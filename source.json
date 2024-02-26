@@ -1,1 +1,66 @@
-<name of source>teamx<name end>
+____________________________________________________________________
+____________________________________________________________________
+<teamx config start>
+
+<version start>1.0.0<version end>
+
+«main information start»
+<baseURL lastUpdatea start> url <baseURL lastUpdatea end>
+<baseURL listManga start> url <baseURL listManga end>
+«main information end»
+
+____________________________________________________________________
+____________________________________________________________________
+<main_last_updatea config start>
+
+<cheak start>>اخر الفصول<<cheak end>
+<substring from start>>اخر الفصول<<substring from end>
+<substring to start>>التواصل الاجتماعي<<substring to end>
+<replaceAll start>thumbnail_<replaceAll end>
+
+<name start><div\s+class="info">\s*<a\s+href="[^"]+">\s*<h3>(.*?)</h3>\s*</a>\s<name end> <group start>1<group end>
+
+<image start>(?<=img src=")(.*?)(?=")<image end> <group start>1<group end>
+
+<links start><div class="info">\s*<a\s+href="([^"]+)"><links end> <group start>1<group end>
+
+<types start><ul class="">([\s\S]*?)<a class="(.*?)"\s+href="(.*?")>([^<]+)<types end> <group start>4<group end>
+
+<main_last_updatea config end>
+____________________________________________________________________
+____________________________________________________________________
+<main_list_manga config start>
+
+<cheak start>>قائمة المانجا<<cheak end>
+<substring from start>>قائمة المانجا<<substring from end>
+<substring to start><span>الرئيسية</span><substring to end>
+<replaceAll start>thumbnail_<replaceAll end>
+
+<name start>(?<=alt=")(.*?)(?=")<name end> <group start>1<group end>
+
+<image start>(?<=src=")(.*?)(?=")<image end> <group start>1<group end>
+
+<links start><div\s+class="bsx">\s*<a\shref="(.*?)(?=")<links end> <group start>1<group end>
+
+<types start><span\s+class="type">([^<]+)</span><types end> <group start>1<group end>
+
+<state start><span\s+class="status">([^<]+)</span><state end> <group start>1<group end>
+
+
+<main_list_manga config end>
+____________________________________________________________________
+____________________________________________________________________
+<info_page config start>
+
+<info_page config end>
+
+<search_page config start>
+
+<search_page config end>
+
+<view_page config start>
+
+<view_page config end>
+
+<teamx config end>
+
