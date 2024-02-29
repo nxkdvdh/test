@@ -55,7 +55,31 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
+<pages_name start>(?<=<li class="page-item"><a class="page-link" href=")(.*?)(?=")<pages_name end> <group start>1<group end>
+
+<name start><div class="author-info-title mb-3">\s*<h1>\s*([^<]+)\s*</h1><name end> <group start>1<group end>
+
+<image start><img[^>]+class="shadow-sm"[^>]+src="([^"]+)"<image end> <group start>1<group end>
+
+<types start><div class="full-list-info">\s*<small>\s*النوع:\s*</small>\s*<small>\s*<a[^>]+>([^<]+)</a>\s*</small><types end> <group start>1<group end>
+
+<state start><div class="full-list-info">\s*<small>\s*الحالة:\s*</small>\s*<small>\s*<a[^>]+>([^<]+)</a>\s*</small><state end> <group start>1<group end>
+
+<author start><div class="full-list-info">\s*<small>\s*الرسام:\s*</small>\s*<small>\s*<a[^>]+>([^<]+)</a>\s*</small><author end> <group start>1<group end>
+
+<size_chapters start><a\s+class="nav-link active"[^>]+>\s*الفصول\s*\((\d+)\)\s*</a><size_chapters end> <group start>1<group end>
+
+<story start><div class="review-content">\s*<p[^>]+>([^<]+)</p><story end> <group start>1<group end>
+
+<ranking start><a[^>]+class="subtitle me-1 mt-2 ">\s*([^<]+)\s*</a><ranking end> <group start>1<group end>
+
+<name_of_chapter start><div\s+class="epl-num">\s*الفصل\s+([\d.]+)\s*</div><name_of_chapter end> <group start>1<group end>
+
+<link_of_chapter start><a\s+href="([^"]+)">\s*<div\s+class="epl-num"><link_of_chapter end> <group start>1<group end>
+
 <info_page config end>
+____________________________________________________________________
+____________________________________________________________________
 
 <search_page config start>
 
