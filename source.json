@@ -2,11 +2,12 @@ ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.2<version end>
+<version start>1.0.3<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://teamxnovel.com/<baseURL lastUpdatea end>
 <baseURL listManga start>https://teamxnovel.com/series<baseURL listManga end>
+<baseURL search start>https://teamxnovel.com/?search=<baseURL search end>
 
 <showMore lastUpdates start>https://teamxnovel.com/?page=<showMore lastUpdates end>
 <showMore listManga start>https://teamxnovel.com/series?page=<showMore listManga end>
@@ -83,7 +84,23 @@ ____________________________________________________________________
 
 <search_page config start>
 
+<cheak start>>قائمة المانجا<<cheak end>
+<substring from start>>قائمة المانجا<<substring from end>
+<substring to start><div class="last-chapter"><substring to end>
+
+<name start><div class="bsx">\s+<a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+
+<image start><img src="(.*?)"<image end> <group start>1<group end>
+
+<links start><div class="bsx">\s+<a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+
+<types start><span class="type">(.*?)</span><types end> <group start>1<group end>
+
+<state start>class="status">(.*?)</span><state end> <group start>1<group end>
+
 <search_page config end>
+____________________________________________________________________
+____________________________________________________________________
 
 <view_page config start>
 
