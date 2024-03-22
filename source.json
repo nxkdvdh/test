@@ -121,3 +121,120 @@ ____________________________________________________________________
 
 <teamx config end>
 
+____________________________________________________________________
+____________________________________________________________________
+<swat config start>
+
+<version start>1.0.0<version end>
+
+«main information start»
+<baseURL lastUpdatea start>https://swatmanhua.com/<baseURL lastUpdatea end>
+<baseURL listManga start>https://swatmanhua.com/manga?order=popular&page=1<baseURL listManga end>
+<baseURL search start>https://swatmanhua.com/?s=<baseURL search end>
+
+<showMore lastUpdates start> url <showMore lastUpdates end>
+<showMore listManga start>https://swatmanhua.com/type/manga?page=<showMore listManga end>
+«main information end»
+
+____________________________________________________________________
+____________________________________________________________________
+<main_last_updatea config start>
+
+<cheak start>>أخر الفصول<<cheak end>
+<substring from start>>أخر الفصول<<substring from end>
+<substring to start>>المزيد <<substring to end>
+//<replaceAll start>thumbnail_<replaceAll end>
+
+<name start><h4>\s*([^<]+)\s*</h4><name end> <group start>1<group end>
+
+<image start>(data-lazy-src=")(.*?)(?=")<image end> <group start>2<group end>
+
+<links start><a rel="(.*?)" class="series" href="(.*?)"<links end> <group start>2<group end>
+
+<chapters start><ul\s+class="(manga|manhua|manhwa|novel|comic)">\s*<li><a\s+href="(.*?)">(.*?)(?=<)<chapters end> <group start>3<group end>
+
+<main_last_updatea config end>
+____________________________________________________________________
+____________________________________________________________________
+<main_list_manga config start>
+
+<cheak start>>وضع النص<<cheak end>
+<substring from start>>وضع النص<<substring from end>
+<substring to start><div class="links"><substring to end>
+//<replaceAll start>thumbnail_<replaceAll end>
+
+<name start><div class="tt">(.*?)</div><name end> <group start>1<group end>
+
+<image start>(data-lazy-src=")(.*?)(?=")<image end> <group start>2<group end>
+
+<links start><div class="bsx">\s*<a href="(.*?)(=?")<links end> <group start>1<group end>
+
+<types start><span class="type\s*(.*?)">(.*?)(?=<)<types end> <group start>2<group end>
+
+<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+
+
+<main_list_manga config end>
+____________________________________________________________________
+____________________________________________________________________
+<info_page config start>
+
+<name start><div class="infox">\s*<h1 itemprop="headline">(.*?)(=?<)<name end> <group start>1<group end>
+
+<image start><noscript><img src="([^"]*)"\swidth(.*?)/></noscript><image end> <group start>1<group end>
+
+<types start><span><b>النوع:</b>\s<a href="(.*?)">(.*?)</a></span><types end> <group start>2<group end>
+
+<state start><span><b>الحالة:</b>\s<a href="(.*?)">(.*?)</a></span><state end> <group start>2<group end>
+
+<author start>class="author vcard"><b>الناشر:</b>\s<i itemprop="name">(.*?)</i><author end> <group start>1<group end>
+
+<size_chapters start><li data-num="(.*?)"><size_chapters end> <group start>1<group end>
+
+<story start><meta\s+property="og:description"\s+content="([^"]*)"<story end> <group start>1<group end>
+
+<ranking start> <a href="(.*?)"\srel="tag">(.*?)</a><ranking end> <group start>2<group end>
+
+<name_of_chapter start><li data-num="(.*?)"><name_of_chapter end> <group start>1<group end>
+
+<link_of_chapter start><span class="dt"><a href="(.*?)"<link_of_chapter end> <group start>1<group end>
+
+<info_page config end>
+____________________________________________________________________
+____________________________________________________________________
+<search_page config start>
+
+<cheak start><div class="releases"><h1><span><cheak end>
+<substring from start><div class="releases"><h1><span><substring from end>
+<substring to start>فريق سوات يرحب بكم<substring to end>
+
+<name start><div class="bsx">\s<a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+
+<image start><noscript><img src="(.*?)"<image end> <group start>1<group end>
+
+<links start><div class="bsx">\s<a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+
+<types start><ul\s+class="(manga|manhua|manhwa|novel|comic)">\s*<li><a\s+href="(.*?)">(.*?)(?=<)<types end> <group start>1<group end>
+
+<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+
+<search_page config end>
+____________________________________________________________________
+____________________________________________________________________
+
+<view_page config start>
+
+<cheak start>"images":[<cheak end>
+<substring from start>"images":[<substring from end>
+<substring to start>loadChList<substring to end>
+
+<images_one start>,"(.*?)"<images_one end> <group start>1<group end>
+
+<images_two start>,"(.*?)"<images_two end> <group start>1<group end>
+
+<view_page config end>
+____________________________________________________________________
+____________________________________________________________________
+
+<swat config end>
+
