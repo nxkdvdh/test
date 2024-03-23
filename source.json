@@ -1,4 +1,4 @@
-<version sources start>1.0.0.0<version sources end>
+<version sources start>1.0.0.1<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -125,7 +125,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.0<version end>
+<version start>1.0.1<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://swatmanhua.com/<baseURL lastUpdatea end>
@@ -133,7 +133,7 @@ ____________________________________________________________________
 <baseURL search start>https://swatmanhua.com/?s=<baseURL search end>
 
 <showMore lastUpdates start> url <showMore lastUpdates end>
-<showMore listManga start>https://swatmanhua.com/type/manga?page=<showMore listManga end>
+<showMore listManga start>https://swatmanhua.com/manga?order=popular&page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
