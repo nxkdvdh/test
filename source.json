@@ -208,11 +208,11 @@ ____________________________________________________________________
 <substring from start><div class="releases"><h1><span><substring from end>
 <substring to start>فريق سوات يرحب بكم<substring to end>
 
-<name start><div class="bsx">\s<a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
 <image start><noscript><img src="(.*?)"<image end> <group start>1<group end>
 
-<links start><div class="bsx">\s<a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
 <types start><ul\s+class="(manga|manhua|manhwa|novel|comic)">\s*<li><a\s+href="(.*?)">(.*?)(?=<)<types end> <group start>1<group end>
 
