@@ -1,4 +1,4 @@
-<version sources start>1.0.0.3<version sources end>
+<version sources start>1.0.0.4<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -206,7 +206,7 @@ ____________________________________________________________________
 
 <cheak start><div class="releases"><h1><span><cheak end>
 <substring from start><div class="releases"><h1><span><substring from end>
-<substring to start>فريق سوات يرحب بكم<substring to end>
+<substring to start><div class="mt-4 mb-4"><substring to end>
 
 <name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
