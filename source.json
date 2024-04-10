@@ -1,9 +1,9 @@
-<version sources start>1.0.0.6<version sources end>
+<version sources start>1.0.0.7<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.8<version end>
+<version start>1.0.9<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://teamxnovel.com/<baseURL lastUpdatea end>
@@ -18,7 +18,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>>∆<<cheak end>
+<cheak start>>اخر الفصول<<cheak end>
 <substring from start>>اخر الفصول<<substring from end>
 <substring to start>>التواصل الاجتماعي<<substring to end>
 <replaceAll start>thumbnail_<replaceAll end>
