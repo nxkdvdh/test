@@ -1,4 +1,4 @@
-<version sources start>1.0.0.7<version sources end>
+<version sources start>1.0.0.8<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -125,15 +125,15 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.2<version end>
+<version start>1.0.3<version end>
 
 «main information start»
-<baseURL lastUpdatea start>https://swatmanhua.com/<baseURL lastUpdatea end>
-<baseURL listManga start>https://swatmanhua.com/manga?order=popular&page=1<baseURL listManga end>
-<baseURL search start>https://swatmanhua.com/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://normoyun.com/<baseURL lastUpdatea end>
+<baseURL listManga start>https://normoyun.com/manga?order=popular&page=1<baseURL listManga end>
+<baseURL search start>https://normoyun.com/?s=<baseURL search end>
 
 <showMore lastUpdates start> url <showMore lastUpdates end>
-<showMore listManga start>https://swatmanhua.com/manga?order=popular&page=<showMore listManga end>
+<showMore listManga start>https://normoyun.com/manga?order=popular&page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
