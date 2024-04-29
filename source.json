@@ -1,4 +1,4 @@
-<version sources start>1.0.0.8<version sources end>
+<version sources start>1.0.0.9<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -237,4 +237,124 @@ ____________________________________________________________________
 ____________________________________________________________________
 
 <swat config end>
+
+
+____________________________________________________________________
+____________________________________________________________________
+<ares config start>
+
+<version start>1.0.0<version end>
+
+«main information start»
+<baseURL lastUpdatea start>https://scarmanga.com/<baseURL lastUpdatea end>
+<baseURL listManga start>https://scarmanga.com/series/?page=1&status=&type=&order=popular<baseURL listManga end>
+<baseURL search start>https://scarmanga.com/?s=<baseURL search end>
+
+<showMore lastUpdates start>https://scarmanga.com/page/<showMore lastUpdates end>
+<showMore listManga start>https://scarmanga.com/series/?page=<showMore listManga end>
+«main information end»
+
+____________________________________________________________________
+____________________________________________________________________
+<main_last_updatea config start>
+
+<cheak start>>جديد إصداراتنا<<cheak end>
+<substring from start>>جديد إصداراتنا<<substring from end>
+<substring to start>التالي<substring to end>
+//<replaceAll start>thumbnail_<replaceAll end>
+
+<name start><a href="(.*?)" title="(.*?)">(.*?)<<name end> <group start>3<group end>
+
+<image start><img src="(.*?)"<image end> <group start>1<group end>
+
+<links start><a href="(.*?)" title="(.*?)">(.*?)<<links end> <group start>1<group end>
+
+<chapters start><ul class="chfiv">(.*?)<li><a href="(.*?)">(.*?)<<chapters end> <group start>3<group end>
+
+<main_last_updatea config end>
+____________________________________________________________________
+____________________________________________________________________
+<main_list_manga config start>
+
+<cheak start>قائمة المانجا<cheak end>
+<substring from start>قائمة المانجا<substring from end>
+<substring to start>التالي<substring to end>
+//<replaceAll start>thumbnail_<replaceAll end>
+
+<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+
+<image start><img src="(.*?)"<image end> <group start>1<group end>
+
+<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+
+<types start><span class="type (.*?)"><types end> <group start>1<group end>
+
+<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+
+
+<main_list_manga config end>
+____________________________________________________________________
+____________________________________________________________________
+<info_page config start>
+
+<name start><h1 class="entry-title" itemprop="name">(.*?)</h1><name end> <group start>1<group end>
+
+<image start><meta property="og:image" content="([^"]*)"<image end> <group start>1<group end>
+
+<types start><div class="imptdt">\s+النوع <a href="(.*?)">(.*?)<<types end> <group start>2<group end>
+
+<state start><div class="imptdt">\s+الحالة <i>(.*?)</i><state end> <group start>1<group end>
+
+<author start><div class="imptdt">\s+الرسام <i>(.*?)<<author end> <group start>1<group end>
+
+<size_chapters start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
+
+<story start>itemprop="description"><p>[^"]*</p><story end> <group start><group end>
+
+<ranking start>rel="tag">(.*?)<<ranking end> <group start>1<group end>
+
+<name_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><name_of_chapter end> <group start>2<group end>
+
+<link_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><link_of_chapter end> <group start>1<group end>
+
+<info_page config end>
+____________________________________________________________________
+____________________________________________________________________
+<search_page config start>
+
+<cheak start><div class="releases"><h1><cheak end>
+<substring from start><div class="releases"><h1><substring from end>
+<substring to start><div class="releases"><h3>اضغـط على الصورة</h3><substring to end>
+
+<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+
+<image start><img src="(.*?)"<image end> <group start>1<group end>
+
+<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+
+<types start><span class="type (.*?)"><types end> <group start>1<group end>
+
+<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+
+<search_page config end>
+____________________________________________________________________
+____________________________________________________________________
+
+<view_page config start>
+
+<cheak start><div id="disqus_thread"></div>\s+</div>\s+</div>\s+</div>\s+</div>\s+<script defer src="data:text/javascript;base64,(.*?)"></script><cheak end>
+<substring from start>"images":[<substring from end>
+<substring to start>lazyload"<substring to end>
+
+<images_one start>,"(.*?)"<images_one end> <group start>1<group end>
+
+<images_two start>,"(.*?)"<images_two end> <group start>1<group end>
+
+<view_page config end>
+____________________________________________________________________
+____________________________________________________________________
+
+<ares config end>
+
+
 
