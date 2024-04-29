@@ -1,4 +1,4 @@
-<version sources start>1.0.0.9<version sources end>
+<version sources start>1.0.0.10<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -243,7 +243,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.0.0<version end>
+<version start>1.0.1<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://scarmanga.com/<baseURL lastUpdatea end>
@@ -309,7 +309,7 @@ ____________________________________________________________________
 
 <size_chapters start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
 
-<story start>itemprop="description"><p>[^"]*</p><story end> <group start><group end>
+<story start>itemprop="description">([\s\S]*?)</div><story end> <group start>1<group end>
 
 <ranking start>rel="tag">(.*?)<<ranking end> <group start>1<group end>
 
