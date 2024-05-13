@@ -718,7 +718,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.0<version end>
+<version start>1.0.1<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://3asq.org/page/1<baseURL lastUpdatea end>
@@ -756,11 +756,11 @@ ____________________________________________________________________
 <substring to start>أقدم<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
 <image start><img width="(.*?)" height="(.*?)" src="(.*?)"<image end> <group start>3<group end>
 
-<links start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
 <types start><span class="type (.*?)"><types end> <group start>1<group end>
 
