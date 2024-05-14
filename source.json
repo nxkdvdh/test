@@ -1,4 +1,4 @@
-<version sources start>1.0.0.15<version sources end>
+<version sources start>1.0.0.16<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -125,7 +125,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.3<version end>
+<version start>1.0.4<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://normoyun.com/<baseURL lastUpdatea end>
@@ -187,7 +187,7 @@ ____________________________________________________________________
 
 <state start><span><b>الحالة:</b>\s<a href="(.*?)">(.*?)</a></span><state end> <group start>2<group end>
 
-<author start>class="author vcard"><b>الناشر:</b>\s<i itemprop="name">(.*?)</i><author end> <group start>1<group end>
+<author start><span><b>المؤلف:</b>(.*?)</span><author end> <group start>1<group end>
 
 <size_chapters start><li data-num="(.*?)"><size_chapters end> <group start>1<group end>
 
