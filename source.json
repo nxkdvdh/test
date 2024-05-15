@@ -1,4 +1,4 @@
-<version sources start>1.0.0.17<version sources end>
+<version sources start>1.0.0.18<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1249,7 +1249,7 @@ ____________________________________________________________________
 
 <image start><div class="thumb" itemprop="image" itemscope itemtype="(.*?)">\s+<img src="(.*?)"<image end> <group start>2<group end>
 
-<types start><a href="(.*?)type=(.*?)">(.*?)</a><types end> <group start>2<group end>
+<types start><b>المؤلف</b>\s+<span>\s+(.*?)</span><types end> <group start>1<group end>
 
 <state start>الحالة <i>(.*?)</i><state end> <group start>1<group end>
 
