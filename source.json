@@ -1,4 +1,4 @@
-<version sources start>1.0.0.18<version sources end>
+<version sources start>1.0.0.19<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1191,7 +1191,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.1<version end>
+<version start>1.0.2<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://mangapro.club/page/1<baseURL lastUpdatea end>
@@ -1249,11 +1249,11 @@ ____________________________________________________________________
 
 <image start><div class="thumb" itemprop="image" itemscope itemtype="(.*?)">\s+<img src="(.*?)"<image end> <group start>2<group end>
 
-<types start><b>المؤلف</b>\s+<span>\s+(.*?)</span><types end> <group start>1<group end>
+<types start><a href="(.*?)type=(.*?)">(.*?)</a><types end> <group start>2<group end>
 
 <state start>الحالة <i>(.*?)</i><state end> <group start>1<group end>
 
-<author start><div class="imptdt">\s+الرسام <i>(.*?)<<author end> <group start>1<group end>
+<author start><b>المؤلف</b>\s+<span>\s+(.*?)</span><author end> <group start>1<group end>
 
 <size_chapters start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
 
