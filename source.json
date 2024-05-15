@@ -1,4 +1,4 @@
-<version sources start>1.0.0.16<version sources end>
+<version sources start>1.0.0.17<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1075,7 +1075,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.0.0<version end>
+<version start>1.0.1<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://www.areascans.net/page/1<baseURL lastUpdatea end>
@@ -1133,7 +1133,7 @@ ____________________________________________________________________
 
 <image start>itemtype="https://schema.org/ImageObject">\s+<img width="(.*?)" height="(.*?)" src="(.*?)"<image end> <group start>3<group end>
 
-<types start><a href="(.*?)&type=(.*?)">(.*?)</a><types end> <group start>3<group end>
+<types start><h1> النوع </h1> <i>(.*?)</i><types end> <group start>1<group end>
 
 <state start><h1> الحالة </h1> <i>(.*?)</i><state end> <group start>1<group end>
 
