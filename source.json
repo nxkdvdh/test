@@ -1,4 +1,4 @@
-<version sources start>1.0.0.21<version sources end>
+<version sources start>1.0.0.22<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -842,7 +842,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.0<version end>
+<version start>1.0.1<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://www.onma.top/latest-release?page=1<baseURL lastUpdatea end>
@@ -923,7 +923,8 @@ ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-//delete//<cheak start><div class="releases"><h1><cheak end>
+<cheak start>value<cheak end>
+
 //delete//<substring from start><div class="releases"><h1><substring from end>
 //delete//<substring to start><div class="releases"><h3>اضغـط على الصورة</h3><substring to end>
 
