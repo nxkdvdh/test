@@ -1,4 +1,4 @@
-<version sources start>1.0.0.20<version sources end>
+<version sources start>1.0.0.21<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -488,12 +488,12 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.0.0<version end>
+<version start>1.0.1<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://like-manga.net/<baseURL lastUpdatea end>
 <baseURL listManga start>https://like-manga.net/manga/<baseURL listManga end>
-//not open now//<baseURL search start>https://scarmanga.com/?s=<baseURL search end>
+//not open now//<baseURL search start>https://like-manga.net/manga/<baseURL search end>
 
 <showMore lastUpdates start>https://like-manga.net/page/<showMore lastUpdates end>
 <showMore listManga start>https://like-manga.net/manga/page/<showMore listManga end>
@@ -565,22 +565,22 @@ ____________________________________________________________________
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
-//البحث غير شغال حاليا//
+//شغال على عملية بحث واحدة//
 <search_page config start>
 
-<cheak start><div class="releases"><h1><cheak end>
-<substring from start><div class="releases"><h1><substring from end>
-<substring to start><div class="releases"><h3>اضغـط على الصورة</h3><substring to end>
+<cheak start>headline<cheak end>
+//off//<substring from start><div class="releases"><h1><substring from end>
+//off//<substring to start><div class="releases"><h3>اضغـط على الصورة</h3><substring to end>
 
-<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start>"headline": "(.*?)",<name end> <group start>1<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start>"url": "(.*?)",<image end> <group start>1<group end>
 
-<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start><link rel="canonical" href="(.*?)" /><links end> <group start>1<group end>
 
 <types start><span class="type (.*?)"><types end> <group start>1<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start><ul class="main version-chap">\s+<li class="wp-manga-chapter  ">\s+<a href="(.*?)" data-wpel-link="internal">\s+(.*?)</a><chapters end> <group start>2<group end>
 
 <search_page config end>
 //end//
