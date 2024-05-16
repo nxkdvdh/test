@@ -1,4 +1,4 @@
-<version sources start>1.0.0.19<version sources end>
+<version sources start>1.0.0.20<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -125,7 +125,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.4<version end>
+<version start>1.0.5<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://normoyun.com/<baseURL lastUpdatea end>
@@ -152,6 +152,14 @@ ____________________________________________________________________
 <links start><a rel="(.*?)" class="series" href="(.*?)"<links end> <group start>2<group end>
 
 <chapters start><ul\s+class="(manga|manhua|manhwa|novel|comic)">\s*<li><a\s+href="(.*?)">(.*?)(?=<)<chapters end> <group start>3<group end>
+
+<name_webview start><a rel="(.*?)" class="(.*?)" href="(.*?)" title="(.*?)"><name_webview end> <group start>4<group end>
+
+<image_webview start><noscript><img src="(.*?)"<image_webview end> <group start>1<group end>
+
+<links_webview start><a rel="(.*?)" class="(.*?)" href="(.*?)" title="(.*?)"><links_webview end> <group start>3<group end>
+
+<chapters_webview start><ul class="(.*?)">\s+<li><a href="(.*?)">(.*?)</a><chapters_webview end> <group start>3<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
