@@ -1,4 +1,4 @@
-<version sources start>1.0.0.24<version sources end>
+<version sources start>1.0.0.25<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -609,7 +609,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.1<version end>
+<version start>1.0.2<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://mangatime.us/home-dark1/page/1<baseURL lastUpdatea end>
@@ -631,7 +631,9 @@ ____________________________________________________________________
 
 <name start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  data-src="(.*?)"<image end> <group start>3<group end>
+<image start><div class="page-item-detail manga  ">([\s\S]*?)</div><image end> <group start>1<group end>
+
+<image2 start><img width="(.*?)" height="(.*?)"  data-src="(.*?)"<image2 end> <group start>3<group end>
 
 <links start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
 
@@ -649,7 +651,9 @@ ____________________________________________________________________
 
 <name start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  data-src="(.*?)"<image end> <group start>3<group end>
+<image start><div class="page-item-detail manga  ">([\s\S]*?)</div><image end> <group start>1<group end>
+
+<image2 start><img width="(.*?)" height="(.*?)"  data-src="(.*?)"<image2 end> <group start>3<group end>
 
 <links start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
 
