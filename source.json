@@ -1,4 +1,4 @@
-<version sources start>1.0.0.22<version sources end>
+<version sources start>1.0.0.23<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -609,15 +609,15 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.0<version end>
+<version start>1.0.1<version end>
 
 «main information start»
-<baseURL lastUpdatea start>https://anime-time.net/home-dark1/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://anime-time.net/manga/?page=1&m_orderby=trending<baseURL listManga end>
-<baseURL search start>https://anime-time.net/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://mangatime.us/home-dark1/page/1<baseURL lastUpdatea end>
+<baseURL listManga start>https://mangatime.us/manga/?page=1&m_orderby=trending<baseURL listManga end>
+<baseURL search start>https://mangatime.us/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://anime-time.net/home-dark1/page/<showMore lastUpdates end>
-<showMore listManga start>https://anime-time.net/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://mangatime.us/home-dark1/page/<showMore lastUpdates end>
+<showMore listManga start>https://mangatime.us/manga/?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
