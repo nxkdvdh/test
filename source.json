@@ -1,4 +1,4 @@
-<app_version start>1.0.0_beta<app_version end>
+<app_version start>1.0.0 _beta<app_version end>
 <app_version_link start>(.*?)<app_version_link end>
 <app_version_news start>تجربة<app_version_news end>
 
