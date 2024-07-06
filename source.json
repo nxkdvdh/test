@@ -5,7 +5,7 @@
 <update_important start>no<update_important end>
 
 
-<version sources start>1.0.0.27<version sources end>
+<version sources start>1.0.0.28<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1213,7 +1213,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.4<version end>
+<version start>1.0.5<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://promanga.pro/page/1<baseURL lastUpdatea end>
@@ -1248,7 +1248,7 @@ ____________________________________________________________________
 
 <cheak start>وضع النصوص<cheak end>
 <substring from start>وضع النصوص<substring from end>
-<substring to start><h3>شائع </h3><substring to end>
+<substring to start><div id="footer"><substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
 <name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
