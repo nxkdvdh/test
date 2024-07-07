@@ -1,4 +1,4 @@
-<app_version start>1.0.1 _beta<app_version end>
+<app_version start>1.0.1_beta<app_version end>
 <app_version_link start>https://www.manga-break.xyz<app_version_link end>
 <app_version_news start>
 تفعيل القوائم الاتية: 
@@ -13,7 +13,7 @@
 لمعرفة كل جديد زورو قناتنا التيليجرام
 <app_version_news end>
 <cheak_user start>yes<cheak_user end>
-<update_important start>no<update_important end>
+<update_important start>yes<update_important end>
 
 
 <version sources start>1.0.0.30<version sources end>
