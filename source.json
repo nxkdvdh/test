@@ -5,7 +5,7 @@
 <update_important start>no<update_important end>
 
 
-<version sources start>1.0.0.28<version sources end>
+<version sources start>1.0.0.29<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -737,7 +737,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.2<version end>
+<version start>1.0.3<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://3asq.org/page/1<baseURL lastUpdatea end>
@@ -779,7 +779,9 @@ ____________________________________________________________________
 
 <name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
-<image start><img width="(.*?)" height="(.*?)" src="(.*?)"<image end> <group start>3<group end>
+<image start><div class="page-item-detail manga  ">([\s\S]*?)</div><image end> <group start>1<group end>
+
+<image2 start><img width="(.*?)" height="(.*?)" src="(.*?)"<image2 end> <group start>3<group end>
 
 <links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
