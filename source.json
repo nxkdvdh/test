@@ -1,6 +1,7 @@
 <app_version start>1.0.1 _beta<app_version end>
 <app_version_link start>https://www.manga-break.xyz<app_version_link end>
-<app_version_news start>تفعيل القوائم الاتية: 
+<app_version_news start>
+تفعيل القوائم الاتية: 
 1-تمت مشاهدتها
 2-ارغب بمشاهدتها
 3-لا ارغب بمشاهدتها
@@ -9,7 +10,8 @@
 فضلاً عن اصلاح بعض المشاكل.
 
 ملاحظة:التطبيق سيخضع لتحديثات قادمة كل فترة.
-لمعرفة كل جديد زورو قناتنا التيليجرام<app_version_news end>
+لمعرفة كل جديد زورو قناتنا التيليجرام
+<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end>
 
