@@ -1,11 +1,20 @@
-<app_version start>1.0.0 _beta<app_version end>
+<app_version start>1.0.1 _beta<app_version end>
 <app_version_link start>https://www.manga-break.xyz<app_version_link end>
-<app_version_news start>تجربة<app_version_news end>
+<app_version_news start>تفعيل القوائم الاتية: 
+1-تمت مشاهدتها
+2-ارغب بمشاهدتها
+3-لا ارغب بمشاهدتها
+4-اشاهدها لاحقاً
+5-اشاهدها الان
+فضلاً عن اصلاح بعض المشاكل.
+
+ملاحظة:التطبيق سيخضع لتحديثات قادمة كل فترة.
+لمعرفة كل جديد زورو قناتنا التيليجرام<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end>
 
 
-<version sources start>1.0.0.29<version sources end>
+<version sources start>1.0.0.30<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -737,7 +746,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.3<version end>
+<version start>1.0.4<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://3asq.org/page/1<baseURL lastUpdatea end>
