@@ -5,7 +5,7 @@
 <update_important start>no<update_important end>
 
 
-<version sources start>1.0.0.30<version sources end>
+<version sources start>1.0.0.31<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -983,15 +983,15 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.1<version end>
+<version start>1.0.2<version end>
 
 «main information start»
-<baseURL lastUpdatea start>https://manjanoon.org/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://manjanoon.org/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
-<baseURL search start>https://manjanoon.org/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://manjanoon.co/page/1<baseURL lastUpdatea end>
+<baseURL listManga start>https://manjanoon.co/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
+<baseURL search start>https://manjanoon.co/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://manjanoon.org/page/<showMore lastUpdates end>
-<showMore listManga start>https://manjanoon.org/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://manjanoon.co/page/<showMore lastUpdates end>
+<showMore listManga start>https://manjanoon.co/manga/?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
