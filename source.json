@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.36<version sources end>
+<version sources start>1.0.0.37<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -985,15 +985,15 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.4<version end>
+<version start>1.0.5<version end>
 
 «main information start»
-<baseURL lastUpdatea start>https://noonscan.com/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://noonscan.com/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
-<baseURL search start>https://noonscan.com/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://noonscan.net/page/1<baseURL lastUpdatea end>
+<baseURL listManga start>https://noonscan.net/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
+<baseURL search start>https://noonscan.net/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://noonscan.com/page/<showMore lastUpdates end>
-<showMore listManga start>https://noonscan.com/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://noonscan.net/page/<showMore lastUpdates end>
+<showMore listManga start>https://noonscan.net/manga/?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
