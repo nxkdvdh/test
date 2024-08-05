@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.38<version sources end>
+<version sources start>1.0.0.39<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -739,7 +739,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.5<version end>
+<version start>1.0.6<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://3asq.org/page/1<baseURL lastUpdatea end>
@@ -846,9 +846,9 @@ ____________________________________________________________________
 <substring from start>none<substring from end>
 <substring to start>none<substring to end>
 
-<images_one start><img id="image-(.*?)" src="\s+(.*?)"<images_one end> <group start>2<group end>
+<images_one start><img id="image-(.*?)" data-src="\s+(.*?)"<images_one end> <group start>2<group end>
 
-<images_two start><img id="image-(.*?)" src="\s+(.*?)"<images_two end> <group start>2<group end>
+<images_two start><img id="image-(.*?)" data-src="\s+(.*?)"<images_two end> <group start>2<group end>
 
 <view_page config end>
 ____________________________________________________________________
