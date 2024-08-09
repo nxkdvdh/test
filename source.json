@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.39<version sources end>
+<version sources start>1.0.0.40<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -132,15 +132,15 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.8<version end>
+<version start>1.0.9<version end>
 
 «main information start»
-<baseURL lastUpdatea start>https://maxlevelteam.com/<baseURL lastUpdatea end>
-<baseURL listManga start>https://maxlevelteam.com/manga?order=popular&page=1<baseURL listManga end>
-<baseURL search start>https://maxlevelteam.com/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://tatwt.com/<baseURL lastUpdatea end>
+<baseURL listManga start>https://tatwt.com/manga?order=popular&page=1<baseURL listManga end>
+<baseURL search start>https://tatwt.com/?s=<baseURL search end>
 
 <showMore lastUpdates start> url <showMore lastUpdates end>
-<showMore listManga start>https://maxlevelteam.com/manga?order=popular&page=<showMore listManga end>
+<showMore listManga start>https://tatwt.com/manga?order=popular&page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
@@ -152,7 +152,7 @@ ____________________________________________________________________
 <substring to start>>المزيد <<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<link_ajax-request start>https://maxlevelteam.com/ajax-request?action=more_manga_home&paged=<link_ajax-request end> <group start>1<group end>
+<link_ajax-request start>https://tatwt.com/ajax-request?action=more_manga_home&paged=<link_ajax-request end> <group start>1<group end>
 
 <name start><h4>\s*([^<]+)\s*</h4><name end> <group start>1<group end>
 
