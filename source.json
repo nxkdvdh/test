@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.40<version sources end>
+<version sources start>1.0.0.41<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -739,7 +739,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.6<version end>
+<version start>1.0.7<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://3asq.org/page/1<baseURL lastUpdatea end>
@@ -763,7 +763,7 @@ ____________________________________________________________________
 
 <image start><div class="page-item-detail manga  ">([\s\S]*?)</div><image end> <group start>1<group end>
 
-<image2 start><img width="(.*?)" height="(.*?)" data-src="(.*?)"<image2 end> <group start>3<group end>
+<image2 start><img width="(.*?)" height="(.*?)" (.*?)src="(.*?)"<image2 end> <group start>4<group end>
 
 <links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
@@ -783,7 +783,7 @@ ____________________________________________________________________
 
 <image start><div class="page-item-detail manga  ">([\s\S]*?)</div><image end> <group start>1<group end>
 
-<image2 start><img width="(.*?)" height="(.*?)" data-src="(.*?)"<image2 end> <group start>3<group end>
+<image2 start><img width="(.*?)" height="(.*?)" (.*?)src="(.*?)"<image2 end> <group start>4<group end>
 
 <links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
@@ -828,7 +828,7 @@ ____________________________________________________________________
 
 <name start><h3 class="h4"><a href="(.*?)">(.*?)</a></h3><name end> <group start>2<group end>
 
-<image start><img width="(.*?)" height="(.*?)" data-src="(.*?)"<image end> <group start>3<group end>
+<image start><img width="(.*?)" height="(.*?)" (.*?)src="(.*?)"<image end> <group start>4<group end>
 
 <links start><h3 class="h4"><a href="(.*?)">(.*?)</a></h3><links end> <group start>1<group end>
 
@@ -846,9 +846,9 @@ ____________________________________________________________________
 <substring from start>none<substring from end>
 <substring to start>none<substring to end>
 
-<images_one start><img id="image-(.*?)" data-src="\s+(.*?)"<images_one end> <group start>2<group end>
+<images_one start><img id="image-(.*?)" (.*?)src="\s+(.*?)"<images_one end> <group start>3<group end>
 
-<images_two start><img id="image-(.*?)" data-src="\s+(.*?)"<images_two end> <group start>2<group end>
+<images_two start><img id="image-(.*?)" (.*?)src="\s+(.*?)"<images_two end> <group start>3<group end>
 
 <view_page config end>
 ____________________________________________________________________
