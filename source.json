@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.41<version sources end>
+<version sources start>1.0.0.42<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -739,7 +739,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.7<version end>
+<version start>1.0.8<version end>
 
 «main information start»
 <baseURL lastUpdatea start>https://3asq.org/page/1<baseURL lastUpdatea end>
