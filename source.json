@@ -5,13 +5,14 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.44<version sources end>
+<version sources start>1.0.0.45<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.11<version end>
+<version start>1.0.12<version end>
 
+<SiteDomain start>test.com<SiteDomain end>
 «main information start»
 <baseURL lastUpdatea start>https://teamxnovel.com/<baseURL lastUpdatea end>
 <baseURL listManga start>https://teamxnovel.com/series<baseURL listManga end>
