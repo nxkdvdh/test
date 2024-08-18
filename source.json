@@ -5,21 +5,21 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.45<version sources end>
+<version sources start>1.0.0.46<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.12<version end>
+<version start>1.0.14<version end>
 
-<SiteDomain start>test.com<SiteDomain end>
+<SiteDomain start>teamoney.site<SiteDomain end>
 «main information start»
-<baseURL lastUpdatea start>https://teamxnovel.com/<baseURL lastUpdatea end>
-<baseURL listManga start>https://teamxnovel.com/series<baseURL listManga end>
-<baseURL search start>https://teamxnovel.com/?search=<baseURL search end>
+<baseURL lastUpdatea start>https://teamoney.site/<baseURL lastUpdatea end>
+<baseURL listManga start>https://teamoney.site/series<baseURL listManga end>
+<baseURL search start>https://teamoney.site/?search=<baseURL search end>
 
-<showMore lastUpdates start>https://teamxnovel.com/?page=<showMore lastUpdates end>
-<showMore listManga start>https://teamxnovel.com/series?page=<showMore listManga end>
+<showMore lastUpdates start>https://teamoney.site/?page=<showMore lastUpdates end>
+<showMore listManga start>https://teamoney.site/series?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
@@ -133,15 +133,15 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.9<version end>
+<version start>1.0.10<version end>
 
 «main information start»
-<baseURL lastUpdatea start>https://tatwt.com/<baseURL lastUpdatea end>
-<baseURL listManga start>https://tatwt.com/manga?order=popular&page=1<baseURL listManga end>
-<baseURL search start>https://tatwt.com/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://swatapp.me/<baseURL lastUpdatea end>
+<baseURL listManga start>https://swatapp.me/manga?order=popular&page=1<baseURL listManga end>
+<baseURL search start>https://swatapp.me/?s=<baseURL search end>
 
 <showMore lastUpdates start> url <showMore lastUpdates end>
-<showMore listManga start>https://tatwt.com/manga?order=popular&page=<showMore listManga end>
+<showMore listManga start>https://swatapp.me/manga?order=popular&page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
@@ -153,7 +153,7 @@ ____________________________________________________________________
 <substring to start>>المزيد <<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<link_ajax-request start>https://tatwt.com/ajax-request?action=more_manga_home&paged=<link_ajax-request end> <group start>1<group end>
+<link_ajax-request start>https://swatapp.me/ajax-request?action=more_manga_home&paged=<link_ajax-request end> <group start>1<group end>
 
 <name start><h4>\s*([^<]+)\s*</h4><name end> <group start>1<group end>
 
