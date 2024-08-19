@@ -5,14 +5,14 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.46<version sources end>
+<version sources start>1.0.0.47<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.14<version end>
+<version start>1.0.15<version end>
 
-<SiteDomain start>teamoney.site<SiteDomain end>
+<SiteDomain start>test.site<SiteDomain end>
 «main information start»
 <baseURL lastUpdatea start>https://teamoney.site/<baseURL lastUpdatea end>
 <baseURL listManga start>https://teamoney.site/series<baseURL listManga end>
@@ -133,7 +133,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.10<version end>
+<version start>1.0.11<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://swatapp.me/<baseURL lastUpdatea end>
@@ -261,7 +263,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.0.1<version end>
+<version start>1.0.2<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://scarmanga.com/<baseURL lastUpdatea end>
@@ -379,7 +383,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.0<version end>
+<version start>1.0.1<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://mangarose.net/<baseURL lastUpdatea end>
@@ -498,7 +504,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.0.1<version end>
+<version start>1.0.2<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://like-manga.net/<baseURL lastUpdatea end>
@@ -619,7 +627,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.2<version end>
+<version start>1.0.3<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://mangatime.us/home-dark1/page/1<baseURL lastUpdatea end>
@@ -740,7 +750,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.8<version end>
+<version start>1.0.9<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://3asq.org/page/1<baseURL lastUpdatea end>
@@ -860,7 +872,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.1<version end>
+<version start>1.0.2<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://www.onma.top/latest-release?page=1<baseURL lastUpdatea end>
@@ -986,7 +1000,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.5<version end>
+<version start>1.0.6<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://noonscan.net/page/1<baseURL lastUpdatea end>
@@ -1102,7 +1118,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.0.1<version end>
+<version start>1.0.2<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://www.areascans.net/page/1<baseURL lastUpdatea end>
@@ -1218,7 +1236,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.5<version end>
+<version start>1.0.6<version end>
+
+<SiteDomain start>test.site<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://promanga.pro/page/1<baseURL lastUpdatea end>
