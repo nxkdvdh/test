@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.49<version sources end>
+<version sources start>1.0.0.50<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -263,7 +263,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.0.3<version end>
+<version start>1.0.4<version end>
 
 <SiteDomain start>scarmanga.com<SiteDomain end>
 
@@ -383,7 +383,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.2<version end>
+<version start>1.0.3<version end>
 
 <SiteDomain start>mangarose.net<SiteDomain end>
 
@@ -504,7 +504,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.0.3<version end>
+<version start>1.0.4<version end>
 
 <SiteDomain start>like-manga.net<SiteDomain end>
 
@@ -627,7 +627,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.4<version end>
+<version start>1.0.5<version end>
 
 <SiteDomain start>mangatime.us<SiteDomain end>
 
@@ -750,7 +750,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.10<version end>
+<version start>1.0.11<version end>
 
 <SiteDomain start>3asq.org<SiteDomain end>
 
@@ -872,7 +872,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.3<version end>
+<version start>1.0.4<version end>
 
 <SiteDomain start>www.onma.top<SiteDomain end>
 
@@ -1000,7 +1000,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.7<version end>
+<version start>1.0.8<version end>
 
 <SiteDomain start>noonscan.net<SiteDomain end>
 
@@ -1118,7 +1118,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.0.3<version end>
+<version start>1.0.4<version end>
 
 <SiteDomain start>www.areascans.net<SiteDomain end>
 
@@ -1236,7 +1236,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.7<version end>
+<version start>1.0.8<version end>
 
 <SiteDomain start>promanga.pro<SiteDomain end>
 
