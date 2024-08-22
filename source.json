@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.50<version sources end>
+<version sources start>1.0.0.51<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1000,17 +1000,17 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.8<version end>
+<version start>1.0.9<version end>
 
-<SiteDomain start>noonscan.net<SiteDomain end>
+<SiteDomain start>manjanoon.xyz<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://noonscan.net/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://noonscan.net/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
-<baseURL search start>https://noonscan.net/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://manjanoon.xyz/page/1<baseURL lastUpdatea end>
+<baseURL listManga start>https://manjanoon.xyz/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
+<baseURL search start>https://manjanoon.xyz/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://noonscan.net/page/<showMore lastUpdates end>
-<showMore listManga start>https://noonscan.net/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://manjanoon.xyz/page/<showMore lastUpdates end>
+<showMore listManga start>https://manjanoon.xyz/manga/?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
