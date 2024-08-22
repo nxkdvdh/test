@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.52<version sources end>
+<version sources start>1.0.0.53<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -504,9 +504,10 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.0.4<version end>
+<version start>1.0.5<version end>
 
 <SiteDomain start>like-manga.net<SiteDomain end>
+<SiteDomain_image start>likehua.like-manga.net<SiteDomain_image end>
 
 «main information start»
 <baseURL lastUpdatea start>https://like-manga.net/<baseURL lastUpdatea end>
