@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.53<version sources end>
+<version sources start>1.0.0.54<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -383,7 +383,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.3<version end>
+<version start>1.0.4<version end>
 
 <SiteDomain start>mangarose.net<SiteDomain end>
 
@@ -485,6 +485,7 @@ ____________________________________________________________________
 
 <view_page config start>
 
+<Referer_url start>https://mangarose.net/<Referer_url end>
 
 //<cheak start><div id="disqus_thread"></div>\s+</div>\s+</div>\s+</div>\s+</div>\s+<script defer src="data:text/javascript;base64,(.*?)"></script><cheak end>
 //<substring from start>"images":[<substring from end>
