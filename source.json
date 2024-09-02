@@ -1,16 +1,16 @@
-<app_version start>1.0.1 _beta<app_version end>
+<app_version start>1.0.2 _beta<app_version end>
 <app_version_link start>https://www.manga-break.xyz<app_version_link end>
-<app_version_news start>-تفعيل قوائم جديدة واصلاح بعض المشاكل.<app_version_news end>
+<app_version_news start>- تم تفعيل سجل اخر المشاهدات + اضافة تأثيرات انتقال بين الصفحات + تحسين واجهة مشاهدة الفصول + تحسين مظهر القوائم جميعها + اضافة حذف الكل وتحسين التحديد للحذف في القوائم + المصدر ROS-M اصبح يعمل على وضع المشاهدة العمودي الويب فيو + تحسينات اخرى اكتشفها بنفسك.<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.54<version sources end>
+<version sources start>1.0.0.55<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.17<version end>
+<version start>1.0.18<version end>
 
 <SiteDomain start>teamoney.site<SiteDomain end>
 «main information start»
@@ -133,7 +133,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.14<version end>
+<version start>1.0.15<version end>
 
 <SiteDomain start>healteer.com<SiteDomain end>
 
@@ -263,7 +263,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.0.4<version end>
+<version start>1.0.5<version end>
 
 <SiteDomain start>scarmanga.com<SiteDomain end>
 
@@ -383,7 +383,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.4<version end>
+<version start>1.0.5<version end>
 
 <SiteDomain start>mangarose.net<SiteDomain end>
 
@@ -505,7 +505,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.0.5<version end>
+<version start>1.0.6<version end>
 
 <SiteDomain start>like-manga.net<SiteDomain end>
 <SiteDomain_image start>likehua.like-manga.net<SiteDomain_image end>
@@ -629,7 +629,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.5<version end>
+<version start>1.0.6<version end>
 
 <SiteDomain start>mangatime.us<SiteDomain end>
 
@@ -752,7 +752,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.11<version end>
+<version start>1.0.12<version end>
 
 <SiteDomain start>3asq.org<SiteDomain end>
 
@@ -874,7 +874,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.4<version end>
+<version start>1.0.5<version end>
 
 <SiteDomain start>www.onma.top<SiteDomain end>
 
@@ -1002,7 +1002,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.9<version end>
+<version start>1.0.10<version end>
 
 <SiteDomain start>manjanoon.xyz<SiteDomain end>
 
@@ -1120,7 +1120,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.0.4<version end>
+<version start>1.0.5<version end>
 
 <SiteDomain start>www.areascans.net<SiteDomain end>
 
@@ -1238,7 +1238,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.8<version end>
+<version start>1.0.9<version end>
 
 <SiteDomain start>promanga.pro<SiteDomain end>
 
