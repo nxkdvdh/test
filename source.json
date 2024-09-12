@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.55<version sources end>
+<version sources start>1.0.0.56<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1238,7 +1238,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.9<version end>
+<version start>1.0.10<version end>
 
 <SiteDomain start>promanga.pro<SiteDomain end>
 
@@ -1260,11 +1260,11 @@ ____________________________________________________________________
 <substring to start>توصيات<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><a class="series" href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start><div class="luf"><a class="series" href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start><img class="(.*?)" loading="(.*?)" src="(.*?)"><image end> <group start>3<group end>
 
-<links start><a class="series" href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start><div class="luf"><a class="series" href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
 <chapters start><ul class="(.*?)"><li><a href="(.*?)">(.*?)</a><chapters end> <group start>3<group end>
 
@@ -1275,16 +1275,16 @@ ____________________________________________________________________
 
 <cheak start>وضع النصوص<cheak end>
 <substring from start>وضع النصوص<substring from end>
-<substring to start><div id="footer"><substring to end>
+<substring to start><div class="hpage"><substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
 <name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start><img class="(.*?)" loading="(.*?)" src="(.*?)"><image end> <group start>3<group end>
 
 <links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
-<types start><span class="type (.*?)"><types end> <group start>1<group end>
+<types start><span class="(.*?) type"><types end> <group start>1<group end>
 
 <chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
 
@@ -1296,23 +1296,23 @@ ____________________________________________________________________
 
 <name start><h1 class="entry-title" itemprop="name">(.*?)</h1><name end> <group start>1<group end>
 
-<image start><div class="thumb" itemprop="image" itemscope itemtype="(.*?)">\s+<img src="(.*?)"<image end> <group start>2<group end>
+<image start>itemprop="image" src="(.*?)"<image end> <group start>1<group end>
 
-<types start><a href="(.*?)type=(.*?)">(.*?)</a><types end> <group start>2<group end>
+<types start><div class="imptdt"> النوع <a href="(.*?)=(.*?)"><types end> <group start>2<group end>
 
 <state start>الحالة <i>(.*?)</i><state end> <group start>1<group end>
 
 <author start><b>المؤلف</b>\s+<span>\s+(.*?)</span><author end> <group start>1<group end>
 
-<size_chapters start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
+<size_chapters start><div class="eph-num"><a href="(.*?)"><span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
 
 <story start><div class="entry-content entry-content-single" itemprop="description">([\s\S]*?)</div><story end> <group start>1<group end>
 
 <ranking start><b>التصنيفات</b><span class="mgen"><ranking end> <group start>1<group end>
 
-<name_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start><div class="eph-num"><a href="(.*?)"><span class="chapternum">(.*?)</span><name_of_chapter end> <group start>2<group end>
 
-<link_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start><div class="eph-num"><a href="(.*?)"><span class="chapternum">(.*?)</span><link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
@@ -1321,15 +1321,15 @@ ____________________________________________________________________
 
 <cheak start><div class="releases"><h1><cheak end>
 <substring from start><div class="releases"><h1><substring from end>
-<substring to start><div id="footer"><substring to end>
+<substring to start><div id="sidebar"><substring to end>
 
 <name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start><img class="(.*?)" loading="(.*?)" src="(.*?)"><image end> <group start>3<group end>
 
 <links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
-<types start><span class="type (.*?)">(.*?)</span><types end> <group start>2<group end>
+<types start><span class="(.*?) type">(.*?)</span><types end> <group start>2<group end>
 
 <chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
 
