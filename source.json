@@ -1,6 +1,6 @@
 <app_version start>1.0.2 _beta<app_version end>
 <app_version_link start>https://www.manga-break.xyz<app_version_link end>
-<app_version_news start>- تم تفعيل سجل اخر المشاهدات + اضافة تأثيرات انتقال بين الصفحات + تحسين واجهة مشاهدة الفصول + تحسين مظهر القوائم جميعها + اضافة حذف الكل وتحسين التحديد للحذف في القوائم + المصدر ROS-M اصبح يعمل على وضع المشاهدة العمودي الويب فيو + تحسينات اخرى اكتشفها بنفسك.<app_version_news end>
+<app_version_news start>1- تفعيل ميزة المشاهدة العمودية "ويب تون".#2-حل مشكلة المصدر (SWT-M) لاخر التحديثات.#3-حل مشاكل اخرى<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end> 
 
