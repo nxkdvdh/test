@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.61<version sources end>
+<version sources start>1.0.0.62<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -133,17 +133,17 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.17<version end>
+<version start>1.0.18<version end>
 
-<SiteDomain start>healteer.com<SiteDomain end>
+<SiteDomain start>swatscans.com<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://healteer.com/<baseURL lastUpdatea end>
-<baseURL listManga start>https://healteer.com/manga?order=popular&page=1<baseURL listManga end>
-<baseURL search start>https://healteer.com/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://swatscans.com/<baseURL lastUpdatea end>
+<baseURL listManga start>https://swatscans.com/manga?order=popular&page=1<baseURL listManga end>
+<baseURL search start>https://swatscans.com/?s=<baseURL search end>
 
 <showMore lastUpdates start> url <showMore lastUpdates end>
-<showMore listManga start>https://healteer.com/manga?order=popular&page=<showMore listManga end>
+<showMore listManga start>https://swatscans.com/manga?order=popular&page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
@@ -155,7 +155,7 @@ ____________________________________________________________________
 <substring to start>>المزيد <<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<link_ajax-request start>https://healteer.com/ajax-request?action=more_manga_home&paged=<link_ajax-request end> <group start>1<group end>
+<link_ajax-request start>https://swatscans.com/ajax-request?action=more_manga_home&paged=<link_ajax-request end> <group start>1<group end>
 
 <name start><h4>\s*([^<]+)\s*</h4><name end> <group start>1<group end>
 
