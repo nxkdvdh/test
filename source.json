@@ -5,21 +5,21 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.62<version sources end>
+<version sources start>1.0.0.63<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.18<version end>
+<version start>1.0.19<version end>
 
-<SiteDomain start>teamoney.site<SiteDomain end>
+<SiteDomain start>olympustaff.com<SiteDomain end>
 «main information start»
-<baseURL lastUpdatea start>https://teamoney.site/<baseURL lastUpdatea end>
-<baseURL listManga start>https://teamoney.site/series<baseURL listManga end>
-<baseURL search start>https://teamoney.site/?search=<baseURL search end>
+<baseURL lastUpdatea start>https://olympustaff.com/<baseURL lastUpdatea end>
+<baseURL listManga start>https://olympustaff.com/series<baseURL listManga end>
+<baseURL search start>https://olympustaff.com/?search=<baseURL search end>
 
-<showMore lastUpdates start>https://teamoney.site/?page=<showMore lastUpdates end>
-<showMore listManga start>https://teamoney.site/series?page=<showMore listManga end>
+<showMore lastUpdates start>https://olympustaff.com/?page=<showMore lastUpdates end>
+<showMore listManga start>https://olympustaff.com/series?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
