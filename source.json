@@ -383,7 +383,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.5<version end>
+<version start>1.0.6<version end>
 
 <SiteDomain start>mangarose.net<SiteDomain end>
 
@@ -405,13 +405,13 @@ ____________________________________________________________________
 <substring to start>الأخيرة<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><h3 class="h5">\s<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start><h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
 
-<image start><img width="(.*?)" height="(.*?)" src="(.*?)"<image end> <group start>3<group end>
+<image start><img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>3<group end>
 
-<links start><h3 class="h5">\s<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start><h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s<div class="chapter-item ">\s<span class="chapter font-meta">\s<a href="(.*?)" class="btn-link">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start><div class="list-chapter">\s+<div class="chapter-item ">\s+<span class="chapter font-meta">\s+<a href="(.*?)" class="btn-link">(.*?)</a><chapters end> <group start>2<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
@@ -423,15 +423,15 @@ ____________________________________________________________________
 <substring to start>الأخيرة<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><h3 class="h5">\s<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start><h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
 
-<image start><img width="(.*?)" height="(.*?)" src="(.*?)"<image end> <group start>3<group end>
+<image start><img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>3<group end>
 
-<links start><h3 class="h5">\s<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start><h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
 
 <types start><span class="type (.*?)"><types end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s<div class="chapter-item ">\s<span class="chapter font-meta">\s<a href="(.*?)" class="btn-link">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start><div class="list-chapter">\s+<div class="chapter-item ">\s+<span class="chapter font-meta">\s+<a href="(.*?)" class="btn-link">(.*?)</a><chapters end> <group start>2<group end>
 
 
 <main_list_manga config end>
@@ -441,23 +441,23 @@ ____________________________________________________________________
 
 <name start><h1>\s(.*?)\s</h1><name end> <group start>1<group end>
 
-<image start><div class="summary_image">\s<a href="(.*?)">\s<img width="(.*?)" height="(.*?)" src="(.*?)"<image end> <group start>4<group end>
+<image start><div class="summary_image">\s+<a href="(.*?)">\s+<img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>4<group end>
 
-<types start><h5>\sالنوع </h5>\s</div>\s<div class="summary-content">\s(.*?)</div><types end> <group start>1<group end>
+<types start><h5>\s+النوع\s+</h5>\s+</div>\s+<div class="summary-content">\s(.*?)\s</div><types end> <group start>1<group end>
 
-<state start><h5>\sالحالة </h5>\s</div>\s<div class="summary-content">\s(.*?)</div><state end> <group start>1<group end>
+<state start><h5>\s+الحالة\s+</h5>\s+</div>\s+<div class="summary-content">\s(.*?)\s</div><state end> <group start>1<group end>
 
-<author start><h5>\sالإصدار </h5>\s</div>\s<div class="summary-content">\s<a href="(.*?)" rel="tag">(.*?)</a><author end> <group start>2<group end>
+<author start><h5>\s+الإصدار\s+</h5>\s+</div>\s+<div class="summary-content">\s+<a href="(.*?)" rel="tag">(.*?)</a><author end> <group start>2<group end>
 
-<size_chapters start><li class="wp-manga-chapter    ">\s<a href="(.*?)">\s(.*?)</a><size_chapters end> <group start>2<group end>
+<size_chapters start><li class="wp-manga-chapter    ">\s+<a href="(.*?)">\s(.*?)</a><size_chapters end> <group start>2<group end>
 
 <story start><div class="summary__content show-more">\s(.*?)\s<p>(.*?)</p><story end> <group start>2<group end>
 
 <ranking start>rel="tag">(.*?)<<ranking end> <group start>1<group end>
 
-<name_of_chapter start><li class="wp-manga-chapter    ">\s<a href="(.*?)">\s(.*?)</a><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start><li class="wp-manga-chapter    ">\s+<a href="(.*?)">\s(.*?)</a><name_of_chapter end> <group start>2<group end>
 
-<link_of_chapter start><li class="wp-manga-chapter    ">\s<a href="(.*?)">\s(.*?)</a><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start><li class="wp-manga-chapter    ">\s+<a href="(.*?)">\s(.*?)</a><link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
@@ -469,13 +469,13 @@ ____________________________________________________________________
 //<substring from start><div class="releases"><h1><substring from end>
 //<substring to start><div class="releases"><h3>اضغـط على الصورة</h3><substring to end>
 
-<name start><a href="(.*?)" title="(.*?)">\s<img width="(.*?)" height="(.*?)" src="(.*?)"<name end> <group start>2<group end>
+<name start><a href="(.*?)" title="(.*?)">\s+<img width="(.*?)" height="(.*?)"  src="(.*?)"<name end> <group start>2<group end>
 
-<image start><a href="(.*?)" title="(.*?)">\s<img width="(.*?)" height="(.*?)" src="(.*?)"<image end> <group start>5<group end>
+<image start><a href="(.*?)" title="(.*?)">\s+<img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>5<group end>
 
-<links start><a href="(.*?)" title="(.*?)">\s<img width="(.*?)" height="(.*?)" src="(.*?)"<links end> <group start>1<group end>
+<links start><a href="(.*?)" title="(.*?)">\s+<img width="(.*?)" height="(.*?)"  src="(.*?)"<links end> <group start>1<group end>
 
-<types start><h5>\sالحالة\s</h5>\s</div>\s<div class="summary-content">\s(.*?)\s</div><types end> <group start>1<group end>
+<types start><h5>\s+الحالة\s+</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)\s+</div><types end> <group start>1<group end>
 
 <chapters start><span class="font-meta chapter"><a href="(.*?)">(.*?)</a></span><chapters end> <group start>2<group end>
 
@@ -1002,17 +1002,17 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.12<version end>
+<version start>1.0.13<version end>
 
-<SiteDomain start>axztu.com<SiteDomain end>
+<SiteDomain start>vrnoin.site<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://axztu.com/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://axztu.com/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
-<baseURL search start>https://axztu.com/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://vrnoin.site/page/1<baseURL lastUpdatea end>
+<baseURL listManga start>https://vrnoin.site/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
+<baseURL search start>https://vrnoin.site/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://axztu.com/page/<showMore lastUpdates end>
-<showMore listManga start>https://axztu.com/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://vrnoin.site/page/<showMore lastUpdates end>
+<showMore listManga start>https://vrnoin.site/manga/?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
@@ -1238,7 +1238,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.11<version end>
+<version start>1.0.12<version end>
 
 <SiteDomain start>promanga.pro<SiteDomain end>
 
@@ -1262,7 +1262,7 @@ ____________________________________________________________________
 
 <name start><a class="series" href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start><img data-lazyloaded="(.*?)" src="(.*?)" data-src="(.*?)"<image end> <group start>3<group end>
 
 <links start><a class="series" href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
@@ -1280,7 +1280,7 @@ ____________________________________________________________________
 
 <name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start><img data-lazyloaded="(.*?)" src="(.*?)" data-src="(.*?)"<image end> <group start>3<group end>
 
 <links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
@@ -1296,7 +1296,7 @@ ____________________________________________________________________
 
 <name start><h1 class="entry-title" itemprop="name">(.*?)</h1><name end> <group start>1<group end>
 
-<image start><div class="thumb" itemprop="image" itemscope itemtype="(.*?)">\s+<img src="(.*?)"<image end> <group start>2<group end>
+<image start><div class="thumb" itemprop="image" itemscope itemtype="(.*?)">\s+<img data-lazyloaded="(.*?)" src="(.*?)" data-src="(.*?)"<image end> <group start>4<group end>
 
 <types start><a href="(.*?)type=(.*?)">(.*?)</a><types end> <group start>2<group end>
 
@@ -1321,11 +1321,11 @@ ____________________________________________________________________
 
 <cheak start><div class="releases"><h1><cheak end>
 <substring from start><div class="releases"><h1><substring from end>
-<substring to start><div id="footer"><substring to end>
+<substring to start>تصفح أعمالنا<substring to end>
 
 <name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start><img loading="lazy" src="(.*?)"<image end> <group start>1<group end>
 
 <links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
 
