@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.65<version sources end>
+<version sources start>1.0.0.66<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -874,17 +874,17 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.5<version end>
+<version start>1.0.6<version end>
 
-<SiteDomain start>www.onma.top<SiteDomain end>
+<SiteDomain start>onma.me<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://www.onma.top/latest-release?page=1<baseURL lastUpdatea end>
-<baseURL listManga start>https://www.onma.top/manga-list?page=1<baseURL listManga end>
-<baseURL search start>https://onma.top/search?query=<baseURL search end>
+<baseURL lastUpdatea start>https://onma.me/latest-release?page=1<baseURL lastUpdatea end>
+<baseURL listManga start>https://onma.me/manga-list?page=1<baseURL listManga end>
+<baseURL search start>https://onma.me/search?query=<baseURL search end>
 
-<showMore lastUpdates start>https://www.onma.top/latest-release?page=<showMore lastUpdates end>
-<showMore listManga start>https://www.onma.top/manga-list?page=<showMore listManga end>
+<showMore lastUpdates start>https://onma.me/latest-release?page=<showMore lastUpdates end>
+<showMore listManga start>https://onma.me/manga-list?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
@@ -900,7 +900,7 @@ ____________________________________________________________________
 
 <image start><div class="right-image" ><img src="(.*?)"/><image end> <group start>1<group end>
 
-<image_URL_COMPILE start>https://www.onma.top<image_URL_COMPILE end>
+<image_URL_COMPILE start>https://onma.me<image_URL_COMPILE end>
 
 <links start><i class="fa fa-book" style="display:none"></i>\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
 
@@ -966,13 +966,13 @@ ____________________________________________________________________
 
 <image start>"value":"(.*?)","data":"(.*?)"<image end> <group start>2<group end>
 
-<image_URL_COMPILE start>https://www.onma.top/uploads/manga/<image_URL_COMPILE end>
+<image_URL_COMPILE start>https://onma.me/uploads/manga/<image_URL_COMPILE end>
 
 <image_URL_COMPILE2 start>/cover/cover_250x350.jpg<image_URL_COMPILE2 end>
 
 <links start>"value":"(.*?)","data":"(.*?)"<links end> <group start>2<group end>
 
-<links_URL_COMPILE start>https://onma.top/manga/<links_URL_COMPILE end>
+<links_URL_COMPILE start>https://onma.me/manga/<links_URL_COMPILE end>
 
 
 //delete//<types start><span class="type (.*?)"><types end> <group start>1<group end>
