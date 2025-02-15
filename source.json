@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.66<version sources end>
+<version sources start>1.0.0.67<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -629,59 +629,59 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.6<version end>
+<version start>1.0.7<version end>
 
-<SiteDomain start>mangatime.us<SiteDomain end>
+<SiteDomain start>mangatime.org<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://mangatime.us/home-dark1/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://mangatime.us/manga/?page=1&m_orderby=trending<baseURL listManga end>
-<baseURL search start>https://mangatime.us/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://mangatime.org/releases/0/1000/<baseURL lastUpdatea end>
+<baseURL listManga start>https://mangatime.org/categories/0/1000/<baseURL listManga end>
+<baseURL search start>https://mangatime.org/search?q=<baseURL search end>
 
-<showMore lastUpdates start>https://mangatime.us/home-dark1/page/<showMore lastUpdates end>
-<showMore listManga start>https://mangatime.us/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://mangatime.org/releases/0/200<showMore lastUpdates end>
+<showMore listManga start>https://mangatime.org/categories/0/200<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>أحدث إصدارات المانجا<cheak end>
-<substring from start>أحدث إصدارات المانجا<substring from end>
-<substring to start>آخر ما قرأت<substring to end>
+<cheak start><h4>آخر الفصول</h4><cheak end>
+<substring from start><h4>آخر الفصول</h4><substring from end>
+<substring to start><div class="product__pagination"><substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start>mangaName="(.*?)"<name end> <group start>1<group end>
 
-<image start><div class="page-item-detail manga  ">([\s\S]*?)</div><image end> <group start>1<group end>
+<image start>data-setbg-high="(.*?)"<image end> <group start>1<group end>
 
-<image2 start><img width="(.*?)" height="(.*?)"  data-src="(.*?)"<image2 end> <group start>3<group end>
+<image2 start>(.*)<image2 end> <group start>1<group end>
 
-<links start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start><a class="UpdatedTitle-module_titleName_1QO_s" onclick="window.location.href = '(.*?)'<links end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s+<div class="chapter-item ">\s+<span class="chapter font-meta">\s+<a href="(.*?)">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start><button class="site-btn-chapter">([\s\S]*?)</button><chapters end> <group start>1<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start><h1 class="item-title h4">قائمة المانجا</h1><cheak end>
-<substring from start><h1 class="item-title h4">قائمة المانجا</h1><substring from end>
-<substring to start><div class="load-title"><substring to end>
+<cheak start><h4>قائمة المانجا</h4><cheak end>
+<substring from start><h4>قائمة المانجا</h4><substring from end>
+<substring to start><div class="product__pagination"><substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start>mangaName="(.*?)"<name end> <group start>1<group end>
 
-<image start><div class="page-item-detail manga  ">([\s\S]*?)</div><image end> <group start>1<group end>
+<image start>data-setbg-high="(.*?)"<image end> <group start>1<group end>
 
-<image2 start><img width="(.*?)" height="(.*?)"  data-src="(.*?)"<image2 end> <group start>3<group end>
+<image2 start>(.*)<image2 end> <group start>1<group end>
 
-<links start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start><a class="UpdatedTitle-module_titleName_1QO_s manga-link-3" data-manga-name = "(.*?)" href="(.*?)"<links end> <group start>2<group end>
 
 <types start><span class="manga-type">(.*?)</span><types end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s+<div class="chapter-item ">\s+<span class="chapter font-meta">\s+<a href="(.*?)">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start><div class="ep" data-total-chapters="(.*?)"<chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
@@ -689,44 +689,44 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start>"headline": "(.*?)"<name end> <group start>1<group end>
+<name start><div class="animedetailstitle">\s+<h3>(.*?)</h3><name end> <group start>1<group end>
 
-<image start>"url": "(.*?)",<image end> <group start>1<group end>
+<image start>"data-setbg="(.*?)"<image end> <group start>1<group end>
 
 <types start><h5>\s+النوع		</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><types end> <group start>1<group end>
 
-<state start><h5>\s+الحالة		</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><state end> <group start>1<group end>
+<state start><li><span>الحالة:</span>(.*?)</li><state end> <group start>1<group end>
 
 <author start><div class="author-content">\s+(.*?)</div><author end> <group start>1<group end>
 
-<size_chapters start><div class="eph-num">\s*<a href="(.*?)">\s*<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
+<size_chapters start><a class="visually-hidden" href="(.*?)">([\s\S]*?)</a><size_chapters end> <group start>2<group end>
 
-<story start><div class="description-summary">([\s\S]*?)</div><story end> <group start>1<group end>
+<story start></div>\s+<p>([\s\S]*?)</p><story end> <group start>1<group end>
 
-<ranking start>rel="tag">(.*?)</a><ranking end> <group start>1<group end>
+<ranking start><li><span>التصنيفات:</span>(.*?)</li><ranking end> <group start>1<group end>
 
-<name_of_chapter start><li class="wp-manga-chapter    ">\s+<a href="(.*?)">\s+(.*?)</a><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start><a class="visually-hidden" href="(.*?)">([\s\S]*?)</a><name_of_chapter end> <group start>2<group end>
 
-<link_of_chapter start><li class="wp-manga-chapter    ">\s+<a href="(.*?)">\s+(.*?)</a><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start><a class="visually-hidden" href="(.*?)">([\s\S]*?)</a><link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start><div class="search-wrap"><cheak end>
-<substring from start><div class="search-wrap"><substring from end>
-<substring to start>المانجا الشائعة<substring to end>
+<cheak start><h4>النتائج</h4><cheak end>
+<substring from start><h4>النتائج</h4><substring from end>
+<substring to start>Product Section End<substring to end>
 
-<name start><h3 class="h4"><a href="(.*?)">(.*?)</a></h3><name end> <group start>2<group end>
+<name start>mangaName="(.*?)"<name end> <group start>1<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  data-src="(.*?)"<image end> <group start>3<group end>
+<image start>data-setbg-high="(.*?)"<image end> <group start>1<group end>
 
-<links start><h3 class="h4"><a href="(.*?)">(.*?)</a></h3><links end> <group start>1<group end>
+<links start><a class="UpdatedTitle-module_titleName_1QO_s" onclick="window.location.href = '(.*?)' \+ replaceNameWithDash(?(.*?)?)<links end> <group start>1<group end>
 
 <types start><h5>\s+الحالة\s+</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><types end> <group start>1<group end>
 
-<chapters start><span class="font-meta chapter"><a href="(.*?)">(.*?)</a></span><chapters end> <group start>2<group end>
+<chapters start><div class="ep" data-total-chapters="(.*?)"<chapters end> <group start>1<group end>
 
 <search_page config end>
 ____________________________________________________________________
@@ -738,9 +738,9 @@ ____________________________________________________________________
 <substring from start>"images":[<substring from end>
 <substring to start>lazyload"<substring to end>
 
-<images_one start><img id="image-(.*?)" data-src="\s+(.*?)"<images_one end> <group start>2<group end>
+<images_one start>imageElement(.*?).dataset.src = '(.*?)';<images_one end> <group start>2<group end>
 
-<images_two start><img id="image-(.*?)" data-src="\s+(.*?)"<images_two end> <group start>2<group end>
+<images_two start>imageElement(.*?).dataset.src = '(.*?)';<images_two end> <group start>2<group end>
 
 <view_page config end>
 ____________________________________________________________________
