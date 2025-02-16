@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.69<version sources end>
+<version sources start>1.0.0.70<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1238,55 +1238,55 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.13<version end>
+<version start>1.0.14<version end>
 
 <SiteDomain start>promanga.pro<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://promanga.pro/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://promanga.pro/manga/?page=1&status=&type=<baseURL listManga end>
-<baseURL search start>https://promanga.pro/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://promanga.pro/api/posts?page=1&perPage=30<baseURL lastUpdatea end>
+<baseURL listManga start>https://promanga.pro/api/query?page=1&perPage=30<baseURL listManga end>
+<baseURL search start>https://promanga.pro/api/query?searchTerm=<baseURL search end>
 
-<showMore lastUpdates start>https://promanga.pro/page/<showMore lastUpdates end>
-<showMore listManga start>https://promanga.pro/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://promanga.pro/api/posts?page=<showMore lastUpdates end>
+<showMore listManga start>https://promanga.pro/api/query?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>آخر الإصدارات<cheak end>
-<substring from start>آخر الإصدارات<substring from end>
-<substring to start>توصيات<substring to end>
+<cheak start>"posts"<cheak end>
+<substring from start>"posts"<substring from end>
+<substring to start>totalCount<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><a class="series" href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start>postTitle":"(.*?)"<name end> <group start>1<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start>seriesColor":(.*?),"featuredImage":"(.*?)"<image end> <group start>2<group end>
 
-<links start><a class="series" href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start>\{"slug":"(.*?)"<links end> <group start>1<group end>
 
-<chapters start><ul class="(.*?)"><li><a href="(.*?)">(.*?)</a><chapters end> <group start>3<group end>
+<chapters start>chapters":\[\{"id":(.*?),"number":(.*?),<chapters end> <group start>2<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start>وضع النصوص<cheak end>
-<substring from start>وضع النصوص<substring from end>
-<substring to start>أشهر الأعمال<substring to end>
+<cheak start>"posts"<cheak end>
+<substring from start>"posts"<substring from end>
+<substring to start>totalCount<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start>postTitle":"(.*?)"<name end> <group start>1<group end>
 
-<image start><img loading="lazy" src="(.*?)"<image end> <group start>1<group end>
+<image start>isNew":(.*?),"featuredImage":"(.*?)"<image end> <group start>2<group end>
 
-<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start>"id":(.*?),"slug":"(.*?)","post<links end> <group start>2<group end>
 
-<types start><span class="type (.*?)"><types end> <group start>1<group end>
+<types start>seriesType":"(.*?)"<types end> <group start>1<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start>chapters":\[\{"id":(.*?),"number":(.*?),<chapters end> <group start>2<group end>
 
 
 <main_list_manga config end>
@@ -1319,19 +1319,19 @@ ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start><div class="releases"><h1><cheak end>
-<substring from start><div class="releases"><h1><substring from end>
-<substring to start>تصفح أعمالنا<substring to end>
+<cheak start>"posts"<cheak end>
+<substring from start>"posts"<substring from end>
+<substring to start>totalCount<substring to end>
 
-<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start>postTitle":"(.*?)"<name end> <group start>1<group end>
 
-<image start><img loading="lazy" src="(.*?)"<image end> <group start>1<group end>
+<image start>isNew":(.*?),"featuredImage":"(.*?)"<image end> <group start>2<group end>
 
-<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start>"id":(.*?),"slug":"(.*?)","post<links end> <group start>2<group end>
 
-<types start><span class="type (.*?)">(.*?)</span><types end> <group start>2<group end>
+<types start>seriesType":"(.*?)"<types end> <group start>1<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start>chapters":\[\{"id":(.*?),"number":(.*?),<chapters end> <group start>2<group end>
 
 <search_page config end>
 ____________________________________________________________________
