@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.68<version sources end>
+<version sources start>1.0.0.69<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -629,7 +629,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.8<version end>
+<version start>1.0.9<version end>
 
 <SiteDomain start>mangatime.org<SiteDomain end>
 
@@ -691,7 +691,7 @@ ____________________________________________________________________
 
 <name start><div class="anime__details__title">\s+<h3>(.*?)</h3><name end> <group start>1<group end>
 
-<image start>"data-setbg="(.*?)"<image end> <group start>1<group end>
+<image start>data-setbg="(.*?)"<image end> <group start>1<group end>
 
 <types start><h5>\s+النوع		</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><types end> <group start>1<group end>
 
