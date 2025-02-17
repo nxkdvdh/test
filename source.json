@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.70<version sources end>
+<version sources start>1.0.0.71<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1238,7 +1238,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.14<version end>
+<version start>1.0.15<version end>
 
 <SiteDomain start>promanga.pro<SiteDomain end>
 
@@ -1249,6 +1249,9 @@ ____________________________________________________________________
 
 <showMore lastUpdates start>https://promanga.pro/api/posts?page=<showMore lastUpdates end>
 <showMore listManga start>https://promanga.pro/api/query?page=<showMore listManga end>
+
+<completeURL ForAll start>https://promanga.pro/series/<completeURL ForAll end>
+<chaptersURL ForAll start>https://promanga.pro/api/chapters?postId=[]&take=1000&order=desc<chaptersURL ForAll end>
 «main information end»
 
 ____________________________________________________________________
@@ -1264,7 +1267,7 @@ ____________________________________________________________________
 
 <image start>seriesColor":(.*?),"featuredImage":"(.*?)"<image end> <group start>2<group end>
 
-<links start>\{"slug":"(.*?)"<links end> <group start>1<group end>
+<links start>\{"slug":"(.*?)".*?"id":(\d+)<links end> <group start>1<group end>
 
 <chapters start>chapters":\[\{"id":(.*?),"number":(.*?),<chapters end> <group start>2<group end>
 
@@ -1282,7 +1285,7 @@ ____________________________________________________________________
 
 <image start>isNew":(.*?),"featuredImage":"(.*?)"<image end> <group start>2<group end>
 
-<links start>"id":(.*?),"slug":"(.*?)","post<links end> <group start>2<group end>
+<links start>"id":\s*(\d+),"slug":"(.*?)","postTitle":<links end> <group start>2<group end>
 
 <types start>seriesType":"(.*?)"<types end> <group start>1<group end>
 
@@ -1294,25 +1297,25 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start><h1 class="entry-title" itemprop="name">(.*?)</h1><name end> <group start>1<group end>
+<name start>itemProp="name">(.*?)</h1><name end> <group start>1<group end>
 
-<image start><div class="thumb" itemprop="image" itemscope itemtype="(.*?)">\s+<img src="(.*?)"<image end> <group start>2<group end>
+<image start>image":\{"@id":"(.*?)"<image end> <group start>1<group end>
 
-<types start><a href="(.*?)type=(.*?)">(.*?)</a><types end> <group start>2<group end>
+<types start>seriesType\\":\\"(.*?)\\"<types end> <group start>1<group end>
 
-<state start>الحالة <i>(.*?)</i><state end> <group start>1<group end>
+<state start>seriesStatus\\":\\"(.*?)\\"<state end> <group start>1<group end>
 
-<author start><b>المؤلف</b>\s+<span>\s+(.*?)</span><author end> <group start>1<group end>
+<author start>author\\":\\"(.*?)\\"<author end> <group start>1<group end>
 
-<size_chapters start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
+<size_chapters start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<size_chapters end> <group start>2<group end>
 
-<story start><div class="entry-content entry-content-single" itemprop="description">([\s\S]*?)</div><story end> <group start>1<group end>
+<story start>postContent\\":\\"(.*?)"<story end> <group start>1<group end>
 
-<ranking start><b>التصنيفات</b><span class="mgen"><ranking end> <group start>1<group end>
+<ranking start>id\\":(\d+),\\"name\\":\\"(.*?)\\"<ranking end> <group start>2<group end>
 
-<name_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<name_of_chapter end> <group start>2<group end>
 
-<link_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<link_of_chapter end> <group start>2<group end>
 
 <info_page config end>
 ____________________________________________________________________
@@ -1327,7 +1330,7 @@ ____________________________________________________________________
 
 <image start>isNew":(.*?),"featuredImage":"(.*?)"<image end> <group start>2<group end>
 
-<links start>"id":(.*?),"slug":"(.*?)","post<links end> <group start>2<group end>
+<links start>"id":\s*(\d+),"slug":"(.*?)","postTitle":<links end> <group start>2<group end>
 
 <types start>seriesType":"(.*?)"<types end> <group start>1<group end>
 
@@ -1343,9 +1346,9 @@ ____________________________________________________________________
 <substring from start><div id="readerarea"<substring from end>
 <substring to start><span class="amob"><substring to end>
 
-<images_one start>src="h(.*?)"<images_one end> <group start>1<group end>
+<images_one start>"id\\":(\d+),\\"url\\":\\"(.*?)\\"<images_one end> <group start>2<group end>
 
-<images_two start>src="h(.*?)"<images_two end> <group start>1<group end>
+<images_two start>"id\\":(\d+),\\"url\\":\\"(.*?)\\"<images_two end> <group start>2<group end>
 
 <view_page config end>
 ____________________________________________________________________
