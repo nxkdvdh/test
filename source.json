@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.71<version sources end>
+<version sources start>1.0.0.72<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -505,7 +505,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.0.6<version end>
+<version start>1.0.7<version end>
 
 <SiteDomain start>like-manga.net<SiteDomain end>
 <SiteDomain_image start>likehua.like-manga.net<SiteDomain_image end>
@@ -613,9 +613,9 @@ ____________________________________________________________________
 <substring from start>"images":[<substring from end>
 <substring to start>lazyload"<substring to end>
 
-<images_one start><img id="image-(.*?)" src="(.*?)" class="wp-manga-chapter-img"><images_one end> <group start>2<group end>
+<images_one start><img id="image-(.*?)" src="(.*?)" nad="(.*?)"><images_one end> <group start>2<group end>
 
-<images_two start><img id="image-(.*?)" src="(.*?)" class="wp-manga-chapter-img"><images_two end> <group start>2<group end>
+<images_two start><img id="image-(.*?)" src="(.*?)" nad="(.*?)"><images_two end> <group start>2<group end>
 
 <view_page config end>
 ____________________________________________________________________
