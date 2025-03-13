@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.72<version sources end>
+<version sources start>1.0.0.73<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -263,17 +263,17 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.0.5<version end>
+<version start>1.0.6<version end>
 
-<SiteDomain start>scarmanga.com<SiteDomain end>
+<SiteDomain start>fl-ares.com<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://scarmanga.com/<baseURL lastUpdatea end>
-<baseURL listManga start>https://scarmanga.com/series/?page=1&status=&type=&order=popular<baseURL listManga end>
-<baseURL search start>https://scarmanga.com/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://fl-ares.com/<baseURL lastUpdatea end>
+<baseURL listManga start>https://fl-ares.com/series/?page=1&status=&type=&order=popular<baseURL listManga end>
+<baseURL search start>https://fl-ares.com/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://scarmanga.com/page/<showMore lastUpdates end>
-<showMore listManga start>https://scarmanga.com/series/?page=<showMore listManga end>
+<showMore lastUpdates start>https://fl-ares.com/page/<showMore lastUpdates end>
+<showMore listManga start>https://fl-ares.com/series/?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
@@ -285,11 +285,11 @@ ____________________________________________________________________
 <substring to start>التالي<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><a href="(.*?)" title="(.*?)">(.*?)<<name end> <group start>3<group end>
+<name start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<name end> <group start>3<group end>
 
 <image start><img src="(.*?)"<image end> <group start>1<group end>
 
-<links start><a href="(.*?)" title="(.*?)">(.*?)<<links end> <group start>1<group end>
+<links start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<links end> <group start>1<group end>
 
 <chapters start><ul class="chfiv">(.*?)<li><a href="(.*?)">(.*?)<<chapters end> <group start>3<group end>
 
@@ -329,15 +329,15 @@ ____________________________________________________________________
 
 <author start><div class="imptdt">\s+الرسام <i>(.*?)<<author end> <group start>1<group end>
 
-<size_chapters start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
+<size_chapters start><div class="eph-num">\s+<a href="(.*?)">\s+<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
 
 <story start>itemprop="description">([\s\S]*?)</div><story end> <group start>1<group end>
 
 <ranking start>rel="tag">(.*?)<<ranking end> <group start>1<group end>
 
-<name_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start><div class="eph-num">\s+<a href="(.*?)">\s+<span class="chapternum">(.*?)</span><name_of_chapter end> <group start>2<group end>
 
-<link_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start><div class="eph-num">\s+<a href="(.*?)">\s+<span class="chapternum">(.*?)</span><link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
@@ -364,7 +364,7 @@ ____________________________________________________________________
 
 <view_page config start>
 
-<cheak start><div id="disqus_thread"></div>\s+</div>\s+</div>\s+</div>\s+</div>\s+<script defer src="data:text/javascript;base64,(.*?)"></script><cheak end>
+<cheak start><div id="disqus_thread"></div></div></div></div></div> <script defer src="data:text/javascript;base64,(.*?)"><cheak end>
 <substring from start>"images":[<substring from end>
 <substring to start>lazyload"<substring to end>
 
