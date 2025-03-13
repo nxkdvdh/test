@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.73<version sources end>
+<version sources start>1.0.0.74<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -285,7 +285,7 @@ ____________________________________________________________________
 <substring to start>التالي<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<name end> <group start>3<group end>
+<name start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<name end> <group start>2<group end>
 
 <image start><img src="(.*?)"<image end> <group start>1<group end>
 
@@ -303,11 +303,11 @@ ____________________________________________________________________
 <substring to start>التالي<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<name end> <group start>2<group end>
 
 <image start><img src="(.*?)"<image end> <group start>1<group end>
 
-<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<links end> <group start>1<group end>
 
 <types start><span class="type (.*?)"><types end> <group start>1<group end>
 
