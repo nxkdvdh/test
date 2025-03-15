@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.75<version sources end>
+<version sources start>1.0.0.76<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1002,17 +1002,17 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.13<version end>
+<version start>1.0.14<version end>
 
-<SiteDomain start>vrnoin.site<SiteDomain end>
+<SiteDomain start>vnoon.xyz<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://vrnoin.site/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://vrnoin.site/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
-<baseURL search start>https://vrnoin.site/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://vnoon.xyz/latest<baseURL lastUpdatea end>
+<baseURL listManga start>https://vnoon.xyz/search?genre=6<baseURL listManga end>
+<baseURL search start>https://vnoon.xyz/search?title=<baseURL search end>
 
-<showMore lastUpdates start>https://vrnoin.site/page/<showMore lastUpdates end>
-<showMore listManga start>https://vrnoin.site/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://vnoon.xyz/latest<showMore lastUpdates end>
+<showMore listManga start>https://vnoon.xyz/search?genre=6<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
@@ -1021,36 +1021,36 @@ ____________________________________________________________________
 
 <cheak start>أحدث الفصول<cheak end>
 <substring from start>أحدث الفصول<substring from end>
-<substring to start>مقترحات<substring to end>
+<substring to start>أفضل موقع لترجمة المانجا<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start><h3 class="text-base leading-5 break-words h-fit line-clamp-2">(.*?)</h3><name end> <group start>1<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start><a style="background-image:url((.*?))"<image end> <group start>1<group end>
 
-<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start><a href="(.*?)"<links end> <group start>1<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start><div class="grid text-xs divide-y divide-white/20 divide-dashed">([\s\S]*?)<div class="truncate leading-4 -my-0.5">(.*?)</div><chapters end> <group start>2<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start>قوائم المانجا<cheak end>
-<substring from start>قوائم المانجا<substring from end>
-<substring to start><div id="footer"><substring to end>
+<cheak start><span>بذيء</span><cheak end>
+<substring from start><span>بذيء</span><substring from end>
+<substring to start>أفضل موقع لترجمة المانجا<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start>truncate sm:leading-4 break-words">(.*?)</h3><name end> <group start>1<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start><div style="background-image:url((.*?))"<image end> <group start>1<group end>
 
-<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start><div class="grid relative sm:gap-3.5 gap-\[2.5vw] w-full h-fit">\s+<a href="(.*?)"<links end> <group start>1<group end>
 
-<types start><span class="type (.*?)"><types end> <group start>1<group end>
+<types start><img src="https://api.iconify.design/emojione:flag-for-(.*?).svg" class="w-full" alt="Flag"><types end> <group start>1<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start>class="flex">(.*?)</a><chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
@@ -1058,44 +1058,44 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start><h1 class="entry-title title" itemprop="name">(.*?)</h1><name end> <group start>1<group end>
+<name start><h1 class="sm:text-6xl  sm:leading-\[4rem] text-\[length:10vw] leading-\[11vw] font-bold">([\s\S]*?)</h1><name end> <group start>1<group end>
 
-<image start><div class="thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">\s+<img src="(.*?)"<image end> <group start>1<group end>
+<image start><meta property="og:image" content="(.*?)"<image end> <group start>1<group end>
 
-<types start><a href="(.*?)type=(.*?)">(.*?)</a><types end> <group start>3<group end>
+<types start>alt="النوع">\s+<span class="capitalize">(.*?)</span><types end> <group start>1<group end>
 
-<state start>الحالة <i>(.*?)</i><state end> <group start>1<group end>
+<state start>rounded-lg">\s+<span class="capitalize">(.*?)</span><state end> <group start>1<group end>
 
 <author start><b>الكاتب</b>\s+<span>([\s\S]*?)</span><author end> <group start>1<group end>
 
-<size_chapters start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
+<size_chapters start>href="(.*?)" alt="(.*?)" title="(.*?)">\s+<div<size_chapters end> <group start>3<group end>
 
-<story start>itemprop="description">([\s\S]*?)</div><story end> <group start>1<group end>
+<story start><meta property="og:description" content="(.*?)"<story end> <group start>1<group end>
 
-<ranking start>المعلومات<ranking end> <group start>1<group end>
+<ranking start><a href="/search\?genre=(.*?)" alt="(.*?)" title="(.*?)"<ranking end> <group start>3<group end>
 
-<name_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start>href="(.*?)" alt="(.*?)" title="(.*?)">\s+<div<name_of_chapter end> <group start>3<group end>
 
-<link_of_chapter start><a href="(.*?)">\s+<span class="chapternum">(.*?)</span><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start>href="(.*?)" alt="(.*?)" title="(.*?)">\s+<div<link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start><div class="releases"><cheak end>
-<substring from start><div class="releases"><substring from end>
-<substring to start><div id="footer"><substring to end>
+<cheak start><span>بذيء</span><cheak end>
+<substring from start><span>بذيء</span><substring from end>
+<substring to start>أفضل موقع لترجمة المانجا<substring to end>
 
-<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start>truncate sm:leading-4 break-words">(.*?)</h3><name end> <group start>1<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start><div style="background-image:url((.*?))"<image end> <group start>1<group end>
 
-<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start><div class="grid relative sm:gap-3.5 gap-\[2.5vw] w-full h-fit">\s+<a href="(.*?)"<links end> <group start>1<group end>
 
-<types start><span class="type (.*?)">(.*?)</span><types end> <group start>1<group end>
+<types start><img src="https://api.iconify.design/emojione:flag-for-(.*?).svg" class="w-full" alt="Flag"><types end> <group start>1<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start>class="flex">(.*?)</a><chapters end> <group start>1<group end>
 
 <search_page config end>
 ____________________________________________________________________
@@ -1103,13 +1103,13 @@ ____________________________________________________________________
 
 <view_page config start>
 
-<cheak start>images":[<cheak end>
-<substring from start>images":[<substring from end>
-<substring to start>"defaultSource"<substring to end>
+<cheak start>readingModes([<cheak end>
+<substring from start>readingModes([<substring from end>
+<substring to start>x-init="initMode()"><substring to end>
 
-<images_one start>"h(.*?)"<images_one end> <group start>1<group end>
+<images_one start>"(.*?)"<images_one end> <group start>1<group end>
 
-<images_two start>"h(.*?)"<images_two end> <group start>1<group end>
+<images_two start>"(.*?)"<images_two end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
