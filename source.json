@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.76<version sources end>
+<version sources start>1.0.0.77<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1002,7 +1002,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.14<version end>
+<version start>1.0.16<version end>
 
 <SiteDomain start>vnoon.xyz<SiteDomain end>
 
@@ -1026,7 +1026,7 @@ ____________________________________________________________________
 
 <name start><h3 class="text-base leading-5 break-words h-fit line-clamp-2">(.*?)</h3><name end> <group start>1<group end>
 
-<image start><a style="background-image:url((.*?))"<image end> <group start>1<group end>
+<image start><a style="background-image:url\((.*?)\)"<image end> <group start>1<group end>
 
 <links start><a href="(.*?)"<links end> <group start>1<group end>
 
@@ -1044,7 +1044,7 @@ ____________________________________________________________________
 
 <name start>truncate sm:leading-4 break-words">(.*?)</h3><name end> <group start>1<group end>
 
-<image start><div style="background-image:url((.*?))"<image end> <group start>1<group end>
+<image start><div style="background-image:url\((.*?)\)"<image end> <group start>1<group end>
 
 <links start><div class="grid relative sm:gap-3.5 gap-\[2.5vw] w-full h-fit">\s+<a href="(.*?)"<links end> <group start>1<group end>
 
@@ -1089,7 +1089,7 @@ ____________________________________________________________________
 
 <name start>truncate sm:leading-4 break-words">(.*?)</h3><name end> <group start>1<group end>
 
-<image start><div style="background-image:url((.*?))"<image end> <group start>1<group end>
+<image start><div style="background-image:url\((.*?)\)"<image end> <group start>1<group end>
 
 <links start><div class="grid relative sm:gap-3.5 gap-\[2.5vw] w-full h-fit">\s+<a href="(.*?)"<links end> <group start>1<group end>
 
