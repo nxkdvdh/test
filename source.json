@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.77<version sources end>
+<version sources start>1.0.0.78<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1002,9 +1002,11 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.16<version end>
+<version start>1.0.17<version end>
 
 <SiteDomain start>vnoon.xyz<SiteDomain end>
+
+<SiteImageDomain start>artnoin.com<SiteImageDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://vnoon.xyz/latest<baseURL lastUpdatea end>
@@ -1013,6 +1015,8 @@ ____________________________________________________________________
 
 <showMore lastUpdates start>https://vnoon.xyz/latest<showMore lastUpdates end>
 <showMore listManga start>https://vnoon.xyz/search?genre=6<showMore listManga end>
+
+<completeURL ForAll start>https://vnoon.xyz<completeURL ForAll end>
 «main information end»
 
 ____________________________________________________________________
@@ -1110,6 +1114,8 @@ ____________________________________________________________________
 <images_one start>"(.*?)"<images_one end> <group start>1<group end>
 
 <images_two start>"(.*?)"<images_two end> <group start>1<group end>
+
+<images_start_url start>'(.*?)'<images_start_url end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
