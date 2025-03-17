@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.78<version sources end>
+<version sources start>1.0.0.79<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1074,7 +1074,7 @@ ____________________________________________________________________
 
 <size_chapters start>href="(.*?)" alt="(.*?)" title="(.*?)">\s+<div<size_chapters end> <group start>3<group end>
 
-<story start><meta property="og:description" content="(.*?)"<story end> <group start>1<group end>
+<story start>"description": "([\s\S]*?)"<story end> <group start>1<group end>
 
 <ranking start><a href="/search\?genre=(.*?)" alt="(.*?)" title="(.*?)"<ranking end> <group start>3<group end>
 
