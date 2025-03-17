@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.79<version sources end>
+<version sources start>1.0.0.80<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1002,7 +1002,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.17<version end>
+<version start>1.0.18<version end>
 
 <SiteDomain start>vnoon.xyz<SiteDomain end>
 
