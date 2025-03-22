@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.81<version sources end>
+<version sources start>1.0.0.82<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1244,7 +1244,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.16<version end>
+<version start>1.0.17<version end>
 
 <SiteDomain start>promanga.pro<SiteDomain end>
 
@@ -1322,6 +1322,8 @@ ____________________________________________________________________
 <name_of_chapter start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<name_of_chapter end> <group start>2<group end>
 
 <link_of_chapter start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<link_of_chapter end> <group start>2<group end>
+
+<manga_id start>\{\\"postId\\":(.*?)\}<manga_id end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
