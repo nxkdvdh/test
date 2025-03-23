@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.82<version sources end>
+<version sources start>1.0.0.83<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1244,9 +1244,11 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.17<version end>
+<version start>1.0.18<version end>
 
 <SiteDomain start>promanga.pro<SiteDomain end>
+
+<SiteImageDomain start>storage.promanga.pro<SiteImageDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://promanga.pro/api/posts?page=1&perPage=30<baseURL lastUpdatea end>
