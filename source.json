@@ -1,16 +1,16 @@
-<app_version start>1.0.4 _beta<app_version end>
+<app_version start>1.0.5 _beta<app_version end>
 <app_version_link start>https://www.manga-break.xyz<app_version_link end>
-<app_version_news start>1- تفعيل ميزة المشاهدة العمودية "ويب تون".#2-حل مشكلة المصدر (SWT-M) لاخر التحديثات.#3-حل مشاكل اخرى<app_version_news end>
+<app_version_news start>1-تم اصلاح واستبدال كل المصادر المعطلة، الان جميعها تعمل بدون مشاكل.#2-تحسينات على  طريقة المشاهدة العمودية"الويب فيو" الان اصبحت افضل بكثير.#3-حل مشكلة تغير لون الايقونات في التطبيق بشكل تلقائي بعض الاحيان.#4-تحسين واجهة صفحة معلومات المانجا.#5-تحسين صفحة المشاهدة مع اضافة ميزة اخفاء شريط الحالة عند الضغط على الشاشة لاعطاء حرية اكبر للقراء.#6-اضافة ميزة التحكم بشفافية شريط الادوات السفلي في صفحة المشاهدة، هذا الشريط الذي يظهر عند الضغط على الشاشة بالاسفل باللون الاحمر.#7-حل مشكلة ظهور ترتيب خاطئ لرقم الفصل في الصفحة الرئيسية "آخر التحديثات" لمصدر TMX-M.#8-حل مشكلة مهمة وهي التصاق صور المانجا ببعضها في صفحات اخر التحديثات وقائمة المانجا وما الى ذلك في بعض الاجهزة، تم حل هذه المشكلة وجعل التطبيق يتناسق مع كل انواع الاجهزة.#9-تحسين التبديل بين قائمة المانجا واخر التحديثات.#10-حل مشكلة خروج التطبيق عند فتح فصول معينة التي الصور بها بحجم عملاق جداً.<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.83<version sources end>
+<version sources start>1.0.0.85<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.19<version end>
+<version start>1.0.20<version end>
 
 <SiteDomain start>olympustaff.com<SiteDomain end>
 «main information start»
@@ -37,7 +37,9 @@ ____________________________________________________________________
 
 <links start><div class="info">\s*<a\s+href="([^"]+)"><links end> <group start>1<group end>
 
-<types start><ul class="">([\s\S]*?)<a class="(.*?)"\s+href="(.*?")>([^<]+)<types end> <group start>4<group end>
+<types start><ul class="">([\s\S]*?)</ul><types end> <group start>1<group end>
+
+<chapters2 start><a class="(.*?)"\s+href="(.*?")>([^<]+)<chapters2 end> <group start>3<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
@@ -263,7 +265,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.0.7<version end>
+<version start>1.0.8<version end>
 
 <SiteDomain start>fl-ares.com<SiteDomain end>
 
@@ -383,7 +385,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.6<version end>
+<version start>1.0.7<version end>
 
 <SiteDomain start>mangarose.net<SiteDomain end>
 
@@ -505,7 +507,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.0.7<version end>
+<version start>1.0.8<version end>
 
 <SiteDomain start>like-manga.net<SiteDomain end>
 <SiteDomain_image start>likehua.like-manga.net<SiteDomain_image end>
@@ -629,7 +631,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.9<version end>
+<version start>1.0.10<version end>
 
 <SiteDomain start>mangatime.org<SiteDomain end>
 
@@ -752,7 +754,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.12<version end>
+<version start>1.0.14<version end>
 
 <SiteDomain start>3asq.org<SiteDomain end>
 
@@ -769,8 +771,8 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>أحدث الإضافات<cheak end>
-<substring from start>أحدث الإضافات<substring from end>
+<cheak start>أحدث الفصول<cheak end>
+<substring from start>أحدث الفصول<substring from end>
 <substring to start>عرض المزيد<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
@@ -789,8 +791,8 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start>كل المانجا<cheak end>
-<substring from start>كل المانجا<substring from end>
+<cheak start>>قائمة المانجا<<cheak end>
+<substring from start>>قائمة المانجا<<substring from end>
 <substring to start>أقدم<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
@@ -874,7 +876,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.6<version end>
+<version start>1.0.7<version end>
 
 <SiteDomain start>onma.me<SiteDomain end>
 
@@ -1002,7 +1004,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.18<version end>
+<version start>1.0.19<version end>
 
 <SiteDomain start>vnoon.xyz<SiteDomain end>
 
@@ -1126,17 +1128,17 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.0.5<version end>
+<version start>1.0.6<version end>
 
-<SiteDomain start>www.areascans.net<SiteDomain end>
+<SiteDomain start>ar.kenmanga.com<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://www.areascans.net/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://www.areascans.net/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
-<baseURL search start>https://www.areascans.net/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://ar.kenmanga.com/page/1<baseURL lastUpdatea end>
+<baseURL listManga start>https://ar.kenmanga.com/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
+<baseURL search start>https://ar.kenmanga.com/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://www.areascans.net/page/<showMore lastUpdates end>
-<showMore listManga start>https://www.areascans.net/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://ar.kenmanga.com/page/<showMore lastUpdates end>
+<showMore listManga start>https://ar.kenmanga.com/manga/?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
@@ -1244,7 +1246,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.18<version end>
+<version start>1.0.19<version end>
 
 <SiteDomain start>promanga.pro<SiteDomain end>
 
