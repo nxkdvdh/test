@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.87<version sources end>
+<version sources start>1.0.0.88<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -507,7 +507,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.0.8<version end>
+<version start>1.0.9<version end>
 
 <SiteDomain start>like-manga.net<SiteDomain end>
 <SiteDomain_image start>likehua.like-manga.net<SiteDomain_image end>
@@ -525,8 +525,8 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>>فتح الصور<<cheak end>
-<substring from start>>فتح الصور<<substring from end>
+<cheak start></header><cheak end>
+<substring from start></header><substring from end>
 <substring to start><div class='wp-pagenavi' role='navigation'><substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
