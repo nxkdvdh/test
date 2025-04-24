@@ -5,12 +5,12 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.90<version sources end>
+<version sources start>1.0.0.91<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.22<version end>
+<version start>1.0.23<version end>
 
 <SiteDomain start>olympustaff.com<SiteDomain end>
 «main information start»
@@ -119,9 +119,9 @@ ____________________________________________________________________
 <substring from start><div id="translationbar"><substring from end>
 <substring to start>>الفصل التالي<<substring to end>
 
-<images_one start><img\s+id="image-\d+"\s+src="([^"]+)"\s+class="manga-chapter-img"\s+alt="image of episode"><images_one end> <group start>1<group end>
+<images_one start>(?:(?:<canvas id="image-\d+"\s+data-src=")|(?:<img\s+id="image-\d+"\s+src="))([^"]+)<images_one end> <group start>1<group end>
 
-<images_two start><img\s+id="image-\d+"\s+src="([^"]+)"\s+class="manga-chapter-img"\s+alt="image of episode"><images_two end> <group start>1<group end>
+<images_two start>(?:(?:<canvas id="image-\d+"\s+data-src=")|(?:<img\s+id="image-\d+"\s+src="))([^"]+)<images_two end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
