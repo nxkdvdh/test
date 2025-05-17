@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.91<version sources end>
+<version sources start>1.0.0.92<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1244,22 +1244,22 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.19<version end>
+<version start>1.0.20<version end>
 
-<SiteDomain start>promanga.pro<SiteDomain end>
+<SiteDomain start>promanga.net<SiteDomain end>
 
-<SiteImageDomain start>storage.promanga.pro<SiteImageDomain end>
+<SiteImageDomain start>storage.promanga.net<SiteImageDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://promanga.pro/api/posts?page=1&perPage=30<baseURL lastUpdatea end>
-<baseURL listManga start>https://promanga.pro/api/query?page=1&perPage=30<baseURL listManga end>
-<baseURL search start>https://promanga.pro/api/query?searchTerm=<baseURL search end>
+<baseURL lastUpdatea start>https://promanga.net/api/posts?page=1&perPage=30<baseURL lastUpdatea end>
+<baseURL listManga start>https://promanga.net/api/query?page=1&perPage=30<baseURL listManga end>
+<baseURL search start>https://promanga.net/api/query?searchTerm=<baseURL search end>
 
-<showMore lastUpdates start>https://promanga.pro/api/posts?page=<showMore lastUpdates end>
-<showMore listManga start>https://promanga.pro/api/query?page=<showMore listManga end>
+<showMore lastUpdates start>https://promanga.net/api/posts?page=<showMore lastUpdates end>
+<showMore listManga start>https://promanga.net/api/query?page=<showMore listManga end>
 
-<completeURL ForAll start>https://promanga.pro/series/<completeURL ForAll end>
-<chaptersURL ForAll start>https://promanga.pro/api/chapters?postId=[]&take=1000&order=desc<chaptersURL ForAll end>
+<completeURL ForAll start>https://promanga.net/series/<completeURL ForAll end>
+<chaptersURL ForAll start>https://promanga.net/api/chapters?postId=[]&take=1000&order=desc<chaptersURL ForAll end>
 «main information end»
 
 ____________________________________________________________________
