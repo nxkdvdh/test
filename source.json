@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.92<version sources end>
+<version sources start>1.0.0.93<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -263,7 +263,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.0.8<version end>
+<version start>1.0.9<version end>
 
 <SiteDomain start>fl-ares.com<SiteDomain end>
 
@@ -344,9 +344,9 @@ ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start><div class="releases"><h1><cheak end>
-<substring from start><div class="releases"><h1><substring from end>
-<substring to start><div class="releases"><h3>اضغـط على الصورة</h3><substring to end>
+<cheak start>اريس مغلق حالياً<cheak end>
+<substring from start>مغلق<substring from end>
+<substring to start>مغلق<substring to end>
 
 <name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
 
