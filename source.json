@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.94<version sources end>
+<version sources start>1.0.0.95<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -629,7 +629,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.10<version end>
+<version start>1.0.11<version end>
 
 <SiteDomain start>mangatime.org<SiteDomain end>
 
@@ -699,15 +699,15 @@ ____________________________________________________________________
 
 <author start><div class="author-content">\s+(.*?)</div><author end> <group start>1<group end>
 
-<size_chapters start><a class="visually-hidden" href="(.*?)">([\s\S]*?)</a><size_chapters end> <group start>2<group end>
+<size_chapters start><a class="visually-hidden chapter-link"\s+href="(.*?)"\s+data-ad-url="(.*?)">([\s\S]*?)</a><size_chapters end> <group start>3<group end>
 
 <story start></div>\s+<p>([\s\S]*?)</p><story end> <group start>1<group end>
 
 <ranking start><li><span>التصنيفات:</span>(.*?)</li><ranking end> <group start>1<group end>
 
-<name_of_chapter start><a class="visually-hidden" href="(.*?)">([\s\S]*?)</a><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start><a class="visually-hidden chapter-link"\s+href="(.*?)"\s+data-ad-url="(.*?)">([\s\S]*?)</a><name_of_chapter end> <group start>3<group end>
 
-<link_of_chapter start><a class="visually-hidden" href="(.*?)">([\s\S]*?)</a><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start><a class="visually-hidden chapter-link"\s+href="(.*?)"\s+data-ad-url="(.*?)">([\s\S]*?)</a><link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
