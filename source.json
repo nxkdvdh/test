@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.95<version sources end>
+<version sources start>1.0.0.96<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1244,22 +1244,22 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.20<version end>
+<version start>1.0.21<version end>
 
 <SiteDomain start>promanga.net<SiteDomain end>
 
 <SiteImageDomain start>storage.promanga.net<SiteImageDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://promanga.net/api/posts?page=1&perPage=30<baseURL lastUpdatea end>
-<baseURL listManga start>https://promanga.net/api/query?page=1&perPage=30<baseURL listManga end>
-<baseURL search start>https://promanga.net/api/query?searchTerm=<baseURL search end>
+<baseURL lastUpdatea start>https://api.promanga.net/api/posts?isNovel=false&perPage=30&tag=latestUpdate&page=1<baseURL lastUpdatea end>
+<baseURL listManga start>https://api.promanga.net/api/query?perPage=30&seriesType=MANHWA&page=1<baseURL listManga end>
+<baseURL search start>https://api.promanga.net/api/query?searchTerm=<baseURL search end>
 
-<showMore lastUpdates start>https://promanga.net/api/posts?page=<showMore lastUpdates end>
-<showMore listManga start>https://promanga.net/api/query?page=<showMore listManga end>
+<showMore lastUpdates start>https://api.promanga.net/api/posts?isNovel=false&perPage=30&tag=latestUpdate&page=<showMore lastUpdates end>
+<showMore listManga start>https://api.promanga.net/api/query?perPage=30&seriesType=MANHWA&page=<showMore listManga end>
 
 <completeURL ForAll start>https://promanga.net/series/<completeURL ForAll end>
-<chaptersURL ForAll start>https://promanga.net/api/chapters?postId=[]&take=1000&order=desc<chaptersURL ForAll end>
+<chaptersURL ForAll start>https://api.promanga.net/api/chapters?postId=[]&take=999&order=desc<chaptersURL ForAll end>
 «main information end»
 
 ____________________________________________________________________
@@ -1268,7 +1268,7 @@ ____________________________________________________________________
 
 <cheak start>"posts"<cheak end>
 <substring from start>"posts"<substring from end>
-<substring to start>totalCount<substring to end>
+<substring to start>"totalCount"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
 <name start>postTitle":"(.*?)"<name end> <group start>1<group end>
@@ -1277,7 +1277,7 @@ ____________________________________________________________________
 
 <links start>\{"slug":"(.*?)".*?"id":(\d+)<links end> <group start>1<group end>
 
-<chapters start>chapters":\[\{"id":(.*?),"number":(.*?),<chapters end> <group start>2<group end>
+<chapters start>chapters":\[\{"number":(.*?),<chapters end> <group start>1<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
@@ -1356,11 +1356,11 @@ ____________________________________________________________________
 <substring from start><div id="readerarea"<substring from end>
 <substring to start><span class="amob"><substring to end>
 
-<images_one start>"id\\":(\d+),\\"url\\":\\"(.*?)\\"<images_one end> <group start>2<group end>
+<images_one start><link rel="preload" as="image" href="([^"]+)" fetchPriority="(.*?)"/><images_one end> <group start>1<group end>
 
-<images_two start>"id\\":(\d+),\\"url\\":\\"(.*?)\\"<images_two end> <group start>2<group end>
+<images_two start><link rel="preload" as="image" href="([^"]+)" fetchPriority="(.*?)"/><images_two end> <group start>1<group end>
 
-<unlockAt start>unlockAt":"(.*?)"<unlockAt end> <group start>1<group end>
+<unlockAt start>unlockAt\\":\\"(.*?)\\"<unlockAt end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
