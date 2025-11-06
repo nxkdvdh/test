@@ -5,12 +5,12 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.97<version sources end>
+<version sources start>1.0.0.98<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.23<version end>
+<version start>1.0.24<version end>
 
 <SiteDomain start>olympustaff.com<SiteDomain end>
 «main information start»
@@ -85,9 +85,9 @@ ____________________________________________________________________
 
 <ranking start><a[^>]+class="subtitle me-1 mt-2 ">\s*([^<]+)\s*</a><ranking end> <group start>1<group end>
 
-<name_of_chapter start><div\s+class="epl-num">\s*الفصل\s+([\d.]+)\s*</div><name_of_chapter end> <group start>1<group end>
+<name_of_chapter start><div class="chapter-number">(.*?)</div><name_of_chapter end> <group start>1<group end>
 
-<link_of_chapter start><a\s+href="([^"]+)">\s*<div\s+class="epl-num"><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start><a href="(.*?)" class="chapter-link"><link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
