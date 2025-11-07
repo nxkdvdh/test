@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.99<version sources end>
+<version sources start>1.1.0.0<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1126,17 +1126,17 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.0.7<version end>
+<version start>1.0.8<version end>
 
-<SiteDomain start>ar.kenmanga.com<SiteDomain end>
+<SiteDomain start>ar.areascans.org<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://ar.kenmanga.com/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://ar.kenmanga.com/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
-<baseURL search start>https://ar.kenmanga.com/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://ar.areascans.org/page/1<baseURL lastUpdatea end>
+<baseURL listManga start>https://ar.areascans.org/manga/?page=1&status=&type=&order=popular<baseURL listManga end>
+<baseURL search start>https://ar.areascans.org/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://ar.kenmanga.com/page/<showMore lastUpdates end>
-<showMore listManga start>https://ar.kenmanga.com/manga/?page=<showMore listManga end>
+<showMore lastUpdates start>https://ar.areascans.org/page/<showMore lastUpdates end>
+<showMore listManga start>https://ar.areascans.org/manga/?page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
