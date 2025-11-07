@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.0.0.98<version sources end>
+<version sources start>1.0.0.99<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -752,7 +752,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.14<version end>
+<version start>1.0.15<version end>
 
 <SiteDomain start>3asq.org<SiteDomain end>
 
@@ -816,15 +816,15 @@ ____________________________________________________________________
 
 <image start>url": "(.*?)",<image end> <group start>1<group end>
 
-<types start><h5>\s+النوع </h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><types end> <group start>1<group end>
+<types start><h5>\s*النوع\s*</h5>[\s\S]*?<div\s+class="summary-content">\s*(.*?)\s*</div><types end> <group start>1<group end>
 
-<state start><h5>\s+الحالة </h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><state end> <group start>1<group end>
+<state start><h5>\s*الحالة\s*</h5>[\s\S]*?<div\s+class="summary-content">\s*(.*?)\s*</div><state end> <group start>1<group end>
 
 <author start><div class="author-content">\s+<a href="(.*?)" rel="tag">(.*?)</a><author end> <group start>2<group end>
 
 <size_chapters start><li class="wp-manga-chapter    ">\s+<a href="(.*?)">\s+(.*?)</a><size_chapters end> <group start>2<group end>
 
-<story start><div class="manga-excerpt">([\s\S]*?)</div><story end> <group start>1<group end>
+<story start><div class="manga-excerpt summary__content show-more">([\s\S]*?)</div><story end> <group start>1<group end>
 
 <ranking start><a href="(.*?)" rel="tag">(.*?)</a>,<ranking end> <group start>2<group end>
 
