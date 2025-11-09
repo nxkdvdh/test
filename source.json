@@ -1246,58 +1246,58 @@ ____________________________________________________________________
 
 <version start>1.0.21<version end>
 
-<SiteDomain start>promanga.net<SiteDomain end>
+<SiteDomain start>prochan.net<SiteDomain end>
 
-<SiteImageDomain start>storage.promanga.net<SiteImageDomain end>
+<SiteImageDomain start>app.prochan.net<SiteImageDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://api.promanga.net/api/posts?isNovel=false&perPage=30&tag=latestUpdate&page=1<baseURL lastUpdatea end>
-<baseURL listManga start>https://api.promanga.net/api/query?perPage=30&seriesType=MANHWA&page=1<baseURL listManga end>
-<baseURL search start>https://api.promanga.net/api/query?searchTerm=<baseURL search end>
+<baseURL lastUpdatea start>https://prochan.net/api/public/series/search?status=approved&limit=40&sort=latest_chapter&page=1<baseURL lastUpdatea end>
+<baseURL listManga start>https://prochan.net/api/public/series/search?status=approved&limit=40&sort=popular&page=1<baseURL listManga end>
+<baseURL search start>https://prochan.net/api/public/series/search?status=approved&limit=50&page=1&search=<baseURL search end>
 
-<showMore lastUpdates start>https://api.promanga.net/api/posts?isNovel=false&perPage=30&tag=latestUpdate&page=<showMore lastUpdates end>
-<showMore listManga start>https://api.promanga.net/api/query?perPage=30&seriesType=MANHWA&page=<showMore listManga end>
+<showMore lastUpdates start>https://prochan.net/api/public/series/search?status=approved&limit=40&sort=latest_chapter&page=<showMore lastUpdates end>
+<showMore listManga start>https://prochan.net/api/public/series/search?status=approved&limit=40&sort=popular&page=<showMore listManga end>
 
-<completeURL ForAll start>https://promanga.net/series/<completeURL ForAll end>
-<chaptersURL ForAll start>https://api.promanga.net/api/chapters?postId=[]&take=999&order=desc<chaptersURL ForAll end>
+<completeURL ForAll start>https://prochan.net/api/public/series/search?limit=1&search=<completeURL ForAll end>
+<chaptersURL ForAll start>https://prochan.net/api/public/[1]/[2]/chapters?page=1&limit=999&order=desc<chaptersURL ForAll end>
 «main information end»
 
 ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>"posts"<cheak end>
-<substring from start>"posts"<substring from end>
-<substring to start>"totalCount"<substring to end>
+<cheak start>"data"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start>postTitle":"(.*?)"<name end> <group start>1<group end>
+<name start>"title":"(.*?)"<name end> <group start>1<group end>
 
-<image start>seriesColor":(.*?),"featuredImage":"(.*?)"<image end> <group start>2<group end>
+<image start>"chapter_views":(.*?),"coverImage":"(.*?)"<image end> <group start>2<group end>
 
-<links start>\{"slug":"(.*?)".*?"id":(\d+)<links end> <group start>1<group end>
+<links start>("id":)(.*?),"title":"(.*?)","slug":"(.*?)","description":"(.*?)","type":"(.*?)"<links end> <group start>4<group end>
 
-<chapters start>chapters":\[\{"number":(.*?),<chapters end> <group start>1<group end>
+<chapters start>"progress":"(.*?)"<chapters end> <group start>1<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start>"posts"<cheak end>
-<substring from start>"posts"<substring from end>
-<substring to start>totalCount<substring to end>
+<cheak start>"data"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start>postTitle":"(.*?)"<name end> <group start>1<group end>
+<name start>"title":"(.*?)"<name end> <group start>1<group end>
 
-<image start>isNew":(.*?),"featuredImage":"(.*?)"<image end> <group start>2<group end>
+<image start>"chapter_views":(.*?),"coverImage":"(.*?)"<image end> <group start>2<group end>
 
-<links start>"id":\s*(\d+),"slug":"(.*?)","postTitle":<links end> <group start>2<group end>
+<links start>("id":)(.*?),"title":"(.*?)","slug":"(.*?)","description":"(.*?)","type":"(.*?)"<links end> <group start>4<group end>
 
-<types start>seriesType":"(.*?)"<types end> <group start>1<group end>
+<types start>"type":"(.*?)"<types end> <group start>1<group end>
 
-<chapters start>chapters":\[\{"id":(.*?),"number":(.*?),<chapters end> <group start>2<group end>
+<chapters start>"progress":"(.*?)"<chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
