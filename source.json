@@ -1305,7 +1305,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start>"title":"(.*?)"<name end> <group start>1<group end>
+<name start>"id":(.*?),"title":"(.*?)","slug":"(.*?)"<name end> <group start>2<group end>
 
 <image start>"chapter_views":(.*?),"coverImage":"(.*?)"<image end> <group start>1<group end>
 
