@@ -1315,15 +1315,15 @@ ____________________________________________________________________
 
 <author start>"artist":"(.*?)"<author end> <group start>1<group end>
 
-<size_chapters start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<size_chapters end> <group start>2<group end>
+<size_chapters start>"id":(.*?),"content_id":(.*?),"chapter_number":"(.*?)"<size_chapters end> <group start>3<group end>
 
 <story start>"description":"([\s\S]*?)"<story end> <group start>1<group end>
 
 <ranking start>id\\":(\d+),\\"name\\":\\"(.*?)\\"<ranking end> <group start>2<group end>
 
-<name_of_chapter start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<name_of_chapter end> <group start>2<group end>
+<name_of_chapter start>"id":(.*?),"content_id":(.*?),"chapter_number":"(.*?)"<name_of_chapter end> <group start>3<group end>
 
-<link_of_chapter start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<link_of_chapter end> <group start>2<group end>
+<link_of_chapter start>"id":(.*?),"content_id":(.*?),"chapter_number":"(.*?)"<link_of_chapter end> <group start>1<group end>
 
 <manga_id start>"id":(.*?),"title":"(.*?)","slug":"(.*?)","description":"(.*?)","type":"(.*?)"<manga_id end> <group start>1<group end>
 
