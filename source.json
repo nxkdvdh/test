@@ -1305,19 +1305,19 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start>itemProp="name">(.*?)</h1><name end> <group start>1<group end>
+<name start>"title":"(.*?)"<name end> <group start>1<group end>
 
-<image start>image":\{"@id":"(.*?)"<image end> <group start>1<group end>
+<image start>"chapter_views":(.*?),"coverImage":"(.*?)"<image end> <group start>1<group end>
 
-<types start>seriesType\\":\\"(.*?)\\"<types end> <group start>1<group end>
+<types start>"type":"(.*?)"<types end> <group start>1<group end>
 
-<state start>seriesStatus\\":\\"(.*?)\\"<state end> <group start>1<group end>
+<state start>"progress":"(.*?)"<state end> <group start>1<group end>
 
-<author start>author\\":\\"(.*?)\\"<author end> <group start>1<group end>
+<author start>"artist":"(.*?)"<author end> <group start>1<group end>
 
 <size_chapters start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<size_chapters end> <group start>2<group end>
 
-<story start>postContent\\":\\"(.*?)"<story end> <group start>1<group end>
+<story start>"description":"([\s\S]*?)"<story end> <group start>1<group end>
 
 <ranking start>id\\":(\d+),\\"name\\":\\"(.*?)\\"<ranking end> <group start>2<group end>
 
@@ -1325,26 +1325,26 @@ ____________________________________________________________________
 
 <link_of_chapter start>"id":(\d+),"slug":"(.*?)".*?"isShortLinkLocked":(true|false|null),<link_of_chapter end> <group start>2<group end>
 
-<manga_id start>\{\\"postId\\":(.*?)\}<manga_id end> <group start>1<group end>
+<manga_id start>"id":(.*?),"title":"(.*?)","slug":"(.*?)","description":"(.*?)","type":"(.*?)"<manga_id end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start>"posts"<cheak end>
-<substring from start>"posts"<substring from end>
-<substring to start>totalCount<substring to end>
+<cheak start>"data"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 
-<name start>postTitle":"(.*?)"<name end> <group start>1<group end>
+<name start>"title":"(.*?)"<name end> <group start>1<group end>
 
-<image start>isNew":(.*?),"featuredImage":"(.*?)"<image end> <group start>2<group end>
+<image start>"chapter_views":(.*?),"coverImage":"(.*?)"<image end> <group start>2<group end>
 
-<links start>"id":\s*(\d+),"slug":"(.*?)","postTitle":<links end> <group start>2<group end>
+<links start>("id":)(.*?),"title":"(.*?)","slug":"(.*?)","description":"(.*?)","type":"(.*?)"<links end> <group start>4<group end>
 
-<types start>seriesType":"(.*?)"<types end> <group start>1<group end>
+<types start>"type":"(.*?)"<types end> <group start>1<group end>
 
-<chapters start>chapters":\[\{"id":(.*?),"number":(.*?),<chapters end> <group start>2<group end>
+<chapters start>"progress":"(.*?)"<chapters end> <group start>1<group end>
 
 <search_page config end>
 ____________________________________________________________________
