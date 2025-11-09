@@ -1359,9 +1359,9 @@ ____________________________________________________________________
 <substring from start><div id="readerarea"<substring from end>
 <substring to start><span class="amob"><substring to end>
 
-<images_one start><link rel="preload" as="image" href="([^"]+)" fetchPriority="(.*?)"/><images_one end> <group start>1<group end>
+<images_one start>"mobile":"(.*?)"<images_one end> <group start>1<group end>
 
-<images_two start><link rel="preload" as="image" href="([^"]+)" fetchPriority="(.*?)"/><images_two end> <group start>1<group end>
+<images_two start>"mobile":"(.*?)"<images_two end> <group start>1<group end>
 
 <unlockAt start>unlockAt\\":\\"(.*?)\\"<unlockAt end> <group start>1<group end>
 
