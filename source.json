@@ -1260,6 +1260,9 @@ ____________________________________________________________________
 
 <completeURL ForAll start>https://prochan.net/api/public/series/search?limit=1&search=<completeURL ForAll end>
 <chaptersURL ForAll start>https://prochan.net/api/public/[1]/[2]/chapters?page=1&limit=999&order=desc<chaptersURL ForAll end>
+
+<chapterURL ForAll start>https://prochan.net/api/public/series/[type]/[id]/[slug]/[chId]/[chNumber]<chapterURL ForAll end>
+
 «main information end»
 
 ____________________________________________________________________
