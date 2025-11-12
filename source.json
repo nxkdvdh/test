@@ -350,6 +350,8 @@ ____________________________________________________________________
 
 <link_of_chapter start>"id":(.*?),"title":"(.*?)","order":(.*?),"views":(.*?),"manga_id":(.*?),"<link_of_chapter end> <group start>1<group end>
 
+<manga_id start>"id":(.*?),"title"<manga_id end> <group start>1<group end>
+
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
