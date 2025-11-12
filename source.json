@@ -1,5 +1,5 @@
 <app_version start>1.0.5 _beta<app_version end>
-<app_version_link start>https://www.manga-break.xyz<app_version_link end>
+<app_version_link start>https://www.manga-break.top<app_version_link end>
 <app_version_news start>1- إصلاح جميع المصادر المعطلة، الآن تعمل بدون مشاكل.#2- تحسين عرض المشاهدة العمودية (ويب فيو) وصفحة المشاهدة، مع ميزة إخفاء شريط الحالة والتحكم بشفافية شريط الأدوات السفلي.#3- حل مشكلة تغيّر لون الأيقونات تلقائيًا.#4- تحسين واجهة صفحة معلومات المانجا.#5- تحسين ترتيب الفصول في "آخر التحديثات" لمصدر TMX-M.#6- حل مشكلة التصاق صور المانجا في بعض الأجهزة وتناسق أفضل مع الشاشات.#7- تحسين التنقل بين قائمة المانجا وآخر التحديثات.#8- حل مشكلة خروج التطبيق في بعض الفصول ذات الصور الكبيرة.<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end> 
@@ -265,53 +265,53 @@ ____________________________________________________________________
 
 <version start>1.0.9<version end>
 
-<SiteDomain start>fl-ares.com<SiteDomain end>
+<SiteDomain start>api.mangamello.com<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://fl-ares.com/<baseURL lastUpdatea end>
-<baseURL listManga start>https://fl-ares.com/series/?page=1&status=&type=&order=popular<baseURL listManga end>
-<baseURL search start>https://fl-ares.com/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://api.mangamello.com/v1/mangas?sort_by=updated_at&page=1<baseURL lastUpdatea end>
+<baseURL listManga start>https://api.mangamello.com/v1/mangas?sort_by=views&page=1<baseURL listManga end>
+<baseURL search start>https://api.mangamello.com/v1/mangas/search?per_page=50&title=<baseURL search end>
 
-<showMore lastUpdates start>https://fl-ares.com/page/<showMore lastUpdates end>
-<showMore listManga start>https://fl-ares.com/series/?page=<showMore listManga end>
+<showMore lastUpdates start>https://api.mangamello.com/v1/mangas?sort_by=updated_at&page=<showMore lastUpdates end>
+<showMore listManga start>https://api.mangamello.com/v1/mangas?sort_by=views&page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>>جديد إصداراتنا<<cheak end>
-<substring from start>>جديد إصداراتنا<<substring from end>
-<substring to start>التالي<substring to end>
+<cheak start>"data"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<name end> <group start>2<group end>
+<name start>"title":"(.*?)"<name end> <group start>1<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start>"img":"(.*?)"<image end> <group start>1<group end>
 
-<links start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<links end> <group start>1<group end>
+<links start>"id":(.*?),"<links end> <group start>1<group end>
 
-<chapters start><ul class="chfiv">(.*?)<li><a href="(.*?)">(.*?)<<chapters end> <group start>3<group end>
+<chapters start>"last":(.*?),"views<chapters end> <group start>1<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start>قائمة المانجا<cheak end>
-<substring from start>قائمة المانجا<substring from end>
-<substring to start>التالي<substring to end>
+<cheak start>"data"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<name end> <group start>2<group end>
+<name start>"title":"(.*?)"<name end> <group start>1<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start>"img":"(.*?)"<image end> <group start>1<group end>
 
-<links start><div class="bsx">\s+<a href="(.*?)" title="(.*?)">(.*?)<<links end> <group start>1<group end>
+<links start>"id":(.*?),"<links end> <group start>1<group end>
 
-<types start><span class="type (.*?)"><types end> <group start>1<group end>
+<types start>type_id":(.*?),"<types end> <group start>1<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start>"last":(.*?),"views<chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
@@ -319,44 +319,44 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start><h1 class="entry-title" itemprop="name">(.*?)</h1><name end> <group start>1<group end>
+<name start>"title":"(.*?)"<name end> <group start>1<group end>
 
-<image start><meta property="og:image" content="([^"]*)"<image end> <group start>1<group end>
+<image start>"img":"(.*?)"<image end> <group start>1<group end>
 
-<types start><div class="imptdt">\s+النوع <a href="(.*?)">(.*?)<<types end> <group start>2<group end>
+<types start>type_id":(.*?),"<types end> <group start>1<group end>
 
-<state start><div class="imptdt">\s+الحالة <i>(.*?)</i><state end> <group start>1<group end>
+<state start>"status":(.*?),"<state end> <group start>1<group end>
 
-<author start><div class="imptdt">\s+الرسام <i>(.*?)<<author end> <group start>1<group end>
+<author start>year":"(.*?)"<author end> <group start>1<group end>
 
-<size_chapters start><div class="eph-num">\s+<a href="(.*?)">\s+<span class="chapternum">(.*?)</span><size_chapters end> <group start>2<group end>
+<size_chapters start>"id":(.*?),"title":"(.*?)","order":(.*?),"views":(.*?),"manga_id":(.*?),"<size_chapters end> <group start>2<group end>
 
-<story start>itemprop="description">([\s\S]*?)</div><story end> <group start>1<group end>
+<story start>summary":"(.*?)"<story end> <group start>1<group end>
 
 <ranking start>rel="tag">(.*?)<<ranking end> <group start>1<group end>
 
-<name_of_chapter start><div class="eph-num">\s+<a href="(.*?)">\s+<span class="chapternum">(.*?)</span><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start>"id":(.*?),"title":"(.*?)","order":(.*?),"views":(.*?),"manga_id":(.*?),"<name_of_chapter end> <group start>2<group end>
 
-<link_of_chapter start><div class="eph-num">\s+<a href="(.*?)">\s+<span class="chapternum">(.*?)</span><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start>"id":(.*?),"title":"(.*?)","order":(.*?),"views":(.*?),"manga_id":(.*?),"<link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start>اريس مغلق حالياً<cheak end>
-<substring from start>مغلق<substring from end>
-<substring to start>مغلق<substring to end>
+<cheak start>"data"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 
-<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start>"title":"(.*?)"<name end> <group start>1<group end>
 
-<image start><img src="(.*?)"<image end> <group start>1<group end>
+<image start>"img":"(.*?)"<image end> <group start>1<group end>
 
-<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start>"id":([\d.]+),"title<links end> <group start>1<group end>
 
-<types start><span class="type (.*?)"><types end> <group start>1<group end>
+<types start>type_id":(.*?),"<types end> <group start>1<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start>"last":(.*?),"views<chapters end> <group start>1<group end>
 
 <search_page config end>
 ____________________________________________________________________
@@ -368,9 +368,9 @@ ____________________________________________________________________
 <substring from start>"images":[<substring from end>
 <substring to start>lazyload"<substring to end>
 
-<images_one start>,"(.*?)"<images_one end> <group start>1<group end>
+<images_one start>"src":"(.*?)"<images_one end> <group start>1<group end>
 
-<images_two start>,"(.*?)"<images_two end> <group start>1<group end>
+<images_two start>"src":"(.*?)"<images_two end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
