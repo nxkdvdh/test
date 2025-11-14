@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.5<version sources end>
+<version sources start>1.1.0.6<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -263,7 +263,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.1.1<version end>
+<version start>1.1.2<version end>
 
 <SiteDomain start>plus.mangamello.com<SiteDomain end>
 
@@ -271,18 +271,18 @@ ____________________________________________________________________
 
 «main information start»
 <baseURL lastUpdatea start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&page=1<baseURL lastUpdatea end>
-<baseURL listManga start>https://api.mangamello.com/v1/mangas?sort_by=views&page=1<baseURL listManga end>
-<baseURL search start>https://api.mangamello.com/v1/mangas/search?per_page=50&title=<baseURL search end>
+<baseURL listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&page=1<baseURL listManga end>
+<baseURL search start>https://plus.mangamello.com/api/v1/mangas/search?per_page=50&title=<baseURL search end>
 
 <showMore lastUpdates start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&page=<showMore lastUpdates end>
-<showMore listManga start>https://api.mangamello.com/v1/mangas?sort_by=views&page=<showMore listManga end>
+<showMore listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&page=<showMore listManga end>
 
 
-<completeURL ForAll start>https://api.mangamello.com/v1/mangas/[id]<completeURL ForAll end>
+<completeURL ForAll start>https://plus.mangamello.com/api/v1/mangas/[id]?relations=genres<completeURL ForAll end>
 
-<chaptersURL ForAll start>https://api.mangamello.com/v1/mangas/[id]/chapters?per_page=5000<chaptersURL ForAll end>
+<chaptersURL ForAll start>https://plus.mangamello.com/api/v1/mangas/[id]/chapters?per_page=5000<chaptersURL ForAll end>
 
-<chapterURL ForAll start>https://api.mangamello.com/v1/mangas/[mangaId]/chapters/[chId]?relations=chapterImages<chapterURL ForAll end>
+<chapterURL ForAll start>https://plus.mangamello.com/api/v1/mangas/[mangaId]/chapters/[chId]?relations=chapterImages<chapterURL ForAll end>
 
 
 «main information end»
@@ -344,7 +344,7 @@ ____________________________________________________________________
 
 <story start>summary":"(.*?)"<story end> <group start>1<group end>
 
-<ranking start>rel="tag">(.*?)<<ranking end> <group start>1<group end>
+<ranking start>"name":"(.*?)"<ranking end> <group start>1<group end>
 
 <name_of_chapter start>"id":(.*?),"title":"(.*?)","order":(.*?),"views":(.*?),"manga_id":(.*?),"<name_of_chapter end> <group start>2<group end>
 
