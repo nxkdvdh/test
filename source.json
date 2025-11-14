@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.4<version sources end>
+<version sources start>1.1.0.5<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -263,18 +263,18 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.1.0<version end>
+<version start>1.1.1<version end>
 
-<SiteDomain start>api.mangamello.com<SiteDomain end>
+<SiteDomain start>plus.mangamello.com<SiteDomain end>
 
 <SiteImageDomain start>raw.githubusercontent.com<SiteImageDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://api.mangamello.com/v1/mangas?sort_by=updated_at&page=1<baseURL lastUpdatea end>
+<baseURL lastUpdatea start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&page=1<baseURL lastUpdatea end>
 <baseURL listManga start>https://api.mangamello.com/v1/mangas?sort_by=views&page=1<baseURL listManga end>
 <baseURL search start>https://api.mangamello.com/v1/mangas/search?per_page=50&title=<baseURL search end>
 
-<showMore lastUpdates start>https://api.mangamello.com/v1/mangas?sort_by=updated_at&page=<showMore lastUpdates end>
+<showMore lastUpdates start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&page=<showMore lastUpdates end>
 <showMore listManga start>https://api.mangamello.com/v1/mangas?sort_by=views&page=<showMore listManga end>
 
 
