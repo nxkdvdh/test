@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.6<version sources end>
+<version sources start>1.1.0.7<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -263,7 +263,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.1.2<version end>
+<version start>1.1.4<version end>
 
 <SiteDomain start>plus.mangamello.com<SiteDomain end>
 
@@ -271,14 +271,14 @@ ____________________________________________________________________
 
 «main information start»
 <baseURL lastUpdatea start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&page=1<baseURL lastUpdatea end>
-<baseURL listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&page=1<baseURL listManga end>
+<baseURL listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&relations=type&page=1<baseURL listManga end>
 <baseURL search start>https://plus.mangamello.com/api/v1/mangas/search?per_page=50&title=<baseURL search end>
 
 <showMore lastUpdates start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&page=<showMore lastUpdates end>
-<showMore listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&page=<showMore listManga end>
+<showMore listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&relations=type&page=<showMore listManga end>
 
 
-<completeURL ForAll start>https://plus.mangamello.com/api/v1/mangas/[id]?relations=genres<completeURL ForAll end>
+<completeURL ForAll start>https://plus.mangamello.com/api/v1/mangas/[id]?relations=genres,type<completeURL ForAll end>
 
 <chaptersURL ForAll start>https://plus.mangamello.com/api/v1/mangas/[id]/chapters?per_page=5000<chaptersURL ForAll end>
 
@@ -320,7 +320,7 @@ ____________________________________________________________________
 
 <links start>"id":(.*?),"<links end> <group start>1<group end>
 
-<types start>type_id":(.*?),"<types end> <group start>1<group end>
+<types start>type":\{"id":(.*?),<types end> <group start>1<group end>
 
 <chapters start>"last":(.*?),"views<chapters end> <group start>1<group end>
 
@@ -334,7 +334,7 @@ ____________________________________________________________________
 
 <image start>"img":"(.*?)"<image end> <group start>1<group end>
 
-<types start>type_id":(.*?),"<types end> <group start>1<group end>
+<types start>type":\{"id":(.*?),<types end> <group start>1<group end>
 
 <state start>"status":(.*?),"<state end> <group start>1<group end>
 
