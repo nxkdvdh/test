@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.7<version sources end>
+<version sources start>1.1.0.8<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -263,19 +263,19 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.1.4<version end>
+<version start>1.1.5<version end>
 
 <SiteDomain start>plus.mangamello.com<SiteDomain end>
 
 <SiteImageDomain start>raw.githubusercontent.com<SiteImageDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&page=1<baseURL lastUpdatea end>
-<baseURL listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&relations=type&page=1<baseURL listManga end>
+<baseURL lastUpdatea start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&per_page=50&page=1<baseURL lastUpdatea end>
+<baseURL listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&relations=type&per_page=50&page=1<baseURL listManga end>
 <baseURL search start>https://plus.mangamello.com/api/v1/mangas/search?per_page=50&title=<baseURL search end>
 
-<showMore lastUpdates start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&page=<showMore lastUpdates end>
-<showMore listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&relations=type&page=<showMore listManga end>
+<showMore lastUpdates start>https://plus.mangamello.com/api/v1/mangas?sort_by=updated_at&per_page=50&page=<showMore lastUpdates end>
+<showMore listManga start>https://plus.mangamello.com/api/v1/mangas?sort_by=views&relations=type&per_page=50&page=<showMore listManga end>
 
 
 <completeURL ForAll start>https://plus.mangamello.com/api/v1/mangas/[id]?relations=genres,type<completeURL ForAll end>
@@ -314,11 +314,11 @@ ____________________________________________________________________
 <substring to start>"total"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start>"title":"(.*?)"<name end> <group start>1<group end>
+<name start>"id":([\d.]+),"title":"(.*?)"<name end> <group start>2<group end>
 
 <image start>"img":"(.*?)"<image end> <group start>1<group end>
 
-<links start>"id":(.*?),"<links end> <group start>1<group end>
+<links start>"id":([\d.]+),"title":"(.*?)"<links end> <group start>1<group end>
 
 <types start>type":\{"id":(.*?),<types end> <group start>1<group end>
 
@@ -330,7 +330,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start>"title":"(.*?)"<name end> <group start>1<group end>
+<name start>"id":([\d.]+),"title":"(.*?)"<name end> <group start>2<group end>
 
 <image start>"img":"(.*?)"<image end> <group start>1<group end>
 
@@ -350,7 +350,7 @@ ____________________________________________________________________
 
 <link_of_chapter start>"id":(.*?),"title":"(.*?)","order":(.*?),"views":(.*?),"manga_id":(.*?),"<link_of_chapter end> <group start>1<group end>
 
-<manga_id start>"id":(.*?),"title"<manga_id end> <group start>1<group end>
+<manga_id start>"id":([\d.]+),"title":"(.*?)"<manga_id end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
