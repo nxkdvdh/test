@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.8<version sources end>
+<version sources start>1.1.0.9<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1264,7 +1264,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.22<version end>
+<version start>1.0.23<version end>
 
 <SiteDomain start>prochan.net<SiteDomain end>
 
@@ -1330,7 +1330,7 @@ ____________________________________________________________________
 
 <name start>"id":(.*?),"title":"(.*?)","slug":"(.*?)"<name end> <group start>2<group end>
 
-<image start>"chapter_views":(.*?),"coverImage":"(.*?)"<image end> <group start>1<group end>
+<image start>"mobile":"(.*?)"<image end> <group start>1<group end>
 
 <types start>"type":"(.*?)"<types end> <group start>1<group end>
 
