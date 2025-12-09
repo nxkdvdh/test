@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.9<version sources end>
+<version sources start>1.1.0.10<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -133,7 +133,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.20<version end>
+<version start>1.0.21<version end>
 
 <SiteDomain start>appswat.com<SiteDomain end>
 
@@ -157,20 +157,20 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>>أخر الفصول<<cheak end>
-<substring from start>>أخر الفصول<<substring from end>
-<substring to start>>المزيد <<substring to end>
+<cheak start>"results"<cheak end>
+<substring from start>"results"<substring from end>
+<substring to start>"}]}]}<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
 <link_ajax-request start>https://appswat.com/ajax-request?action=more_manga_home&paged=<link_ajax-request end> <group start>1<group end>
 
-<name start><h4>\s*([^<]+)\s*</h4><name end> <group start>1<group end>
+<name start>serie_id":(.*?),"title":"(.*?)"<name end> <group start>2<group end>
 
-<image start>(data-lazy-src=")(.*?)(?=")<image end> <group start>2<group end>
+<image start>medium":"(.*?)"<image end> <group start>1<group end>
 
-<links start><a rel="(.*?)" class="series" href="(.*?)"<links end> <group start>2<group end>
+<links start>serie_id":(.*?),"title":"(.*?)"<links end> <group start>1<group end>
 
-<chapters start><ul\s+class="(manga|manhua|manhwa|novel|comic)">\s*<li><a\s+href="(.*?)">(.*?)(?=<)<chapters end> <group start>3<group end>
+<chapters start>chapters":\[\{"id":(.*?),"title":"(.*?)","chapter":"(.*?)"<chapters end> <group start>3<group end>
 
 <name_webview start><a rel="(.*?)" class="(.*?)" href="(.*?)" title="(.*?)"><name_webview end> <group start>4<group end>
 
@@ -185,20 +185,20 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start>>وضع النص<<cheak end>
-<substring from start>>وضع النص<<substring from end>
-<substring to start><div class="links"><substring to end>
+<cheak start>"results"<cheak end>
+<substring from start>"results"<substring from end>
+<substring to start>}]}<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div class="tt">(.*?)</div><name end> <group start>1<group end>
+<name start>"id":([\d.]+),"title":"(.*?)"<name end> <group start>2<group end>
 
-<image start>(data-lazy-src=")(.*?)(?=")<image end> <group start>2<group end>
+<image start>medium":"(.*?)"<image end> <group start>1<group end>
 
-<links start><div class="bsx">\s*<a href="(.*?)(=?")<links end> <group start>1<group end>
+<links start>"id":([\d.]+),"title":"(.*?)"<links end> <group start>1<group end>
 
-<types start><span class="type\s*(.*?)">(.*?)(?=<)<types end> <group start>2<group end>
+<types start>type":\{"id":(.*?),"name":"(.*?)"<types end> <group start>2<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start>status":\{"id":(.*?),"name":"(.*?)"<chapters end> <group start>2<group end>
 
 
 <main_list_manga config end>
@@ -206,44 +206,44 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start><div class="infox">\s*<h1 itemprop="headline">(.*?)(=?<)<name end> <group start>1<group end>
+<name start>"id":([\d.]+),"title":"(.*?)"<name end> <group start>2<group end>
 
-<image start><noscript><img src="([^"]*)"\swidth(.*?)/></noscript><image end> <group start>1<group end>
+<image start>poster":\{"thumbnail":"(.*?)","medium":"(.*?)"<image end> <group start>2<group end>
 
-<types start><span><b>النوع:</b>\s<a href="(.*?)">(.*?)</a></span><types end> <group start>2<group end>
+<types start>type":\{"id":(.*?),"name":"(.*?)"<types end> <group start>2<group end>
 
-<state start><span><b>الحالة:</b>\s<a href="(.*?)">(.*?)</a></span><state end> <group start>2<group end>
+<state start>status":\{"id":(.*?),"name":"(.*?)"<state end> <group start>2<group end>
 
 <author start><span><b>المؤلف:</b>(.*?)</span><author end> <group start>1<group end>
 
-<size_chapters start><li data-num="(.*?)"><size_chapters end> <group start>1<group end>
+<size_chapters start>"chapter":"(.*?)"<size_chapters end> <group start>1<group end>
 
-<story start><meta\s+property="og:description"\s+content="([^"]*)"<story end> <group start>1<group end>
+<story start>story":"(.*?)"<story end> <group start>1<group end>
 
-<ranking start> <a href="(.*?)"\srel="tag">(.*?)</a><ranking end> <group start>2<group end>
+<ranking start>\{"id":([\d.]+),"name":"(.*?)","series_count":(.*?)}<ranking end> <group start>2<group end>
 
-<name_of_chapter start><li data-num="(.*?)"><name_of_chapter end> <group start>1<group end>
+<name_of_chapter start>"chapter":"(.*?)"<name_of_chapter end> <group start>1<group end>
 
-<link_of_chapter start><span class="dt"><a href="(.*?)"<link_of_chapter end> <group start>1<group end>
+<link_of_chapter start>"id":([\d.]+),"title":"(.*?)"<link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start><div class="releases"><h1><span><cheak end>
-<substring from start><div class="releases"><h1><span><substring from end>
-<substring to start><div class="mt-4 mb-4"><substring to end>
+<cheak start>"results"<cheak end>
+<substring from start>"results"<substring from end>
+<substring to start>}]}<substring to end>
 
-<name start><a href="(.*?)" title="(.*?)"><name end> <group start>2<group end>
+<name start>"id":([\d.]+),"title":"(.*?)"<name end> <group start>2<group end>
 
-<image start><noscript><img src="(.*?)"<image end> <group start>1<group end>
+<image start>medium":"(.*?)"<image end> <group start>1<group end>
 
-<links start><a href="(.*?)" title="(.*?)"><links end> <group start>1<group end>
+<links start>"id":([\d.]+),"title":"(.*?)"<links end> <group start>1<group end>
 
 <types start><ul\s+class="(manga|manhua|manhwa|novel|comic)">\s*<li><a\s+href="(.*?)">(.*?)(?=<)<types end> <group start>1<group end>
 
-<chapters start><div class="epxs">(.*?)</div><chapters end> <group start>1<group end>
+<chapters start>status":\{"id":(.*?),"name":"(.*?)"<chapters end> <group start>2<group end>
 
 <search_page config end>
 ____________________________________________________________________
@@ -255,9 +255,9 @@ ____________________________________________________________________
 <substring from start>"images":[<substring from end>
 <substring to start>loadChList<substring to end>
 
-<images_one start>,"(.*?)"<images_one end> <group start>1<group end>
+<images_one start>"image":"(.*?)"<images_one end> <group start>1<group end>
 
-<images_two start>,"(.*?)"<images_two end> <group start>1<group end>
+<images_two start>"image":"(.*?)"<images_two end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
