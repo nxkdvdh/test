@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.12<version sources end>
+<version sources start>1.1.0.13<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -133,7 +133,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.23<version end>
+<version start>1.0.24<version end>
 
 <SiteDomain start>appswat.com<SiteDomain end>
 
@@ -208,7 +208,7 @@ ____________________________________________________________________
 
 <name start>"id":([\d.]+),"title":"(.*?)"<name end> <group start>2<group end>
 
-<image start>poster":\{"thumbnail":"(.*?)","medium":"(.*?)"<image end> <group start>2<group end>
+<image start>"poster"\s*:\s*\{[^}]*?"medium"\s*:\s*"([^"]*)"<image end> <group start>1<group end>
 
 <types start>type":\{"id":(.*?),"name":"(.*?)"<types end> <group start>2<group end>
 
