@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.11<version sources end>
+<version sources start>1.1.0.12<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -133,7 +133,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.22<version end>
+<version start>1.0.23<version end>
 
 <SiteDomain start>appswat.com<SiteDomain end>
 
@@ -220,7 +220,7 @@ ____________________________________________________________________
 
 <story start>story":"(.*?)"<story end> <group start>1<group end>
 
-<ranking start>\{"id":([\d.]+),"name":"(.*?)","series_count":(.*?)}<ranking end> <group start>2<group end>
+<ranking start>"name":"([^"]+)","series_count"<ranking end> <group start>1<group end>
 
 <name_of_chapter start>"chapter":"(.*?)"<name_of_chapter end> <group start>1<group end>
 
