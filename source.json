@@ -294,6 +294,8 @@ ____________________________________________________________________
 <chapterURL ForAll start>https://plus.mangamello.com/api/v1/mangas/[mangaId]/chapters/[chId]?relations=chapterImages<chapterURL ForAll end>
 
 
+<UserAgent start>Dart/3.8 (dart:io)<UserAgent end>
+
 «main information end»
 
 ____________________________________________________________________
