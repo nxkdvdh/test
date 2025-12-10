@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.17<version sources end>
+<version sources start>1.1.0.18<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -133,7 +133,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.28<version end>
+<version start>1.0.29<version end>
 
 <SiteDomain start>appswat.com<SiteDomain end>
 
@@ -272,7 +272,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.1.6<version end>
+<version start>1.1.7<version end>
 
 <SiteDomain start>plus.mangamello.com<SiteDomain end>
 
@@ -776,7 +776,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.15<version end>
+<version start>1.0.16<version end>
 
 <SiteDomain start>3asq.org<SiteDomain end>
 
@@ -898,7 +898,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.9<version end>
+<version start>1.0.10<version end>
 
 <SiteDomain start>www.onma.me<SiteDomain end>
 
@@ -1026,7 +1026,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.21<version end>
+<version start>1.0.22<version end>
 
 <SiteDomain start>azoramoon.com<SiteDomain end>
 
@@ -1268,7 +1268,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.23<version end>
+<version start>1.0.24<version end>
 
 <SiteDomain start>prochan.net<SiteDomain end>
 
