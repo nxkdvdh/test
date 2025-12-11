@@ -1,16 +1,16 @@
-<app_version start>1.0.5 _beta<app_version end>
+<app_version start>1.0.6 _beta<app_version end>
 <app_version_link start>https://www.manga-break.top<app_version_link end>
-<app_version_news start>1- إصلاح جميع المصادر المعطلة، الآن تعمل بدون مشاكل.#2- تحسين عرض المشاهدة العمودية (ويب فيو) وصفحة المشاهدة، مع ميزة إخفاء شريط الحالة والتحكم بشفافية شريط الأدوات السفلي.#3- حل مشكلة تغيّر لون الأيقونات تلقائيًا.#4- تحسين واجهة صفحة معلومات المانجا.#5- تحسين ترتيب الفصول في "آخر التحديثات" لمصدر TMX-M.#6- حل مشكلة التصاق صور المانجا في بعض الأجهزة وتناسق أفضل مع الشاشات.#7- تحسين التنقل بين قائمة المانجا وآخر التحديثات.#8- حل مشكلة خروج التطبيق في بعض الفصول ذات الصور الكبيرة.<app_version_news end>
+<app_version_news start>1-إصلاح عدد من مصادر المحتوى: تحسين واستقرار مصادر (SWT, ASQ, ONL, REA).#2-استبدال مصدر ARS بمصدر جديد وأكثر كفاءة تحت اسم MLO.#3-استبدال مصدر NON بمصدر جديد تحت اسم AZR لضمان أداء أفضل.#4-إضافة خانة التبرع داخل التطبيق لدعم استمرار تطويره وتحسينه.#5-إصلاح مشكلة المشاهدة في وضع ملء الشاشة وتحسين تجربة القراءة دون عوائق.#6-تحسينات عامة على الأداء والاستقرار استعدادًا للتحديثات القادمة.<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.18<version sources end>
+<version sources start>1.1.0.19<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.24<version end>
+<version start>1.0.25<version end>
 
 <SiteDomain start>olympustaff.com<SiteDomain end>
 «main information start»
@@ -133,7 +133,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.29<version end>
+<version start>1.0.30<version end>
 
 <SiteDomain start>appswat.com<SiteDomain end>
 
@@ -272,7 +272,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.1.7<version end>
+<version start>1.1.8<version end>
 
 <SiteDomain start>plus.mangamello.com<SiteDomain end>
 
@@ -653,7 +653,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.11<version end>
+<version start>1.0.12<version end>
 
 <SiteDomain start>mangatime.org<SiteDomain end>
 
@@ -776,7 +776,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.16<version end>
+<version start>1.0.17<version end>
 
 <SiteDomain start>3asq.org<SiteDomain end>
 
@@ -898,7 +898,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.10<version end>
+<version start>1.0.11<version end>
 
 <SiteDomain start>www.onma.me<SiteDomain end>
 
@@ -1026,7 +1026,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.22<version end>
+<version start>1.0.23<version end>
 
 <SiteDomain start>azoramoon.com<SiteDomain end>
 
@@ -1150,7 +1150,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.0.8<version end>
+<version start>1.0.9<version end>
 
 <SiteDomain start>ar.areascans.org<SiteDomain end>
 
@@ -1268,7 +1268,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.24<version end>
+<version start>1.0.25<version end>
 
 <SiteDomain start>prochan.net<SiteDomain end>
 
