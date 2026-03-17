@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.19<version sources end>
+<version sources start>1.1.0.20<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -133,7 +133,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.30<version end>
+<version start>1.0.31<version end>
 
 <SiteDomain start>appswat.com<SiteDomain end>
 
@@ -150,6 +150,8 @@ ____________________________________________________________________
 <chaptersURL ForAll start>https://appswat.com/v2/api/v1/series/[id]/chapters?page_size=5000<chaptersURL ForAll end>
 
 <chapterURL ForAll start>https://appswat.com/v2/api/v1/chapters/[id]/<chapterURL ForAll end>
+
+<chapterUserAgent start>ktor-client<chapterUserAgent end>
 
 «main information end»
 
