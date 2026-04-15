@@ -1397,6 +1397,126 @@ ____________________________________________________________________
 
 <pro config end>
 
+____________________________________________________________________
+____________________________________________________________________
+
+<music config start>
+
+<need update start>yes<need update end>
+
+<url>https://api-mobile.soundcloud.com/search/query?client_id=SSdQ80vM8nLPhbDBylHl2JFK6ElhBr9B&page=0&query=[q]&layout_version=v8&filter.content_type=TRACKS&layout=soundcloud%3Alayouts%3Asearch_default</url>
+<id>?client_id=SSdQ80vM8nLPhbDBylHl2JFK6ElhBr9B</id>
+<oauth>I9+4v7ffQhPDdljGH9KdAtmJ1pcSrx867gcTM3KwW+I8TzhP0XR++3KlYRAquLoM</oauth>
+
+<html_scraping><html>
+  <body>
+    <script>
+function extractAudioData() {
+  let client_id = "?client_id=SSdQ80vM8nLPhbDBylHl2JFK6ElhBr9B"; 
+  let source = AndroidInterface.getSource();
+
+  try {
+    let pq = source.indexOf('"entities":{');
+
+    if (pq === -1) {
+      AndroidInterface.sendResult("error", "لم يتم العثور على entities");
+      return;
+    }
+    let startObj = pq + '"entities":'.length;
+    let brackets = 0;
+    let inString = false;
+    let isEscaping = false;
+    let endObj = -1;
+
+    for (let i = startObj; i < source.length; i++) {
+      let char = source[i];
+
+      if (isEscaping) {
+        isEscaping = false;
+        continue;
+      }
+      if (char === '\\') { 
+        isEscaping = true;
+        continue;
+      }
+      if (char === '"') { 
+        inString = !inString;
+        continue;
+      }
+
+      if (!inString) {
+        if (char === '{') brackets++;
+        else if (char === '}') {
+          brackets--;
+          if (brackets === 0) {
+            endObj = i + 1; 
+            break;
+          }
+        }
+      }
+    }
+
+    if (endObj === -1) {
+      AndroidInterface.sendResult("error", "النص مقطوع في المصدر ولم يتم إغلاق JSON");
+      return;
+    }
+
+    let validJsonString = "{" + '"entities":' + source.substring(startObj, endObj) + "}";
+
+    let data = JSON.parse(validJsonString);
+    let result = [];
+
+    let entitiesArray = Object.values(data.entities);
+
+    let tracks = entitiesArray.filter(item => item.type === "track");
+
+    for (let i = 0; i < tracks.length; i++) {
+      let t = tracks[i].data;
+
+      if (t["go-plus"] === true) continue;
+
+      let duration = t.full_duration || 0;
+      let minutes = Math.floor((duration / 1000) / 60);
+      let seconds = Math.floor((duration / 1000) % 60);
+
+      let timeStr = String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0');
+
+      let link = "";
+      if (t.media && t.media.transcodings) {
+        let progressive = t.media.transcodings.find(x =>
+          x.format && x.format.protocol === "progressive"
+        );
+        if (progressive) {
+          link = progressive.url + client_id;
+        }
+      }
+
+      let img = t.artwork_url_template ? t.artwork_url_template.replace("{size}", "t500x500") : "";
+
+      result.push({
+        name: t.title || "بدون عنوان",
+        time: timeStr,
+        link: link,
+        image: img
+      });
+    }
+
+    AndroidInterface.sendResult("audio_data", JSON.stringify(result));
+
+
+  } catch (e) {
+    AndroidInterface.sendResult("error", "Exception: " + e.message);
+  }
+}
+    </script>
+  </body>
+</html>
+</html_scraping>
+
+<music config end>
+
+
+
 
 
 
