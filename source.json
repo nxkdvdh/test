@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.24<version sources end>
+<version sources start>1.1.0.25<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,7 +655,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.13<version end>
+<version start>1.0.14<version end>
 
 <SiteDomain start>mangatime.org<SiteDomain end>
 
@@ -707,7 +707,7 @@ ____________________________________________________________________
 
 <types start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<types end> <group start>5<group end>
 
-<chapters start>chapterCount":(.*?)}<chapters end> <group start>1<group end>
+<chapters start>chapterCount":(.*?),<chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
