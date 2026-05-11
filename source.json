@@ -666,6 +666,11 @@ ____________________________________________________________________
 
 <showMore lastUpdates start>https://mangatime.org/api/trpc/homepage.getLatestReleases?batch=1&input={"0":{"json":{"page":[page],"limit":50}}}<showMore lastUpdates end>
 <showMore listManga start>https://mangatime.org/api/trpc/homepage.getTrending?batch=1&input={"0":{"json":{"page":[page],"limit":50}}}<showMore listManga end>
+
+<completeURL ForAll start>https://mangatime.org/api/trpc/content.getSeriesBySlug,content.getChapters?batch=1&input={"0":{"json":{"slug":"[slug]"}},"1":{"json":{"seriesId":"[id]","limit":-1}}}<completeURL ForAll end>
+
+<chapterURL ForAll start>https://mangatime.org/api/trpc/content.getChapterPages?batch=1&input={"0":{"json":{"seriesSlug":"[slug]","chapterNumber":[number]}}}<chapterURL ForAll end>
+
 «main information end»
 
 ____________________________________________________________________
