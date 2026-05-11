@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.25<version sources end>
+<version sources start>1.1.0.26<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,7 +655,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.14<version end>
+<version start>1.0.15<version end>
 
 <SiteDomain start>mangatime.org<SiteDomain end>
 
@@ -670,6 +670,8 @@ ____________________________________________________________________
 <completeURL ForAll start>https://mangatime.org/api/trpc/content.getSeriesBySlug,content.getChapters?batch=1&input={"0":{"json":{"slug":"[slug]"}},"1":{"json":{"seriesId":"[id]","limit":-1}}}<completeURL ForAll end>
 
 <chapterURL ForAll start>https://mangatime.org/api/trpc/content.getChapterPages?batch=1&input={"0":{"json":{"seriesSlug":"[slug]","chapterNumber":[number]}}}<chapterURL ForAll end>
+
+<imageURL ForAll start>https://mangatime.org<imageURL ForAll end>
 
 «main information end»
 
