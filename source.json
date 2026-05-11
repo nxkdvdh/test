@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.23<version sources end>
+<version sources start>1.1.0.24<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,59 +655,59 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.12<version end>
+<version start>1.0.13<version end>
 
 <SiteDomain start>mangatime.org<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://mangatime.org/releases/0/1000/<baseURL lastUpdatea end>
-<baseURL listManga start>https://mangatime.org/categories/0/1000/<baseURL listManga end>
-<baseURL search start>https://mangatime.org/search?q=<baseURL search end>
+<baseURL lastUpdatea start>https://mangatime.org/api/trpc/homepage.getLatestReleases?batch=1&input={"0":{"json":{"page":1,"limit":50}}}<baseURL lastUpdatea end>
+<baseURL listManga start>https://mangatime.org/api/trpc/homepage.getTrending?batch=1&input={"0":{"json":{"page":1,"limit":50}}}<baseURL listManga end>
+<baseURL search start>https://mangatime.org/api/trpc/search.searchSeries?batch=1&input={"0":{"json":{"query":"[q]"}}}<baseURL search end>
 
-<showMore lastUpdates start>https://mangatime.org/releases/0/200<showMore lastUpdates end>
-<showMore listManga start>https://mangatime.org/categories/0/200<showMore listManga end>
+<showMore lastUpdates start>https://mangatime.org/api/trpc/homepage.getLatestReleases?batch=1&input={"0":{"json":{"page":[page],"limit":50}}}<showMore lastUpdates end>
+<showMore listManga start>https://mangatime.org/api/trpc/homepage.getTrending?batch=1&input={"0":{"json":{"page":[page],"limit":50}}}<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start><h4>آخر الفصول</h4><cheak end>
-<substring from start><h4>آخر الفصول</h4><substring from end>
-<substring to start><div class="product__pagination"><substring to end>
+<cheak start>"total"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start>mangaName="(.*?)"<name end> <group start>1<group end>
+<name start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)","latestChapter":\{"number":(.*?),<name end> <group start>2<group end>
 
-<image start>data-setbg-high="(.*?)"<image end> <group start>1<group end>
+<image start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)","latestChapter":\{"number":(.*?),<image end> <group start>4<group end>
 
 <image2 start>(.*)<image2 end> <group start>1<group end>
 
-<links start><a class="UpdatedTitle-module_titleName_1QO_s" onclick="window.location.href = '(.*?)'<links end> <group start>1<group end>
+<links start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)","latestChapter":\{"number":(.*?),<links end> <group start>3<group end>
 
-<chapters start><button class="site-btn-chapter">([\s\S]*?)</button><chapters end> <group start>1<group end>
+<chapters start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)","latestChapter":\{"number":(.*?),<chapters end> <group start>7<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start><h4>قائمة المانجا</h4><cheak end>
-<substring from start><h4>قائمة المانجا</h4><substring from end>
-<substring to start><div class="product__pagination"><substring to end>
+<cheak start>"total"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start>mangaName="(.*?)"<name end> <group start>1<group end>
+<name start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<name end> <group start>2<group end>
 
-<image start>data-setbg-high="(.*?)"<image end> <group start>1<group end>
+<image start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<image end> <group start>4<group end>
 
 <image2 start>(.*)<image2 end> <group start>1<group end>
 
-<links start><a class="UpdatedTitle-module_titleName_1QO_s manga-link-3" data-manga-name = "(.*?)" href="(.*?)"<links end> <group start>2<group end>
+<links start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<links end> <group start>3<group end>
 
-<types start><span class="manga-type">(.*?)</span><types end> <group start>1<group end>
+<types start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<types end> <group start>5<group end>
 
-<chapters start><div class="ep" data-total-chapters="(.*?)"<chapters end> <group start>1<group end>
+<chapters start>chapterCount":(.*?)}<chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
@@ -715,44 +715,44 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start><div class="anime__details__title">\s+<h3>(.*?)</h3><name end> <group start>1<group end>
+<name start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)"<name end> <group start>2<group end>
 
-<image start>data-setbg="(.*?)"<image end> <group start>1<group end>
+<image start>coverUrl":"(.*?)"<image end> <group start>1<group end>
 
-<types start><h5>\s+النوع		</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><types end> <group start>1<group end>
+<types start>type":"(.*?)"<types end> <group start>1<group end>
 
-<state start><li><span>الحالة:</span>(.*?)</li><state end> <group start>1<group end>
+<state start>status":"(.*?)"<state end> <group start>1<group end>
 
-<author start><div class="author-content">\s+(.*?)</div><author end> <group start>1<group end>
+<author start>author":"(.*?)"<author end> <group start>1<group end>
 
 <size_chapters start><a class="visually-hidden chapter-link"\s+href="(.*?)"\s+data-ad-url="(.*?)">([\s\S]*?)</a><size_chapters end> <group start>3<group end>
 
-<story start></div>\s+<p>([\s\S]*?)</p><story end> <group start>1<group end>
+<story start>description":"([\s\S]*?)"type<story end> <group start>1<group end>
 
-<ranking start><li><span>التصنيفات:</span>(.*?)</li><ranking end> <group start>1<group end>
+<ranking start>"name":"(.*?)"<ranking end> <group start>1<group end>
 
-<name_of_chapter start><a class="visually-hidden chapter-link"\s+href="(.*?)"\s+data-ad-url="(.*?)">([\s\S]*?)</a><name_of_chapter end> <group start>3<group end>
+<name_of_chapter start>"id":"(.*?)","seriesId":"(.*?)","number":(.*?),<name_of_chapter end> <group start>3<group end>
 
-<link_of_chapter start><a class="visually-hidden chapter-link"\s+href="(.*?)"\s+data-ad-url="(.*?)">([\s\S]*?)</a><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start>"id":"(.*?)","seriesId":"(.*?)","number":(.*?),<link_of_chapter end> <group start>3<group end>
 
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start><h4>النتائج</h4><cheak end>
-<substring from start><h4>النتائج</h4><substring from end>
-<substring to start>Product Section End<substring to end>
+<cheak start>"totalCount"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"totalCount"<substring to end>
 
-<name start>mangaName="(.*?)"<name end> <group start>1<group end>
+<name start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<name end> <group start>2<group end>
 
-<image start>data-setbg-high="(.*?)"<image end> <group start>1<group end>
+<image start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<image end> <group start>4<group end>
 
-<links start><a class="UpdatedTitle-module_titleName_1QO_s" onclick="window.location.href = '(.*?)' \+ replaceNameWithDash(`?(.*?)?`)<links end> <group start>1<group end>
+<links start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<links end> <group start>3<group end>
 
-<types start><h5>\s+الحالة\s+</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><types end> <group start>1<group end>
+<types start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<types end> <group start>5<group end>
 
-<chapters start><div class="ep" data-total-chapters="(.*?)"<chapters end> <group start>1<group end>
+<chapters start>chapterCount":(.*?),<chapters end> <group start>1<group end>
 
 <search_page config end>
 ____________________________________________________________________
@@ -764,9 +764,9 @@ ____________________________________________________________________
 <substring from start>"images":[<substring from end>
 <substring to start>lazyload"<substring to end>
 
-<images_one start>imageElement(.*?).dataset.src = '(.*?)';<images_one end> <group start>2<group end>
+<images_one start>(?<="pages":\["|,"(?![a-zA-Z0-9_]+":))[^"]+(?=")<images_one end> <group start>0<group end>
 
-<images_two start>imageElement(.*?).dataset.src = '(.*?)';<images_two end> <group start>2<group end>
+<images_two start>0<images_two end> <group start>2<group end>
 
 <view_page config end>
 ____________________________________________________________________
