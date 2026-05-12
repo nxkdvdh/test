@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.26<version sources end>
+<version sources start>1.1.0.27<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,7 +655,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.15<version end>
+<version start>1.0.16<version end>
 
 <SiteDomain start>mangatime.org<SiteDomain end>
 
@@ -738,9 +738,9 @@ ____________________________________________________________________
 
 <ranking start>"name":"(.*?)"<ranking end> <group start>1<group end>
 
-<name_of_chapter start>"id":"(.*?)","seriesId":"(.*?)","number":(.*?),<name_of_chapter end> <group start>3<group end>
+<name_of_chapter start>"title":"[^"]*","slug":"([^"]+)"|"number":(\d+)[\s\S]*?"isUnlocked":(true|false)<name_of_chapter end> <group start>2<group end>
 
-<link_of_chapter start>"id":"(.*?)","seriesId":"(.*?)","number":(.*?),<link_of_chapter end> <group start>3<group end>
+<link_of_chapter start>"title":"[^"]*","slug":"([^"]+)"|"number":(\d+)[\s\S]*?"isUnlocked":(true|false)<link_of_chapter end> <group start>2<group end>
 
 <info_page config end>
 ____________________________________________________________________
@@ -773,7 +773,7 @@ ____________________________________________________________________
 
 <images_one start>(?<="pages":\["|,"(?![a-zA-Z0-9_]+":))[^"]+(?=")<images_one end> <group start>0<group end>
 
-<images_two start>0<images_two end> <group start>2<group end>
+<images_two start>(?<="pages":\["|,"(?![a-zA-Z0-9_]+":))[^"]+(?=")<images_two end> <group start>0<group end>
 
 <view_page config end>
 ____________________________________________________________________
