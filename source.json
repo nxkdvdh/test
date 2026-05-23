@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.29<version sources end>
+<version sources start>1.1.0.30<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1035,7 +1035,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.24<version end>
+<version start>1.0.25<version end>
 
 <SiteDomain start>azoramoon.com<SiteDomain end>
 
@@ -1049,7 +1049,7 @@ ____________________________________________________________________
 <showMore lastUpdates start>https://api.azoramoon.com/api/posts?perPage=40&searchTerm=&isNovel=false&tag=new&page=<showMore lastUpdates end>
 <showMore listManga start>https://api.azoramoon.com/api/query?page=[page]&perPage=40&view=archive&orderBy=totalViews&orderDirection=desc<showMore listManga end>
 
-<completeURL ForAll start>https://azoramoon.com/series/[slug]<completeURL ForAll end>
+<completeURL ForAll start>https://azoramoon.com/series/<completeURL ForAll end>
 «main information end»
 
 ____________________________________________________________________
