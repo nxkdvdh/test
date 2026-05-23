@@ -1039,17 +1039,17 @@ ____________________________________________________________________
 
 <SiteDomain start>azoramoon.com<SiteDomain end>
 
-<SiteImageDomain start>azoramoon.com<SiteImageDomain end>
+<SiteImageDomain start>storage.azoramoon.com<SiteImageDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://azoramoon.com/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://azoramoon.com/series/page/1/?m_orderby=views<baseURL listManga end>
-<baseURL search start>https://azoramoon.com/?s=[name]&post_type=wp-manga<baseURL search end>
+<baseURL lastUpdatea start>https://api.azoramoon.com/api/posts?page=1&perPage=40&searchTerm=&isNovel=false&tag=new<baseURL lastUpdatea end>
+<baseURL listManga start>https://api.azoramoon.com/api/query?page=1&perPage=40&view=archive&orderBy=totalViews&orderDirection=desc<baseURL listManga end>
+<baseURL search start>https://api.azoramoon.com/api/query?page=1&perPage=50&view=archive&searchTerm=[name]&orderBy=lastChapterAddedAt&orderDirection=desc<baseURL search end>
 
-<showMore lastUpdates start>https://azoramoon.com/page/<showMore lastUpdates end>
-<showMore listManga start>https://azoramoon.com/series/page/[page]/?m_orderby=views<showMore listManga end>
+<showMore lastUpdates start>https://api.azoramoon.com/api/posts?perPage=40&searchTerm=&isNovel=false&tag=new&page=<showMore lastUpdates end>
+<showMore listManga start>https://api.azoramoon.com/api/query?page=[page]&perPage=40&view=archive&orderBy=totalViews&orderDirection=desc<showMore listManga end>
 
-<completeURL ForAll start> <completeURL ForAll end>
+<completeURL ForAll start>https://azoramoon.com/series/[slug]<completeURL ForAll end>
 «main information end»
 
 ____________________________________________________________________
