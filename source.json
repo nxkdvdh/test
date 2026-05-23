@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.28<version sources end>
+<version sources start>1.1.0.29<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1035,7 +1035,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.23<version end>
+<version start>1.0.24<version end>
 
 <SiteDomain start>azoramoon.com<SiteDomain end>
 
@@ -1056,38 +1056,38 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>أخر المانجا المضافة<cheak end>
-<substring from start>أخر المانجا المضافة<substring from end>
-<substring to start>الشائع اليوم<substring to end>
+<cheak start>"posts"<cheak end>
+<substring from start>"posts"<substring from end>
+<substring to start>"novelPosts"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start>postTitle":"(.*?)"<name end> <group start>1<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>3<group end>
+<image start>postTitle":"[\s\S]*?"featuredImage":"(.*?)"<image end> <group start>1<group end>
 
-<links start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start>"slug":"([^"]+)","postTitle"<links end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s+<div class="chapter-item  has-thumb">\s+<span class="chapter font-meta">\s+<a href="(.*?)" class="btn-link">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start>"chapters":\[(?:[^\]]*?"number":)?(\d+|(?<=\[)(?=\]))<chapters end> <group start>1<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start>Most Views<cheak end>
-<substring from start>Most Views<substring from end>
-<substring to start>الشائع اليوم<substring to end>
+<cheak start>"posts"<cheak end>
+<substring from start>"posts"<substring from end>
+<substring to start>"totalCount"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start>postTitle":"(.*?)"<name end> <group start>1<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>3<group end>
+<image start>postTitle":"[\s\S]*?"featuredImage":"(.*?)"<image end> <group start>1<group end>
 
-<links start><div class="post-title font-title">\s+<h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start>"slug":"([^"]+)","postTitle"<links end> <group start>1<group end>
 
-<types start><img src="https://api.iconify.design/emojione:flag-for-(.*?).svg" class="w-full" alt="Flag"><types end> <group start>1<group end>
+<types start>seriesType":"(.*?)"<types end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s+<div class="chapter-item  has-thumb">\s+<span class="chapter font-meta">\s+<a href="(.*?)" class="btn-link">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start>"chapters":\[(?:[^\]]*?"number":)?(\d+|(?<=\[)(?=\]))<chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
@@ -1095,44 +1095,44 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start><span class="rate-title" property="name" title="(.*?)">(.*?)</span><name end> <group start>2<group end>
+<name start>itemProp="name">(.*?)</h1><name end> <group start>1<group end>
 
-<image start><div class="summary_image">\s+<a href="(.*?)">\s+<img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>4<group end>
+<image start>"src":\[0,"(.*?)"\]<image end> <group start>1<group end>
 
-<types start>alt="النوع">\s+<span class="capitalize">(.*?)</span><types end> <group start>1<group end>
+<types start><div class="inline"><span[^>]*>(.*?)<\/span><types end> <group start>1<group end>
 
-<state start>rounded-lg">\s+<span class="capitalize">(.*?)</span><state end> <group start>1<group end>
+<state start></svg>الحالة</h1><div class="flex items-center ">.*?class="font-normal text-xs inline ml-1 text-foreground">(.*?)</p><state end> <group start>1<group end>
 
 <author start><b>الكاتب</b>\s+<span>([\s\S]*?)</span><author end> <group start>1<group end>
 
-<size_chapters start><img class="thumb" src="(.*?)"/>\s+</div>\s+<a href="(.*?)">([\s\S]*?)</a><size_chapters end> <group start>3<group end>
+<size_chapters start>"number":\[0,(.*?)\],"slug":\[0,"(.*?)"\].*?"isLocked":\[0,(.*?)\]<size_chapters end> <group start>1<group end>
 
-<story start><div class="manga-summary">([\s\S]*?)</div><story end> <group start>1<group end>
+<story start>\A[\s\S]*?postContent":\[0,"<p.*?><span.*?>(.*?)</span></p>"]<story end> <group start>1<group end>
 
-<ranking start><a href="(.*?)" rel="tag">(.*?)</a><ranking end> <group start>2<group end>
+<ranking start>>([^<]+)</a><a href="/series\?genres<ranking end> <group start>1<group end>
 
-<name_of_chapter start><img class="thumb" src="(.*?)"/>\s+</div>\s+<a href="(.*?)">([\s\S]*?)</a><name_of_chapter end> <group start>3<group end>
+<name_of_chapter start>"number":\[0,(.*?)\],"slug":\[0,"(.*?)"\].*?"isLocked":\[0,(.*?)\]<name_of_chapter end> <group start>1<group end>
 
-<link_of_chapter start><img class="thumb" src="(.*?)"/>\s+</div>\s+<a href="(.*?)">([\s\S]*?)</a><link_of_chapter end> <group start>2<group end>
+<link_of_chapter start>"number":\[0,(.*?)\],"slug":\[0,"(.*?)"\].*?"isLocked":\[0,(.*?)\]<link_of_chapter end> <group start>2<group end>
 
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start><div class="tab-content-wrap"><cheak end>
-<substring from start><div class="tab-content-wrap"><substring from end>
-<substring to start><div class="c-footer-sidebar"><substring to end>
+<cheak start>"totalCount"<cheak end>
+<substring from start>"posts"<substring from end>
+<substring to start>"totalCount"<substring to end>
 
-<name start><div class="post-title">\s+<h3 class="h4"><a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start>postTitle":"(.*?)"<name end> <group start>1<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>3<group end>
+<image start>postTitle":"[\s\S]*?"featuredImage":"(.*?)"<image end> <group start>1<group end>
 
-<links start><div class="post-title">\s+<h3 class="h4"><a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start>"slug":"([^"]+)","postTitle"<links end> <group start>1<group end>
 
-<types start>Status\s+</h5>\s+</div>\s+<div class="summary-content">([\s\S]*?)</div><types end> <group start>1<group end>
+<types start>seriesType":"(.*?)"<types end> <group start>1<group end>
 
-<chapters start><span class="font-meta chapter"><a href="(.*?)">(.*?)</a></span><chapters end> <group start>2<group end>
+<chapters start>"chapters":\[(?:[^\]]*?"number":)?(\d+|(?<=\[)(?=\]))<chapters end> <group start>1<group end>
 
 <search_page config end>
 ____________________________________________________________________
@@ -1144,9 +1144,9 @@ ____________________________________________________________________
 <substring from start>readingModes([<substring from end>
 <substring to start>x-init="initMode()"><substring to end>
 
-<images_one start><img id="image-(.*?)" src="([\s\S]*?)" class="wp-manga-chapter-img"><images_one end> <group start>2<group end>
+<images_one start>><img src="(.*?)" alt="(.*?)" class="h-auto<images_one end> <group start>1<group end>
 
-<images_two start><img id="image-(.*?)" src="([\s\S]*?)" class="wp-manga-chapter-img"><images_two end> <group start>2<group end>
+<images_two start>><img src="(.*?)" alt="(.*?)" class="h-auto<images_two end> <group start>1<group end>
 
 <images_start_url start>'(.*?)'<images_start_url end> <group start>1<group end>
 
