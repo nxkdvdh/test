@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.30<version sources end>
+<version sources start>1.1.0.31<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1035,7 +1035,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.25<version end>
+<version start>1.0.26<version end>
 
 <SiteDomain start>azoramoon.com<SiteDomain end>
 
@@ -1105,15 +1105,15 @@ ____________________________________________________________________
 
 <author start><b>الكاتب</b>\s+<span>([\s\S]*?)</span><author end> <group start>1<group end>
 
-<size_chapters start>"number":\[0,(.*?)\],"slug":\[0,"(.*?)"\].*?"isLocked":\[0,(.*?)\]<size_chapters end> <group start>1<group end>
+<size_chapters start>"initialChap"([\s\S]*?)"totalChapterCount"<size_chapters end> <group start>1<group end>
 
 <story start>\A[\s\S]*?postContent":\[0,"<p.*?><span.*?>(.*?)</span></p>"]<story end> <group start>1<group end>
 
 <ranking start>>([^<]+)</a><a href="/series\?genres<ranking end> <group start>1<group end>
 
-<name_of_chapter start>"number":\[0,(.*?)\],"slug":\[0,"(.*?)"\].*?"isLocked":\[0,(.*?)\]<name_of_chapter end> <group start>1<group end>
+<name_of_chapter start>"number":\[\d+,(\d+)\],(?:(?!"number").)*?"slug":\[\d+,"([^"]+)"\],(?:(?!"number").)*?"isLocked":\[\d+,false\]<name_of_chapter end> <group start>1<group end>
 
-<link_of_chapter start>"number":\[0,(.*?)\],"slug":\[0,"(.*?)"\].*?"isLocked":\[0,(.*?)\]<link_of_chapter end> <group start>2<group end>
+<link_of_chapter start>"number":\[\d+,(\d+)\],(?:(?!"number").)*?"slug":\[\d+,"([^"]+)"\],(?:(?!"number").)*?"isLocked":\[\d+,false\]<link_of_chapter end> <group start>2<group end>
 
 <info_page config end>
 ____________________________________________________________________
