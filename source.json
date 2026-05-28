@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.31<version sources end>
+<version sources start>1.1.0.32<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1035,7 +1035,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.26<version end>
+<version start>1.0.27<version end>
 
 <SiteDomain start>azoramoon.com<SiteDomain end>
 
@@ -1107,7 +1107,7 @@ ____________________________________________________________________
 
 <size_chapters start>"initialChap"([\s\S]*?)"totalChapterCount"<size_chapters end> <group start>1<group end>
 
-<story start>\A[\s\S]*?postContent":\[0,"<p.*?><span.*?>(.*?)</span></p>"]<story end> <group start>1<group end>
+<story start>\A[\s\S]*?postContent":\[0,"([\s\S]*?)"]<story end> <group start>1<group end>
 
 <ranking start>>([^<]+)</a><a href="/series\?genres<ranking end> <group start>1<group end>
 
