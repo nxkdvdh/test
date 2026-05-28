@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.32<version sources end>
+<version sources start>1.1.0.33<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -133,7 +133,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.32<version end>
+<version start>1.0.33<version end>
 
 <SiteDomain start>appswat.com<SiteDomain end>
 
@@ -218,7 +218,7 @@ ____________________________________________________________________
 
 <author start><span><b>المؤلف:</b>(.*?)</span><author end> <group start>1<group end>
 
-<size_chapters start>"chapter":"(.*?)"<size_chapters end> <group start>1<group end>
+<size_chapters start>"next":"(.*?)",<size_chapters end> <group start>1<group end>
 
 <story start>story":"(.*?)"<story end> <group start>1<group end>
 
