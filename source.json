@@ -671,7 +671,7 @@ ____________________________________________________________________
 
 <chapterURL ForAll start>https://dilar.tube/api/chapters/[id]<chapterURL ForAll end>
 
-<imageURL ForAll start>https://mangatime.org<imageURL ForAll end>
+<imageURL ForAll start>https://dilar.tube/uploads/manga/cover/[id]/[c]<imageURL ForAll end>
 
 «main information end»
 
