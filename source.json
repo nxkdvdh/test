@@ -1,4 +1,4 @@
-app_version start>1.0.6 _beta<app_version end>
+<app_version start>1.0.6 _beta<app_version end>
 <app_version_link start>https://www.manga-break.top<app_version_link end>
 <app_version_news start>1-إصلاح عدد من مصادر المحتوى: تحسين واستقرار مصادر (SWT, ASQ, ONL, REA).#2-استبدال مصدر ARS بمصدر جديد وأكثر كفاءة تحت اسم MLO.#3-استبدال مصدر NON بمصدر جديد تحت اسم AZR لضمان أداء أفضل.#4-إضافة خانة التبرع داخل التطبيق لدعم استمرار تطويره وتحسينه.#5-إصلاح مشكلة المشاهدة في وضع ملء الشاشة وتحسين تجربة القراءة دون عوائق.#6-تحسينات عامة على الأداء والاستقرار استعدادًا للتحديثات القادمة.<app_version_news end>
 <cheak_user start>yes<cheak_user end>
