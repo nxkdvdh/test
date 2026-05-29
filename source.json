@@ -1,11 +1,11 @@
-<app_version start>1.0.6 _beta<app_version end>
+app_version start>1.0.6 _beta<app_version end>
 <app_version_link start>https://www.manga-break.top<app_version_link end>
 <app_version_news start>1-إصلاح عدد من مصادر المحتوى: تحسين واستقرار مصادر (SWT, ASQ, ONL, REA).#2-استبدال مصدر ARS بمصدر جديد وأكثر كفاءة تحت اسم MLO.#3-استبدال مصدر NON بمصدر جديد تحت اسم AZR لضمان أداء أفضل.#4-إضافة خانة التبرع داخل التطبيق لدعم استمرار تطويره وتحسينه.#5-إصلاح مشكلة المشاهدة في وضع ملء الشاشة وتحسين تجربة القراءة دون عوائق.#6-تحسينات عامة على الأداء والاستقرار استعدادًا للتحديثات القادمة.<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.39<version sources end>
+<version sources start>1.1.0.40<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,7 +655,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.23<version end>
+<version start>1.0.24<version end>
 
 <SiteDomain start>dilar.tube<SiteDomain end>
 
@@ -679,7 +679,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>​releases(.*?)<cheak end>
+<cheak start>\A\{"([^"]*?)":\[\{<cheak end>
 <substring from start>​releases<substring from end>
 <substring to start>​totalReleases<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
