@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.40<version sources end>
+<version sources start>1.1.0.41<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,7 +655,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.24<version end>
+<version start>1.0.25<version end>
 
 <SiteDomain start>dilar.tube<SiteDomain end>
 
@@ -680,8 +680,8 @@ ____________________________________________________________________
 <main_last_updatea config start>
 
 <cheak start>\A\{"([^"]*?)":\[\{<cheak end>
-<substring from start>​releases<substring from end>
-<substring to start>​totalReleases<substring to end>
+<substring from start>releases<substring from end>
+<substring to start>totalReleases<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
 <name start>series":\{"id":"(.*?)","title":"(.*?)","cover":"(.*?)".*?"seriesType":\{"id":"(?!99)(\d+)","title":"(.*?)"\}\},"chapter":\{.*?"chapter":"(.*?)"<name end> <group start>2<group end>
