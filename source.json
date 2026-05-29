@@ -657,12 +657,12 @@ ____________________________________________________________________
 
 <version start>1.0.17<version end>
 
-<SiteDomain start>mangatime.org<SiteDomain end>
+<SiteDomain start>dilar.tube<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://mangatime.org/api/trpc/homepage.getLatestReleases?batch=1&input={"0":{"json":{"page":1,"limit":50}}}<baseURL lastUpdatea end>
-<baseURL listManga start>https://mangatime.org/api/trpc/homepage.getTrending?batch=1&input={"0":{"json":{"page":1,"limit":50}}}<baseURL listManga end>
-<baseURL search start>https://mangatime.org/api/trpc/search.searchSeries?batch=1&input={"0":{"json":{"query":"[q]"}}}<baseURL search end>
+<baseURL lastUpdatea start>https://dilar.tube/api/chapters?page=1&limit=50<baseURL lastUpdatea end>
+<baseURL listManga start>https://dilar.tube/api/series/?page=1&limit=50<baseURL listManga end>
+<baseURL search start>ht&input={"0":{"json":{"query":"[q]"}}}<baseURL search end>
 
 <showMore lastUpdates start>https://mangatime.org/api/trpc/homepage.getLatestReleases?batch=1&input={"0":{"json":{"page":[page],"limit":50}}}<showMore lastUpdates end>
 <showMore listManga start>https://mangatime.org/api/trpc/homepage.getTrending?batch=1&input={"0":{"json":{"page":[page],"limit":50}}}<showMore listManga end>
