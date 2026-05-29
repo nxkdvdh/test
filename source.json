@@ -662,14 +662,14 @@ ____________________________________________________________________
 «main information start»
 <baseURL lastUpdatea start>https://dilar.tube/api/chapters?page=1&limit=50<baseURL lastUpdatea end>
 <baseURL listManga start>https://dilar.tube/api/series/?page=1&limit=50<baseURL listManga end>
-<baseURL search start>ht&input={"0":{"json":{"query":"[q]"}}}<baseURL search end>
+<baseURL search start>url"https://dilar.tube/api/search/quick_search",body"{"query":"[q]","includes":["Manga","Team","Member"]}"<baseURL search end>
 
-<showMore lastUpdates start>https://mangatime.org/api/trpc/homepage.getLatestReleases?batch=1&input={"0":{"json":{"page":[page],"limit":50}}}<showMore lastUpdates end>
-<showMore listManga start>https://mangatime.org/api/trpc/homepage.getTrending?batch=1&input={"0":{"json":{"page":[page],"limit":50}}}<showMore listManga end>
+<showMore lastUpdates start>https://dilar.tube/api/chapters?page=[page]&limit=50<showMore lastUpdates end>
+<showMore listManga start>https://dilar.tube/api/series/?page=[page]&limit=50<showMore listManga end>
 
-<completeURL ForAll start>https://mangatime.org/api/trpc/content.getSeriesBySlug,content.getChapters?batch=1&input={"0":{"json":{"slug":"[slug]"}},"1":{"json":{"seriesId":"[id]","limit":-1}}}<completeURL ForAll end>
+<completeURL ForAll start>https://dilar.tube/api/series/[id]/<completeURL ForAll end>
 
-<chapterURL ForAll start>https://mangatime.org/api/trpc/content.getChapterPages?batch=1&input={"0":{"json":{"seriesSlug":"[slug]","chapterNumber":[number]}}}<chapterURL ForAll end>
+<chapterURL ForAll start>https://dilar.tube/api/chapters/[id]<chapterURL ForAll end>
 
 <imageURL ForAll start>https://mangatime.org<imageURL ForAll end>
 
@@ -679,42 +679,42 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>"total"<cheak end>
-<substring from start>"data"<substring from end>
-<substring to start>"total"<substring to end>
+<cheak start>​"releases"<cheak end>
+<substring from start>​"releases"<substring from end>
+<substring to start>​"totalReleases"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)","latestChapter":\{"number":(.*?),<name end> <group start>2<group end>
+<name start>series":\{"id":"(.*?)","title":"(.*?)","cover":"(.*?)".*?"seriesType":\{"id":"(?!99)(\d+)","title":"(.*?)"\}\},"chapter":\{.*?"chapter":"(.*?)"<name end> <group start>2<group end>
 
-<image start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)","latestChapter":\{"number":(.*?),<image end> <group start>4<group end>
+<image start>series":\{"id":"(.*?)","title":"(.*?)","cover":"(.*?)".*?"seriesType":\{"id":"(?!99)(\d+)","title":"(.*?)"\}\},"chapter":\{.*?"chapter":"(.*?)"<image end> <group start>3<group end>
 
 <image2 start>(.*)<image2 end> <group start>1<group end>
 
-<links start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)","latestChapter":\{"number":(.*?),<links end> <group start>3<group end>
+<links start>series":\{"id":"(.*?)","title":"(.*?)","cover":"(.*?)".*?"seriesType":\{"id":"(?!99)(\d+)","title":"(.*?)"\}\},"chapter":\{.*?"chapter":"(.*?)"<links end> <group start>1<group end>
 
-<chapters start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)","latestChapter":\{"number":(.*?),<chapters end> <group start>7<group end>
+<chapters start>series":\{"id":"(.*?)","title":"(.*?)","cover":"(.*?)".*?"seriesType":\{"id":"(?!99)(\d+)","title":"(.*?)"\}\},"chapter":\{.*?"chapter":"(.*?)"<chapters end> <group start>6<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start>"total"<cheak end>
-<substring from start>"data"<substring from end>
-<substring to start>"total"<substring to end>
+<cheak start>"series"<cheak end>
+<substring from start>"series"<substring from end>
+<substring to start>"totalPages"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<name end> <group start>2<group end>
+<name start>"id":"([^"]*?)","title":"([^"]*?)"<name end> <group start>2<group end>
 
-<image start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<image end> <group start>4<group end>
+<image start>"cover":"(.*?)"<image end> <group start>1<group end>
 
 <image2 start>(.*)<image2 end> <group start>1<group end>
 
-<links start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<links end> <group start>3<group end>
+<links start>"id":"([^"]*?)","title":"([^"]*?)"<links end> <group start>1<group end>
 
-<types start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<types end> <group start>5<group end>
+<types start>seriesType":\{"id":"(.*?)","name":"(.*?)","title":"(.*?)"\}<types end> <group start>3<group end>
 
-<chapters start>chapterCount":(.*?),<chapters end> <group start>1<group end>
+<chapters start>total_chapters":(.*?),<chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
@@ -722,44 +722,44 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)"<name end> <group start>2<group end>
+<name start>"id":"(.*?)","title":"(.*?)","synonyms"<name end> <group start>2<group end>
 
-<image start>coverUrl":"(.*?)"<image end> <group start>1<group end>
+<image start>cover":"(.*?)"<image end> <group start>1<group end>
 
-<types start>type":"(.*?)"<types end> <group start>1<group end>
+<types start>seriesType":\{"id":"(.*?)","name":"(.*?)","title":"(.*?)"<types end> <group start>3<group end>
 
-<state start>status":"(.*?)"<state end> <group start>1<group end>
+<state start>translation_status":"(.*?)".*?"story_status":"(.*?)"<state end> <group start>1<group end>
 
 <author start>author":"(.*?)"<author end> <group start>1<group end>
 
-<size_chapters start><a class="visually-hidden chapter-link"\s+href="(.*?)"\s+data-ad-url="(.*?)">([\s\S]*?)</a><size_chapters end> <group start>3<group end>
+<size_chapters start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,<size_chapters end> <group start>3<group end>
 
-<story start>description":"([\s\S]*?)"type<story end> <group start>1<group end>
+<story start>summary":"(.*?)"<story end> <group start>1<group end>
 
-<ranking start>"name":"(.*?)"<ranking end> <group start>1<group end>
+<ranking start>"name":"([^"]*?)","Categorization"<ranking end> <group start>1<group end>
 
-<name_of_chapter start>"title":"[^"]*","slug":"([^"]+)"|"number":(\d+)[\s\S]*?"isUnlocked":(true|false)<name_of_chapter end> <group start>2<group end>
+<name_of_chapter start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,<name_of_chapter end> <group start>3<group end>
 
-<link_of_chapter start>"title":"[^"]*","slug":"([^"]+)"|"number":(\d+)[\s\S]*?"isUnlocked":(true|false)<link_of_chapter end> <group start>2<group end>
+<link_of_chapter start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,<link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start>"totalCount"<cheak end>
+<cheak start>"data"<cheak end>
 <substring from start>"data"<substring from end>
-<substring to start>"totalCount"<substring to end>
+<substring to start>"الفرق"<substring to end>
 
-<name start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<name end> <group start>2<group end>
+<name start>"id":"([^"]*?)","title":"([^"]*?)"<name end> <group start>2<group end>
 
-<image start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<image end> <group start>4<group end>
+<image start>"cover":"(.*?)"<image end> <group start>1<group end>
 
-<links start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<links end> <group start>3<group end>
+<links start>"id":"([^"]*?)","title":"([^"]*?)"<links end> <group start>1<group end>
 
-<types start>"id":"(.*?)","title":"(.*?)","slug":"(.*?)","coverUrl":"(.*?)","type":"(.*?)","status":"(.*?)"<types end> <group start>5<group end>
+<types start>series_type":\{"id":"(.*?)","name":"(.*?)","title":"(.*?)"<types end> <group start>3<group end>
 
-<chapters start>chapterCount":(.*?),<chapters end> <group start>1<group end>
+<chapters start>series_type":\{"id":"(.*?)","name":"(.*?)","title":"(.*?)"<chapters end> <group start>3<group end>
 
 <search_page config end>
 ____________________________________________________________________
@@ -771,9 +771,9 @@ ____________________________________________________________________
 <substring from start>"images":[<substring from end>
 <substring to start>lazyload"<substring to end>
 
-<images_one start>(?:"pages":\[|\G,)\s*"([^"]+)"<images_one end> <group start>1<group end>
+<images_one start>"url":"(.*?)"<images_one end> <group start>1<group end>
 
-<images_two start>(?:"pages":\[|\G,)\s*"([^"]+)"<images_two end> <group start>1<group end>
+<images_two start>"url":"(.*?)"<images_two end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
