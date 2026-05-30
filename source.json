@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.41<version sources end>
+<version sources start>1.1.0.42<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,7 +655,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.25<version end>
+<version start>1.0.26<version end>
 
 <SiteDomain start>dilar.tube<SiteDomain end>
 
@@ -730,7 +730,7 @@ ____________________________________________________________________
 
 <state start>translation_status":"(.*?)".*?"story_status":"(.*?)"<state end> <group start>1<group end>
 
-<author start>author":"(.*?)"<author end> <group start>1<group end>
+<author start>,\{"id":"([^"]*?)","name":"([^"]*?)","Staff":\{"series_id":"(.*?)","mangaka_id":"(.*?)","role":"Author"<author end> <group start>2<group end>
 
 <size_chapters start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,<size_chapters end> <group start>3<group end>
 
