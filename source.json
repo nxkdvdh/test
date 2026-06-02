@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.42<version sources end>
+<version sources start>1.1.0.43<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,14 +655,14 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.26<version end>
+<version start>1.0.27<version end>
 
 <SiteDomain start>dilar.tube<SiteDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://dilar.tube/api/chapters?page=1&limit=50<baseURL lastUpdatea end>
 <baseURL listManga start>https://dilar.tube/api/series/?page=1&limit=50<baseURL listManga end>
-<baseURL search start>url"https://dilar.tube/api/search/quick_search",body"{"query":"[q]","includes":["Manga","Team","Member"]}"<baseURL search end>
+<baseURL search start>url<https://dilar.tube/api/search/quick_search>,body<{"query":"[q]","includes":["Manga","Team","Member"]}><baseURL search end>
 
 <showMore lastUpdates start>https://dilar.tube/api/chapters?page=[page]&limit=50<showMore lastUpdates end>
 <showMore listManga start>https://dilar.tube/api/series/?page=[page]&limit=50<showMore listManga end>
@@ -747,15 +747,15 @@ ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start>"data"<cheak end>
-<substring from start>"data"<substring from end>
+<cheak start>"المانجات"<cheak end>
+<substring from start>"المانجات"<substring from end>
 <substring to start>"الفرق"<substring to end>
 
-<name start>"id":"([^"]*?)","title":"([^"]*?)"<name end> <group start>2<group end>
+<name start>"id":"([^"]*?)","title":"([^"]*?)".*?"cover":"([^"]*?)"<name end> <group start>2<group end>
 
-<image start>"cover":"(.*?)"<image end> <group start>1<group end>
+<image start>"id":"([^"]*?)","title":"([^"]*?)".*?"cover":"([^"]*?)"<image end> <group start>3<group end>
 
-<links start>"id":"([^"]*?)","title":"([^"]*?)"<links end> <group start>1<group end>
+<links start>"id":"([^"]*?)","title":"([^"]*?)".*?"cover":"([^"]*?)"<links end> <group start>1<group end>
 
 <types start>series_type":\{"id":"(.*?)","name":"(.*?)","title":"(.*?)"<types end> <group start>3<group end>
 
