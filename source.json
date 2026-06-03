@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.43<version sources end>
+<version sources start>1.1.0.44<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,7 +655,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.27<version end>
+<version start>1.0.28<version end>
 
 <SiteDomain start>dilar.tube<SiteDomain end>
 
@@ -672,6 +672,8 @@ ____________________________________________________________________
 <chapterURL ForAll start>https://dilar.tube/api/chapters/[id]<chapterURL ForAll end>
 
 <imageURL ForAll start>https://dilar.tube/uploads/manga/cover/[id]/[c]<imageURL ForAll end>
+
+<imageURLchapter ForAll start>https://dilar.tube/uploads/releases/[storage_id]/hq/[c]<imageURLchapter ForAll end>
 
 «main information end»
 
