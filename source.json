@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.46<version sources end>
+<version sources start>1.1.0.47<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,7 +655,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.30<version end>
+<version start>1.0.31<version end>
 
 <SiteDomain start>dilar.tube<SiteDomain end>
 
@@ -775,7 +775,7 @@ ____________________________________________________________________
 
 <images_one start><1>"storage_key":"([^"]+)"<1><2>"url":"([^"]+)"<2><images_one end> <group start>1<group end>
 
-<images_two start><images_two end> <group start>1<group end>
+<images_two start><1>"storage_key":"([^"]+)"<1><2>"url":"([^"]+)"<2><images_two end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
