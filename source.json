@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.47<version sources end>
+<version sources start>1.1.0.48<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -655,7 +655,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.31<version end>
+<version start>1.0.32<version end>
 
 <SiteDomain start>dilar.tube<SiteDomain end>
 
@@ -734,15 +734,15 @@ ____________________________________________________________________
 
 <author start>,\{"id":"([^"]*?)","name":"([^"]*?)","Staff":\{"series_id":"(.*?)","mangaka_id":"(.*?)","role":"Author"<author end> <group start>2<group end>
 
-<size_chapters start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,<size_chapters end> <group start>3<group end>
+<size_chapters start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,.*?"releases":\[\{"id":"(.*?)",<size_chapters end> <group start>3<group end>
 
 <story start>summary":"(.*?)"<story end> <group start>1<group end>
 
 <ranking start>"name":"([^"]*?)","Categorization"<ranking end> <group start>1<group end>
 
-<name_of_chapter start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,<name_of_chapter end> <group start>3<group end>
+<name_of_chapter start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,.*?"releases":\[\{"id":"(.*?)",<name_of_chapter end> <group start>3<group end>
 
-<link_of_chapter start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,<link_of_chapter end> <group start>1<group end>
+<link_of_chapter start>"id":"([^"]*?)","series_id":"(.*?)",".*?"chapter":"(.*?)",".*?"lock":false,.*?"releases":\[\{"id":"(.*?)",<link_of_chapter end> <group start>4<group end>
 
 <info_page config end>
 ____________________________________________________________________
