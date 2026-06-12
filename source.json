@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.51<version sources end>
+<version sources start>1.1.0.52<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -409,7 +409,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.10<version end>
+<version start>1.0.11<version end>
 
 <SiteDomain start>firestore.googleapis.com<SiteDomain end>
 
@@ -487,7 +487,7 @@ ____________________________________________________________________
 
 <ranking start>(?s)(?:\G(?!\A)|"genres"\s*:\s*\{)(?:(?!"stringValue"|\]).)*?"stringValue"\s*:\s*"([^"]+)"<ranking end> <group start>1<group end>
 
-<name_of_chapter start>"chapterNumber": \{[\s\S]*?"integerValue": "(.*?)"<name_of_chapter end> <group start>1<group end>
+<name_of_chapter start>"title": \{[\s\S]*?"stringValue": "(.*?)"<name_of_chapter end> <group start>1<group end>
 
 <link_of_chapter start>"name": "(.*?)"<link_of_chapter end> <group start>1<group end>
 
