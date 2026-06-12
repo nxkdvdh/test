@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.50<version sources end>
+<version sources start>1.1.0.51<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -409,7 +409,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.9<version end>
+<version start>1.0.10<version end>
 
 <SiteDomain start>firestore.googleapis.com<SiteDomain end>
 
@@ -425,7 +425,7 @@ ____________________________________________________________________
 
 <completeURL ForAll start>https://firestore.googleapis.com/v1/<completeURL ForAll end>
 
-<chaptersURL ForAll start>/chapters?pageSize=1000&orderBy=index%20asc<chaptersURL ForAll end>
+<chaptersURL ForAll start>/chapters?pageSize=1000&orderBy=index%20desc<chaptersURL ForAll end>
 «main information end»
 
 ____________________________________________________________________
