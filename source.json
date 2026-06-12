@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.48<version sources end>
+<version sources start>1.1.0.49<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -409,13 +409,13 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.7<version end>
+<version start>1.0.8<version end>
 
-<SiteDomain start>mangarose.net<SiteDomain end>
+<SiteDomain start>firestore.googleapis.com<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://mangarose.net/<baseURL lastUpdatea end>
-<baseURL listManga start>https://mangarose.net/manga/page/1/?m_orderby=views<baseURL listManga end>
+<baseURL lastUpdatea start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=updatedAt%20desc<baseURL lastUpdatea end>
+<baseURL listManga start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=numberOfVotes%20desc<baseURL listManga end>
 <baseURL search start>https://mangarose.net/?s=<baseURL search end>
 
 <showMore lastUpdates start>https://mangarose.net/page/<showMore lastUpdates end>
@@ -426,36 +426,36 @@ ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start>أخر المانجا المضافة<cheak end>
-<substring from start>أخر المانجا المضافة<substring from end>
-<substring to start>الأخيرة<substring to end>
+<cheak start>"documents":<cheak end>
+<substring from start>"documents":<substring from end>
+<substring to start>"nextPageToken"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start>"title": \{[\s\S]*?"stringValue": "(.*?)"<name end> <group start>1<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>3<group end>
+<image start>coverImage": \{[\s\S]*?"stringValue": "(.*?)"<image end> <group start>1<group end>
 
-<links start><h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start>"name": "(.*?)"<links end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s+<div class="chapter-item ">\s+<span class="chapter font-meta">\s+<a href="(.*?)" class="btn-link">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start>"status": \{[\s\S]*?"stringValue": "(.*?)"<chapters end> <group start>1<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start>كل المانجا<cheak end>
-<substring from start>كل المانجا<substring from end>
-<substring to start>الأخيرة<substring to end>
+<cheak start>"documents":<cheak end>
+<substring from start>"documents":<substring from end>
+<substring to start>"nextPageToken"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><h3 class="h5">\s+<a href="(.*?)">(.*?)</a><name end> <group start>2<group end>
+<name start>"title": \{[\s\S]*?"stringValue": "(.*?)"<name end> <group start>1<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>3<group end>
+<image start>coverImage": \{[\s\S]*?"stringValue": "(.*?)"<image end> <group start>1<group end>
 
-<links start><h3 class="h5">\s+<a href="(.*?)">(.*?)</a><links end> <group start>1<group end>
+<links start>"name": "(.*?)"<links end> <group start>1<group end>
 
-<types start><span class="type (.*?)"><types end> <group start>1<group end>
+<types start>"type": \{[\s\S]*?"stringValue": "(.*?)"<types end> <group start>1<group end>
 
 <chapters start><div class="list-chapter">\s+<div class="chapter-item ">\s+<span class="chapter font-meta">\s+<a href="(.*?)" class="btn-link">(.*?)</a><chapters end> <group start>2<group end>
 
@@ -465,25 +465,25 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start><h1>\s(.*?)\s</h1><name end> <group start>1<group end>
+<name start>"title": \{[\s\S]*?"stringValue": "(.*?)"<name end> <group start>1<group end>
 
-<image start><div class="summary_image">\s+<a href="(.*?)">\s+<img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>4<group end>
+<image start>coverImage": \{[\s\S]*?"stringValue": "(.*?)"<image end> <group start>1<group end>
 
-<types start><h5>\s+النوع\s+</h5>\s+</div>\s+<div class="summary-content">\s(.*?)\s</div><types end> <group start>1<group end>
+<types start>"type": \{[\s\S]*?"stringValue": "(.*?)"<types end> <group start>1<group end>
 
-<state start><h5>\s+الحالة\s+</h5>\s+</div>\s+<div class="summary-content">\s(.*?)\s</div><state end> <group start>1<group end>
+<state start>"status": \{[\s\S]*?"stringValue": "(.*?)"<state end> <group start>1<group end>
 
-<author start><h5>\s+الإصدار\s+</h5>\s+</div>\s+<div class="summary-content">\s+<a href="(.*?)" rel="tag">(.*?)</a><author end> <group start>2<group end>
+<author start>"author": \{[\s\S]*?"stringValue": "(.*?)"<author end> <group start>1<group end>
 
-<size_chapters start><li class="wp-manga-chapter    ">\s+<a href="(.*?)">\s(.*?)</a><size_chapters end> <group start>2<group end>
+<size_chapters start>"chaptersCount": \{[\s\S]*?"stringValue": "(.*?)"<size_chapters end> <group start>1<group end>
 
-<story start><div class="summary__content show-more">\s(.*?)\s<p>(.*?)</p><story end> <group start>2<group end>
+<story start>"description": \{[\s\S]*?"stringValue": "(.*?)"<story end> <group start>1<group end>
 
-<ranking start>rel="tag">(.*?)<<ranking end> <group start>1<group end>
+<ranking start>(?s)(?:\G(?!\A)|"genres"\s*:\s*\{)(?:(?!"stringValue"|\]).)*?"stringValue"\s*:\s*"([^"]+)"<ranking end> <group start>1<group end>
 
-<name_of_chapter start><li class="wp-manga-chapter    ">\s+<a href="(.*?)">\s(.*?)</a><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start>"chapterNumber": \{[\s\S]*?"integerValue": "(.*?)"<name_of_chapter end> <group start>1<group end>
 
-<link_of_chapter start><li class="wp-manga-chapter    ">\s+<a href="(.*?)">\s(.*?)</a><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start>"name": "(.*?)"<link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
@@ -511,15 +511,15 @@ ____________________________________________________________________
 
 <view_page config start>
 
-<Referer_url start>https://mangarose.net/<Referer_url end>
+<Referer_url start><Referer_url end>
 
 //<cheak start><div id="disqus_thread"></div>\s+</div>\s+</div>\s+</div>\s+</div>\s+<script defer src="data:text/javascript;base64,(.*?)"></script><cheak end>
 //<substring from start>"images":[<substring from end>
 //<substring to start>lazyload"<substring to end>
 
-<images_one start><img id="image-(.*?)" src="\s+(.*?)"<images_one end> <group start>2<group end>
+<images_one start>(?s)(?:\G(?!\A)|"pages"\s*:\s*\{)(?:(?!"stringValue"|\]).)*?"stringValue"\s*:\s*"([^"]+)"<images_one end> <group start>1<group end>
 
-<images_two start><img id="image-(.*?)" src="\s+(.*?)"<images_two end> <group start>2<group end>
+<images_two start>(?s)(?:\G(?!\A)|"pages"\s*:\s*\{)(?:(?!"stringValue"|\]).)*?"stringValue"\s*:\s*"([^"]+)"<images_two end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
