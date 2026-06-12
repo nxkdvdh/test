@@ -413,6 +413,8 @@ ____________________________________________________________________
 
 <SiteDomain start>firestore.googleapis.com<SiteDomain end>
 
+<SiteImageDomain start>cdn.mangacloud.online<SiteImageDomain end>
+
 «main information start»
 <baseURL lastUpdatea start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=updatedAt%20desc<baseURL lastUpdatea end>
 <baseURL listManga start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=numberOfVotes%20desc<baseURL listManga end>
@@ -420,6 +422,10 @@ ____________________________________________________________________
 
 <showMore lastUpdates start>https://mangarose.net/page/<showMore lastUpdates end>
 <showMore listManga start>https://mangarose.net/manga/page/<showMore listManga end>
+
+<completeURL ForAll start>https://firestore.googleapis.com/v1/<completeURL ForAll end>
+
+<chaptersURL ForAll start>chapters?pageSize=1000&orderBy=index%20asc<chaptersURL ForAll end>
 «main information end»
 
 ____________________________________________________________________
