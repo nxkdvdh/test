@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.54<version sources end>
+<version sources start>1.1.0.55<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -409,7 +409,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.12<version end>
+<version start>1.0.14<version end>
 
 <SiteDomain start>firestore.googleapis.com<SiteDomain end>
 
@@ -466,7 +466,7 @@ ____________________________________________________________________
 
 <types start>"type": \{[\s\S]*?"stringValue": "(.*?)"<types end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s+<div class="chapter-item ">\s+<span class="chapter font-meta">\s+<a href="(.*?)" class="btn-link">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start>"status": \{[\s\S]*?"stringValue": "(.*?)"<chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
