@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.53<version sources end>
+<version sources start>1.1.0.54<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -409,7 +409,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.11<version end>
+<version start>1.0.12<version end>
 
 <SiteDomain start>firestore.googleapis.com<SiteDomain end>
 
@@ -420,12 +420,15 @@ ____________________________________________________________________
 <baseURL listManga start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=numberOfVotes%20desc<baseURL listManga end>
 <baseURL search start>https://mangarose.net/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://mangarose.net/page/<showMore lastUpdates end>
-<showMore listManga start>https://mangarose.net/manga/page/<showMore listManga end>
+<showMore lastUpdates start>https://firestore.googleapis.com/v1/projects/ninja-brew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=updatedAt%20desc&pageToken=<showMore lastUpdates end>
+<showMore listManga start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=numberOfVotes%20desc&pageToken=<showMore listManga end>
 
 <completeURL ForAll start>https://firestore.googleapis.com/v1/<completeURL ForAll end>
 
-<chaptersURL ForAll start>/chapters?pageSize=1000&orderBy=index%20desc<chaptersURL ForAll end>
+<chaptersURL ForAll start>/chapters?pageSize=1000&orderBy=index%20desc&pageToken=<chaptersURL ForAll end>
+
+<nextPage start>nextPageToken": "(.*?)"<nextPage end>
+
 «main information end»
 
 ____________________________________________________________________
