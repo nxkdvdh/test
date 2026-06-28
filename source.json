@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.57<version sources end>
+<version sources start>1.1.0.58<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -409,7 +409,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.16<version end>
+<version start>1.0.18<version end>
 
 <SiteDomain start>firestore.googleapis.com<SiteDomain end>
 
@@ -505,15 +505,15 @@ ____________________________________________________________________
 //<substring from start><div class="releases"><h1><substring from end>
 //<substring to start><div class="releases"><h3>اضغـط على الصورة</h3><substring to end>
 
-<name start><a href="(.*?)" title="(.*?)">\s+<img width="(.*?)" height="(.*?)"  src="(.*?)"<name end> <group start>2<group end>
+<name start>"title": \{[\s\S]*?"stringValue": "(.*?)"<name end> <group start>1<group end>
 
-<image start><a href="(.*?)" title="(.*?)">\s+<img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>5<group end>
+<image start>coverImage": \{[\s\S]*?"stringValue": "(.*?)"<image end> <group start>1<group end>
 
-<links start><a href="(.*?)" title="(.*?)">\s+<img width="(.*?)" height="(.*?)"  src="(.*?)"<links end> <group start>1<group end>
+<links start>"name": "(.*?)"<links end> <group start>1<group end>
 
-<types start><h5>\s+الحالة\s+</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)\s+</div><types end> <group start>1<group end>
+<types start>"createdAt": \{[\s\S]*?"timestampValue": "(.*?)"<types end> <group start>1<group end>
 
-<chapters start><span class="font-meta chapter"><a href="(.*?)">(.*?)</a></span><chapters end> <group start>2<group end>
+<chapters start>"status": \{[\s\S]*?"stringValue": "(.*?)"<chapters end> <group start>1<group end>
 
 <search_page config end>
 ____________________________________________________________________
