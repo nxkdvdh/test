@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.56<version sources end>
+<version sources start>1.1.0.57<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -409,7 +409,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.15<version end>
+<version start>1.0.16<version end>
 
 <SiteDomain start>firestore.googleapis.com<SiteDomain end>
 
@@ -418,7 +418,8 @@ ____________________________________________________________________
 «main information start»
 <baseURL lastUpdatea start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=updatedAt%20desc<baseURL lastUpdatea end>
 <baseURL listManga start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=numberOfVotes%20desc<baseURL listManga end>
-<baseURL search start>https://mangarose.net/?s=<baseURL search end>
+
+<baseURL search start><url_s>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents:runQuery<url_e><body1_s>{"structuredQuery":{"from":[{"collectionId":"cloudmangas"}],"orderBy":[{"field":{"fieldPath":"createdAt"},"direction":"ASCENDING"}]}}<body1_e><body2_s>{"structuredQuery":{"from":[{"collectionId":"cloudmangas"}],"where":{"fieldFilter":{"field":{"fieldPath":"createdAt"},"op":"GREATER_THAN","value":{"timestampValue":"[time]"}}},"orderBy":[{"field":{"fieldPath":"createdAt"},"direction":"ASCENDING"}]}}<body2_e><baseURL search end>
 
 <showMore lastUpdates start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=updatedAt%20desc&pageToken=<showMore lastUpdates end>
 <showMore listManga start>https://firestore.googleapis.com/v1/projects/ninja-brew-crew-4d79c/databases/(default)/documents/cloudmangas?pageSize=50&orderBy=numberOfVotes%20desc&pageToken=<showMore listManga end>
