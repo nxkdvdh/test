@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.62<version sources end>
+<version sources start>1.1.0.63<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -133,7 +133,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.33<version end>
+<version start>1.0.34<version end>
 
 <SiteDomain start>appswat.com<SiteDomain end>
 
@@ -220,7 +220,7 @@ ____________________________________________________________________
 
 <size_chapters start>"next":"(.*?)",<size_chapters end> <group start>1<group end>
 
-<story start>story":"(.*?)"<story end> <group start>1<group end>
+<story start>story":"([\s\S]*?)"<story end> <group start>1<group end>
 
 <ranking start>"name":"([^"]+)","series_count"<ranking end> <group start>1<group end>
 
@@ -274,7 +274,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.1.8<version end>
+<version start>1.1.9<version end>
 
 <SiteDomain start>plus.mangamello.com<SiteDomain end>
 
@@ -355,7 +355,7 @@ ____________________________________________________________________
 
 <size_chapters start>"id":(.*?),"title":"(.*?)","order":(.*?),"views":(.*?),"manga_id":(.*?),"<size_chapters end> <group start>2<group end>
 
-<story start>summary":"(.*?)"<story end> <group start>1<group end>
+<story start>"summary":"([\s\S]*?)"<story end> <group start>1<group end>
 
 <ranking start>"name":"(.*?)"<ranking end> <group start>1<group end>
 
