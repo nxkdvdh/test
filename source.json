@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.63<version sources end>
+<version sources start>1.1.0.64<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1289,24 +1289,24 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.25<version end>
+<version start>1.0.27<version end>
 
-<SiteDomain start>prochan.net<SiteDomain end>
+<SiteDomain start>procomic.pro<SiteDomain end>
 
-<SiteImageDomain start>app.prochan.net<SiteImageDomain end>
+<SiteImageDomain start>app.procomic.pro<SiteImageDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://prochan.net/api/public/series/search?status=approved&limit=40&sort=latest_chapter&page=1<baseURL lastUpdatea end>
-<baseURL listManga start>https://prochan.net/api/public/series/search?status=approved&limit=40&sort=popular&page=1<baseURL listManga end>
-<baseURL search start>https://prochan.net/api/public/series/search?status=approved&limit=50&page=1&search=<baseURL search end>
+<baseURL lastUpdatea start>https://procomic.pro/api/public/series/search?status=approved&limit=40&sort=latest_chapter&page=1<baseURL lastUpdatea end>
+<baseURL listManga start>https://procomic.pro/api/public/series/search?status=approved&limit=40&sort=popular&page=1<baseURL listManga end>
+<baseURL search start>https://procomic.pro/api/public/series/search?status=approved&limit=50&page=1&search=<baseURL search end>
 
-<showMore lastUpdates start>https://prochan.net/api/public/series/search?status=approved&limit=40&sort=latest_chapter&page=<showMore lastUpdates end>
-<showMore listManga start>https://prochan.net/api/public/series/search?status=approved&limit=40&sort=popular&page=<showMore listManga end>
+<showMore lastUpdates start>https://procomic.pro/api/public/series/search?status=approved&limit=40&sort=latest_chapter&page=<showMore lastUpdates end>
+<showMore listManga start>https://procomic.pro/api/public/series/search?status=approved&limit=40&sort=popular&page=<showMore listManga end>
 
-<completeURL ForAll start>https://prochan.net/api/public/series/search?limit=1&search=<completeURL ForAll end>
-<chaptersURL ForAll start>https://prochan.net/api/public/[1]/[2]/chapters?page=1&limit=999&order=desc<chaptersURL ForAll end>
+<completeURL ForAll start>https://procomic.pro/api/public/series/search?limit=1&search=<completeURL ForAll end>
+<chaptersURL ForAll start>https://procomic.pro/api/public/[1]/[2]/chapters?page=1&limit=999&order=desc<chaptersURL ForAll end>
 
-<chapterURL ForAll start>https://prochan.net/api/public/series/[type]/[id]/[slug]/[chId]/[chNumber]<chapterURL ForAll end>
+<chapterURL ForAll start>https://procomic.pro/api/public/series/[type]/[id]/[slug]/[chId]/[chNumber]<chapterURL ForAll end>
 
 «main information end»
 
