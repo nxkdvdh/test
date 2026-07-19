@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.67<version sources end>
+<version sources start>1.1.0.68<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1171,7 +1171,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.1.0<version end>
+<version start>1.1.1<version end>
 
 <SiteDomain start>ar.kenmanga.com<SiteDomain end>
 
@@ -1182,6 +1182,9 @@ ____________________________________________________________________
 
 <showMore lastUpdates start>https://ar.kenmanga.com/wp-admin/admin-ajax.php?action=ts_load_more_latest_updates&page=<showMore lastUpdates end>
 <showMore listManga start>https://ar.kenmanga.com/browse/page/[page]/?s&m_orderby=views&m_status&m_type<showMore listManga end>
+
+<chapterURL ForAll start>https://ar.kenmanga.com/wp-json/wp/v2/posts/[id]<chapterURL ForAll end>
+
 «main information end»
 
 ____________________________________________________________________
@@ -1276,9 +1279,9 @@ ____________________________________________________________________
 <substring from start>images":[<substring from end>
 <substring to start>"defaultSource"<substring to end>
 
-<images_one start><img src=\\"(.*?)\\"<images_one end> <group start>1<group end>
+<images_one start><img data-recalc-dims="1" decoding="async" src="(.*?)" class="aligncenter"><images_one end> <group start>1<group end>
 
-<images_two start><img src=\\"(.*?)\\"<images_two end> <group start>1<group end>
+<images_two start><img data-recalc-dims="1" decoding="async" src="(.*?)" class="aligncenter"><images_two end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
