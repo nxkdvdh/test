@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.66<version sources end>
+<version sources start>1.1.0.67<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1289,11 +1289,11 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.28<version end>
+<version start>1.0.29<version end>
 
 <SiteDomain start>api.huntertoon.org<SiteDomain end>
 
-<SiteImageDomain start>get-img.laminheskoura1.workers.dev<SiteImageDomain end>
+<SiteImageDomain start>hello.no-xxx-body.workers.dev<SiteImageDomain end>
 
 «main information start»
 <baseURL lastUpdatea start>https://api.huntertoon.org/api/v1/manhwa/list?page=1&per_page=30&sort_by=latest<baseURL lastUpdatea end>
@@ -1304,7 +1304,7 @@ ____________________________________________________________________
 <showMore listManga start>https://api.huntertoon.org/api/v1/manhwa/list?per_page=30&sort_by=latest&page=<showMore listManga end>
 
 <completeURL ForAll start>https://api.huntertoon.org/api/v1/manhwa/<completeURL ForAll end>
-<chaptersURL ForAll start>https://get-img.laminheskoura1.workers.dev/<chaptersURL ForAll end>
+<chaptersURL ForAll start>https://hello.no-xxx-body.workers.dev/<chaptersURL ForAll end>
 
 <chapterURL ForAll start>https://pub-df5d1c999116467f835dcc1e01bdd505.r2.dev/chapters/[id].json<chapterURL ForAll end>
 
