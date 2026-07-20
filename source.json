@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.68<version sources end>
+<version sources start>1.1.0.69<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -1171,7 +1171,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.1.1<version end>
+<version start>1.1.2<version end>
 
 <SiteDomain start>ar.kenmanga.com<SiteDomain end>
 
@@ -1255,8 +1255,8 @@ ____________________________________________________________________
 ____________________________________________________________________
 <search_page config start>
 
-<cheak start>تم العثور<cheak end>
-<substring from start>تم العثور<substring from end>
+<cheak start><div class="manga-grid"><cheak end>
+<substring from start><div class="manga-grid"><substring from end>
 <substring to start>load-more-container<substring to end>
 
 <name start><a href="(.*?)" class="u-title" style="display:block; text-decoration:none; color:inherit;">(.*?)</a><name end> <group start>2<group end>
