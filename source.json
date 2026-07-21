@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.69<version sources end>
+<version sources start>1.1.0.70<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -541,56 +541,56 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.0.9<version end>
+<version start>1.1.0<version end>
 
-<SiteDomain start>like-manga.net<SiteDomain end>
-<SiteDomain_image start>likehua.like-manga.net<SiteDomain_image end>
+<SiteDomain start>api.atheertoon.com<SiteDomain end>
+<SiteDomain_image start>cdn.atheertoon.com<SiteDomain_image end>
 
 «main information start»
-<baseURL lastUpdatea start>https://like-manga.net/<baseURL lastUpdatea end>
-<baseURL listManga start>https://like-manga.net/manga/<baseURL listManga end>
-//not open now//<baseURL search start>https://like-manga.net/manga/<baseURL search end>
+<baseURL lastUpdatea start>https://api.atheertoon.com/api/v1/public/manhwas?per_page=24&sort=latest_chapter&page=1<baseURL lastUpdatea end>
+<baseURL listManga start>https://api.atheertoon.com/api/v1/public/manhwas?page=1&per_page=24&sort=rating<baseURL listManga end>
+//not open now//<baseURL search start>https://api.atheertoon.com/api/v1/public/manhwas?page=1&per_page=50&sort=latest&search=<baseURL search end>
 
-<showMore lastUpdates start>https://like-manga.net/page/<showMore lastUpdates end>
-<showMore listManga start>https://like-manga.net/manga/page/<showMore listManga end>
+<showMore lastUpdates start>https://api.atheertoon.com/api/v1/public/manhwas?per_page=24&sort=latest_chapter&page=<showMore lastUpdates end>
+<showMore listManga start>https://api.atheertoon.com/api/v1/public/manhwas?per_page=24&sort=rating&page=<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
 ____________________________________________________________________
 <main_last_updatea config start>
 
-<cheak start></header><cheak end>
-<substring from start></header><substring from end>
-<substring to start><div class='wp-pagenavi' role='navigation'><substring to end>
+<cheak start>"data"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div id="manga-item-(.*?)" class="item-thumb  c-image-hover" data-post-id="(.*?)">\s+<a href="(.*?)" title="(.*?)" data-wpel-link="internal"><name end> <group start>4<group end>
+<name start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<name end> <group start>2<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>3<group end>
+<image start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<image end> <group start>4<group end>
 
-<links start><div id="manga-item-(.*?)" class="item-thumb  c-image-hover" data-post-id="(.*?)">\s+<a href="(.*?)" title="(.*?)" data-wpel-link="internal"><links end> <group start>3<group end>
+<links start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<links end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s+<div class="chapter-item ">\s+<span class="chapter font-meta">\s+<a href="(.*?)" class="btn-link" data-wpel-link="internal">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start>latest_chapter_number":"(.*?)",<chapters end> <group start>1<group end>
 
 <main_last_updatea config end>
 ____________________________________________________________________
 ____________________________________________________________________
 <main_list_manga config start>
 
-<cheak start><h1 class="item-title h4">قائمة المانجا</h1><cheak end>
-<substring from start><h1 class="item-title h4">قائمة المانجا</h1><substring from end>
-<substring to start>التالي<substring to end>
+<cheak start>"data"<cheak end>
+<substring from start>"data"<substring from end>
+<substring to start>"total"<substring to end>
 //<replaceAll start>thumbnail_<replaceAll end>
 
-<name start><div id="manga-item-(.*?)" class="item-thumb  c-image-hover" data-post-id="(.*?)">\s+<a href="(.*?)" title="(.*?)" data-wpel-link="internal"><name end> <group start>4<group end>
+<name start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<name end> <group start>2<group end>
 
-<image start><img width="(.*?)" height="(.*?)"  src="(.*?)"<image end> <group start>3<group end>
+<image start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<image end> <group start>4<group end>
 
-<links start><div id="manga-item-(.*?)" class="item-thumb  c-image-hover" data-post-id="(.*?)">\s+<a href="(.*?)" title="(.*?)" data-wpel-link="internal"><links end> <group start>3<group end>
+<links start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<links end> <group start>1<group end>
 
-<types start><span class="mt-1 flex([\s\S]*?)<span>(.*?)</span><types end> <group start>2<group end>
+<types start>display_type":"(.*?)"<types end> <group start>1<group end>
 
-<chapters start><div class="list-chapter">\s+<div class="chapter-item ">\s+<span class="chapter font-meta">\s+<a href="(.*?)" class="btn-link" data-wpel-link="internal">(.*?)</a><chapters end> <group start>2<group end>
+<chapters start>latest_chapter_number":"(.*?)",<chapters end> <group start>1<group end>
 
 
 <main_list_manga config end>
@@ -598,25 +598,25 @@ ____________________________________________________________________
 ____________________________________________________________________
 <info_page config start>
 
-<name start>headline": "(.*?)"<name end> <group start>1<group end>
+<name start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<name end> <group start>2<group end>
 
-<image start>url": "(.*?)",<image end> <group start>1<group end>
+<image start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<image end> <group start>4<group end>
 
-<types start>النوع\s+</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><types end> <group start>1<group end>
+<types start>display_type":"(.*?)"<types end> <group start>1<group end>
 
-<state start>الحالة\s+</h5>\s+</div>\s+<div class="summary-content">\s+(.*?)</div><state end> <group start>1<group end>
+<state start>"status":"(.*?)"<state end> <group start>1<group end>
 
-<author start><div class="author-content">\s+(.*?)</div><author end> <group start>1<group end>
+<author start>publication_year":(.*?),<author end> <group start>1<group end>
 
-<size_chapters start><li class="wp-manga-chapter  ">\s+<a href="(.*?)" data-wpel-link="internal">\s+(.*?)</a><size_chapters end> <group start>2<group end>
+<size_chapters start>"id":(.*?),"manhwa_id":(.*?),"chapter_number":"(.*?)","title":"(.*?)"<size_chapters end> <group start>4<group end>
 
-<story start><div class="summary__content ">([\s\S]*?)</div><story end> <group start>1<group end>
+<story start>description":"([\s\S]*?)"<story end> <group start>1<group end>
 
-<ranking start><a href="(.*?)" rel="tag" data-wpel-link="internal">(.*?)</a><ranking end> <group start>2<group end>
+<ranking start>\{"id":([^"]*?),"name":"(.*?)"<ranking end> <group start>2<group end>
 
-<name_of_chapter start><li class="wp-manga-chapter  ">\s+<a href="(.*?)" data-wpel-link="internal">\s+(.*?)</a><name_of_chapter end> <group start>2<group end>
+<name_of_chapter start>"id":(.*?),"manhwa_id":(.*?),"chapter_number":"(.*?)","title":"(.*?)"<name_of_chapter end> <group start>4<group end>
 
-<link_of_chapter start><li class="wp-manga-chapter  ">\s+<a href="(.*?)" data-wpel-link="internal">\s+(.*?)</a><link_of_chapter end> <group start>1<group end>
+<link_of_chapter start>"id":(.*?),"manhwa_id":(.*?),"chapter_number":"(.*?)","title":"(.*?)"<link_of_chapter end> <group start>1<group end>
 
 <info_page config end>
 ____________________________________________________________________
@@ -624,19 +624,20 @@ ____________________________________________________________________
 //شغال على عملية بحث واحدة//
 <search_page config start>
 
-<cheak start>headline<cheak end>
-//off//<substring from start><div class="releases"><h1><substring from end>
-//off//<substring to start><div class="releases"><h3>اضغـط على الصورة</h3><substring to end>
+<cheak start>"data"<cheak end>
+<substring from start>"data"<substring from end>
 
-<name start>"headline": "(.*?)",<name end> <group start>1<group end>
+<substring to start>"total"<substring to end>
 
-<image start>"url": "(.*?)",<image end> <group start>1<group end>
+<name start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<name end> <group start>2<group end>
 
-<links start><link rel="canonical" href="(.*?)" /><links end> <group start>1<group end>
+<image start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<image end> <group start>4<group end>
+
+<links start>"id":([^"]*?),"title":"(.*?)","slug":"(.*?)","cover_url":"(.*?)"<links end> <group start>1<group end>
 
 <types start><span class="type (.*?)"><types end> <group start>1<group end>
 
-<chapters start><ul class="main version-chap">\s+<li class="wp-manga-chapter  ">\s+<a href="(.*?)" data-wpel-link="internal">\s+(.*?)</a><chapters end> <group start>2<group end>
+<chapters start>latest_chapter_number":"(.*?)",<chapters end> <group start>1<group end>
 
 <search_page config end>
 //end//
@@ -649,9 +650,9 @@ ____________________________________________________________________
 <substring from start>"images":[<substring from end>
 <substring to start>lazyload"<substring to end>
 
-<images_one start><img id="image-(.*?)" src="(.*?)" nad="(.*?)"><images_one end> <group start>2<group end>
+<images_one start>image_url":"(.*?)"<images_one end> <group start>1<group end>
 
-<images_two start><img id="image-(.*?)" src="(.*?)" nad="(.*?)"><images_two end> <group start>2<group end>
+<images_two start>image_url":"(.*?)"<images_two end> <group start>1<group end>
 
 <view_page config end>
 ____________________________________________________________________
