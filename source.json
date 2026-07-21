@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.70<version sources end>
+<version sources start>1.1.0.71<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -541,7 +541,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.1.0<version end>
+<version start>1.1.1<version end>
 
 <SiteDomain start>api.atheertoon.com<SiteDomain end>
 <SiteDomain_image start>cdn.atheertoon.com<SiteDomain_image end>
@@ -556,7 +556,7 @@ ____________________________________________________________________
 
 <completeURL ForAll start>https://api.atheertoon.com/api/v1/public/manhwas/[id]<completeURL ForAll end>
 
-<chaptersURL ForAll start>https://api.atheertoon.com/api/v1/public/manhwas/[id]/chapters<chaptersURL ForAll end>
+<chaptersURL ForAll start>/chapters<chaptersURL ForAll end>
 
 <chapterURL ForAll start>https://api.atheertoon.com/api/v1/public/chapters/[id]/pages<chapterURL ForAll end>
 
