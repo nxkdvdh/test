@@ -553,6 +553,13 @@ ____________________________________________________________________
 
 <showMore lastUpdates start>https://api.atheertoon.com/api/v1/public/manhwas?per_page=24&sort=latest_chapter&page=<showMore lastUpdates end>
 <showMore listManga start>https://api.atheertoon.com/api/v1/public/manhwas?per_page=24&sort=rating&page=<showMore listManga end>
+
+<completeURL ForAll start>https://api.atheertoon.com/api/v1/public/manhwas/[id]<completeURL ForAll end>
+
+<chaptersURL ForAll start>https://api.atheertoon.com/api/v1/public/manhwas/[id]/chapters<chaptersURL ForAll end>
+
+<chapterURL ForAll start>https://api.atheertoon.com/api/v1/public/chapters/[id]/pages<chapterURL ForAll end>
+
 «main information end»
 
 ____________________________________________________________________
