@@ -5,12 +5,12 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.71<version sources end>
+<version sources start>1.1.0.72<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.27<version end>
+<version start>1.0.28<version end>
 
 <SiteDomain start>olympustaff.com<SiteDomain end>
 «main information start»
@@ -20,6 +20,11 @@ ____________________________________________________________________
 
 <showMore lastUpdates start>https://olympustaff.com/?page=<showMore lastUpdates end>
 <showMore listManga start>https://olympustaff.com/series?page=<showMore listManga end>
+
+<service_domain_1 start>images.weserv.nl<service_domain_1 end>
+
+<service_domain_2 start>images.hsingh.app<service_domain_2 end>
+
 «main information end»
 
 ____________________________________________________________________
