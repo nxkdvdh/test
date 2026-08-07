@@ -1,16 +1,16 @@
-<app_version start>1.0.6 _beta<app_version end>
+<app_version start>1.0.7 _beta<app_version end>
 <app_version_link start>https://www.manga-break.top<app_version_link end>
-<app_version_news start>1-إصلاح عدد من مصادر المحتوى: تحسين واستقرار مصادر (SWT, ASQ, ONL, REA).#2-استبدال مصدر ARS بمصدر جديد وأكثر كفاءة تحت اسم MLO.#3-استبدال مصدر NON بمصدر جديد تحت اسم AZR لضمان أداء أفضل.#4-إضافة خانة التبرع داخل التطبيق لدعم استمرار تطويره وتحسينه.#5-إصلاح مشكلة المشاهدة في وضع ملء الشاشة وتحسين تجربة القراءة دون عوائق.#6-تحسينات عامة على الأداء والاستقرار استعدادًا للتحديثات القادمة.<app_version_news end>
+<app_version_news start>1-إضافة إمكانية الانتقال بين الفصول والوصول إلى قائمة الفصول مباشرة من صفحة المشاهدة.#2-تحديث إعدادات المشاهدة في صفحة مشاهدة الفصول، مع تعديل بسيط على التصميم واستبدال خيار المشاهدة عبر WebView بخيار المشاهدة العمودية المتقطعة، بالإضافة إلى إضافة ميزة الموسيقى التي تتطلب تفعيلها من الإعدادات ولن تعمل بشكل افتراضي.#3-إضافة قسم ضبط المصادر، والذي يتيح التحكم بجودة ودقة الصور الخاصة بالمصادر.#4-إضافة وسائل جديدة لدعم التطبيق، تشمل Binance والبطاقات الائتمانية وSuperQi (متاح للعراق فقط).#5-تحسينات عامة على تصميم صفحة المعلومات.#6-إصلاح عدد من المصادر التي كانت معطلة مسبقًا.#7-استبدال مصادر ROS وLEK وTIM وPRO وNON بمصادر جديدة وأفضل.#8-تحسينات وإصلاحات عامة.<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.73<version sources end>
+<version sources start>1.1.0.74<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
 
-<version start>1.0.29<version end>
+<version start>1.0.30<version end>
 
 <SiteDomain start>olympustaff.com<SiteDomain end>
 «main information start»
@@ -138,7 +138,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <swat config start>
 
-<version start>1.0.35<version end>
+<version start>1.0.36<version end>
 
 <SiteDomain start>appswat.com<SiteDomain end>
 
@@ -279,7 +279,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <ares config start>
 
-<version start>1.2.0<version end>
+<version start>1.2.1<version end>
 
 <SiteDomain start>plus.mangamello.com<SiteDomain end>
 
@@ -414,7 +414,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <rose config start>
 
-<version start>1.0.21<version end>
+<version start>1.0.22<version end>
 
 <SiteDomain start>firestore.googleapis.com<SiteDomain end>
 
@@ -546,7 +546,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <lek config start>
 
-<version start>1.1.2<version end>
+<version start>1.1.3<version end>
 
 <SiteDomain start>api.atheertoon.com<SiteDomain end>
 <SiteDomain_image start>cdn.atheertoon.com<SiteDomain_image end>
@@ -678,7 +678,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.33<version end>
+<version start>1.0.34<version end>
 
 <SiteDomain start>dilar.tube<SiteDomain end>
 
@@ -810,7 +810,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.19<version end>
+<version start>1.0.20<version end>
 
 <SiteDomain start>3asq.org<SiteDomain end>
 
@@ -932,7 +932,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.12<version end>
+<version start>1.0.13<version end>
 
 <SiteDomain start>www.onma.me<SiteDomain end>
 
@@ -1060,7 +1060,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <non config start>
 
-<version start>1.0.30<version end>
+<version start>1.0.31<version end>
 
 <SiteDomain start>azorafly.com<SiteDomain end>
 
@@ -1184,7 +1184,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <area config start>
 
-<version start>1.1.3<version end>
+<version start>1.1.5<version end>
 
 <SiteDomain start>ar.kenmanga.com<SiteDomain end>
 
@@ -1305,7 +1305,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <pro config start>
 
-<version start>1.0.30<version end>
+<version start>1.0.32<version end>
 
 <SiteDomain start>api.huntertoon.org<SiteDomain end>
 
