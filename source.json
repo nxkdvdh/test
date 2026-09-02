@@ -5,7 +5,7 @@
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.76<version sources end>
+<version sources start>1.1.0.77<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -810,17 +810,17 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.20<version end>
+<version start>1.0.21<version end>
 
-<SiteDomain start>3asq.org<SiteDomain end>
+<SiteDomain start>3asq.online<SiteDomain end>
 
 «main information start»
-<baseURL lastUpdatea start>https://3asq.org/page/1<baseURL lastUpdatea end>
-<baseURL listManga start>https://3asq.org/manga/page/1/?m_orderby=trending<baseURL listManga end>
-<baseURL search start>https://3asq.org/?s=<baseURL search end>
+<baseURL lastUpdatea start>https://3asq.online/page/1<baseURL lastUpdatea end>
+<baseURL listManga start>https://3asq.online/manga/page/1/?m_orderby=trending<baseURL listManga end>
+<baseURL search start>https://3asq.online/?s=<baseURL search end>
 
-<showMore lastUpdates start>https://3asq.org/page/<showMore lastUpdates end>
-<showMore listManga start>https://3asq.org/manga/page/<showMore listManga end>
+<showMore lastUpdates start>https://3asq.online/page/<showMore lastUpdates end>
+<showMore listManga start>https://3asq.online/manga/page/<showMore listManga end>
 «main information end»
 
 ____________________________________________________________________
