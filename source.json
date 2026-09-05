@@ -1,11 +1,11 @@
-<app_version start>1.0.7 _beta<app_version end>
+<app_version start>1.0.8 _beta<app_version end>
 <app_version_link start>https://www.manga-break.top<app_version_link end>
-<app_version_news start>1-إضافة إمكانية الانتقال بين الفصول والوصول إلى قائمة الفصول مباشرة من صفحة المشاهدة.#2-تحديث إعدادات المشاهدة في صفحة مشاهدة الفصول، مع تعديل بسيط على التصميم واستبدال خيار المشاهدة عبر WebView بخيار المشاهدة العمودية المتقطعة، بالإضافة إلى إضافة ميزة الموسيقى التي تتطلب تفعيلها من الإعدادات ولن تعمل بشكل افتراضي.#3-إضافة قسم ضبط المصادر، والذي يتيح التحكم بجودة ودقة الصور الخاصة بالمصادر.#4-إضافة وسائل جديدة لدعم التطبيق، تشمل Binance والبطاقات الائتمانية وSuperQi (متاح للعراق فقط).#5-تحسينات عامة على تصميم صفحة المعلومات.#6-إصلاح عدد من المصادر التي كانت معطلة مسبقًا.#7-استبدال مصادر ROS وLEK وTIM وPRO وNON بمصادر جديدة وأفضل.#8-تحسينات وإصلاحات عامة.<app_version_news end>
+<app_version_news start>1- اصلاح مشكلة بمظهر التطبيق على اصدارات اندرويد 15 فما فوق.#2- تعديلات وتحسينات بسيطة على اداء التطبيق.#3- حل بعض مشاكل المصادر.<app_version_news end>
 <cheak_user start>yes<cheak_user end>
 <update_important start>no<update_important end> 
 
 
-<version sources start>1.1.0.77<version sources end>
+<version sources start>1.1.0.78<version sources end>
 ____________________________________________________________________
 ____________________________________________________________________
 <teamx config start>
@@ -678,7 +678,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <time config start>
 
-<version start>1.0.35<version end>
+<version start>1.0.36<version end>
 
 <SiteDomain start>dilar.tube<SiteDomain end>
 
@@ -810,7 +810,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <asq config start>
 
-<version start>1.0.21<version end>
+<version start>1.0.22<version end>
 
 <SiteDomain start>3asq.online<SiteDomain end>
 
@@ -932,7 +932,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 <online config start>
 
-<version start>1.0.14<version end>
+<version start>1.0.15<version end>
 
 <SiteDomain start>manonga.online<SiteDomain end>
 
